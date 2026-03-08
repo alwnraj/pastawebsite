@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import ReactFlow, {
   Background,
   Controls,
@@ -15,8 +15,12 @@ const nodeTypes = {
   pasta: PastaNode,
 }
 
-function AutoFitView({ fitKey }) {
-  const { fitView } = useReactFlow()
+const defaultEdgeOptions = {
+  type: 'smoothstep',
+}
+
+function AutoViewport({ structureKey, focusKey, focusTarget }) {
+  const { fitView, getZoom, setCenter } = useReactFlow()
   const firstRenderRef = useRef(true)
 
   useEffect(() => {
@@ -30,13 +34,32 @@ function AutoFitView({ fitKey }) {
     })
 
     return () => window.cancelAnimationFrame(frame)
-  }, [fitKey, fitView])
+  }, [structureKey, fitView])
+
+  useEffect(() => {
+    if (!focusTarget) {
+      return
+    }
+
+    const frame = window.requestAnimationFrame(() => {
+      setCenter(focusTarget.x, focusTarget.y, {
+        duration: 700,
+        zoom: getZoom(),
+      })
+    })
+
+    return () => window.cancelAnimationFrame(frame)
+  }, [focusKey, focusTarget, getZoom, setCenter])
 
   return null
 }
 
 function MindMapCanvas(props) {
-  const { nodes, edges, fitKey } = useLayoutNodes(props)
+  const [hoveredNodeId, setHoveredNodeId] = useState(null)
+  const { nodes, edges, structureKey, focusKey, focusTarget } = useLayoutNodes({
+    ...props,
+    hoveredNodeId,
+  })
 
   function handleNodeClick(_, node) {
     node.data.onToggle()
@@ -45,7 +68,6 @@ function MindMapCanvas(props) {
   return (
     <div className="absolute inset-0 z-[1] h-full w-full">
       <ReactFlow
-        fitView
         edges={edges}
         nodes={nodes}
         nodeTypes={nodeTypes}
@@ -56,14 +78,18 @@ function MindMapCanvas(props) {
         nodesConnectable={false}
         elementsSelectable={false}
         onNodeClick={handleNodeClick}
+        onNodeMouseEnter={(_, node) => setHoveredNodeId(node.id)}
+        onNodeMouseLeave={() => setHoveredNodeId(null)}
+        onPaneClick={() => setHoveredNodeId(null)}
         zoomOnDoubleClick={false}
-        defaultEdgeOptions={{
-          type: 'smoothstep',
-          animated: true,
-        }}
+        defaultEdgeOptions={defaultEdgeOptions}
         proOptions={{ hideAttribution: true }}
       >
-        <AutoFitView fitKey={fitKey} />
+        <AutoViewport
+          structureKey={structureKey}
+          focusKey={focusKey}
+          focusTarget={focusTarget}
+        />
         <Background
           color="rgba(82, 101, 67, 0.12)"
           gap={28}

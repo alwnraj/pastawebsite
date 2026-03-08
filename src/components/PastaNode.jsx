@@ -1,6 +1,64 @@
 import { Handle, Position } from 'reactflow'
-import { motion } from 'framer-motion'
+import { AnimatePresence, motion } from 'framer-motion'
 import PastaCard from './PastaCard'
+
+const HANDLE_CLASSNAME =
+  '!h-3 !w-3 !border-0 !bg-transparent !opacity-0'
+
+function FlowHandles() {
+  return (
+    <>
+      <Handle
+        id="top"
+        type="target"
+        position={Position.Top}
+        className={HANDLE_CLASSNAME}
+      />
+      <Handle
+        id="right"
+        type="target"
+        position={Position.Right}
+        className={HANDLE_CLASSNAME}
+      />
+      <Handle
+        id="bottom"
+        type="target"
+        position={Position.Bottom}
+        className={HANDLE_CLASSNAME}
+      />
+      <Handle
+        id="left"
+        type="target"
+        position={Position.Left}
+        className={HANDLE_CLASSNAME}
+      />
+      <Handle
+        id="top"
+        type="source"
+        position={Position.Top}
+        className={HANDLE_CLASSNAME}
+      />
+      <Handle
+        id="right"
+        type="source"
+        position={Position.Right}
+        className={HANDLE_CLASSNAME}
+      />
+      <Handle
+        id="bottom"
+        type="source"
+        position={Position.Bottom}
+        className={HANDLE_CLASSNAME}
+      />
+      <Handle
+        id="left"
+        type="source"
+        position={Position.Left}
+        className={HANDLE_CLASSNAME}
+      />
+    </>
+  )
+}
 
 function PastaNode({ data }) {
   return (
@@ -10,13 +68,15 @@ function PastaNode({ data }) {
       transition={{ duration: 0.34, ease: [0.16, 1, 0.3, 1] }}
       className="relative"
     >
-      <Handle
-        type="target"
-        position={Position.Left}
-        className="!h-3 !w-3 !border-2 !border-parchment !bg-[#d88c3f]"
-      />
+      <FlowHandles />
 
-      <div className="h-full w-full rounded-[1.7rem] border border-[#ecdcca] bg-white/95 p-4 shadow-lg">
+      <div
+        className={`h-full w-full rounded-[1.7rem] border bg-white/95 p-4 shadow-lg transition-all duration-300 ${
+          data.isActive
+            ? 'border-terracotta/35 shadow-[0_30px_60px_-36px_rgba(184,92,56,0.8)]'
+            : 'border-[#ecdcca]'
+        }`}
+      >
         <div className="nodrag nopan w-full cursor-pointer text-left">
           <div className="flex items-start justify-between gap-3">
             <div>
@@ -33,18 +93,21 @@ function PastaNode({ data }) {
           </div>
 
           <div className="mt-4 flex items-center justify-between text-xs uppercase tracking-[0.18em] text-olive/65">
-            <span>{data.isOpen ? 'Close card' : 'Open card'}</span>
-            <span>{data.isOpen ? '−' : '+'}</span>
+            <span>{data.isClosing ? 'Closing card' : data.isOpen ? 'Close card' : 'Open card'}</span>
+            <span>{data.isDisplayedOpen ? '−' : '+'}</span>
           </div>
         </div>
 
-        {data.isOpen && (
-          <PastaCard
-            pronunciation={data.pronunciation}
-            icon={data.icon}
-            fact={data.fact}
-          />
-        )}
+        <AnimatePresence initial={false}>
+          {data.isDisplayedOpen && (
+            <PastaCard
+              pronunciation={data.pronunciation}
+              icon={data.icon}
+              fact={data.fact}
+              isClosing={data.isClosing}
+            />
+          )}
+        </AnimatePresence>
       </div>
     </motion.div>
   )

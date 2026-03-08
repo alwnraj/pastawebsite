@@ -9,6 +9,9 @@ function App() {
     visibleNodeIds,
     expandedQuestionIds,
     openPastaIds,
+    activePastaId,
+    closingPastaId,
+    focusRequest,
     totalPastas,
     toggleQuestionNode,
     togglePastaNode,
@@ -64,6 +67,9 @@ function App() {
             visibleNodeIds={visibleNodeIds}
             expandedQuestionIds={expandedQuestionIds}
             openPastaIds={openPastaIds}
+            activePastaId={activePastaId}
+            closingPastaId={closingPastaId}
+            focusRequest={focusRequest}
             onQuestionToggle={toggleQuestionNode}
             onPastaToggle={togglePastaNode}
           />

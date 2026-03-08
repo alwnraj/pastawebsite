@@ -1,15 +1,19 @@
-import { useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
+
+const CARD_CLOSE_DURATION_MS = 180
 
 function createTreeIndex(tree) {
   const nodesById = new Map()
   const parentById = new Map()
   const childrenById = new Map()
   const descendantIdsById = new Map()
+  const depthById = new Map()
   let totalPastas = 0
 
-  function visit(node, parentId = null) {
+  function visit(node, parentId = null, depth = 0) {
     nodesById.set(node.id, node)
     parentById.set(node.id, parentId)
+    depthById.set(node.id, depth)
 
     const children = node.children ?? []
     childrenById.set(
@@ -24,7 +28,7 @@ function createTreeIndex(tree) {
     const descendantIds = []
 
     children.forEach((child) => {
-      visit(child, node.id)
+      visit(child, node.id, depth + 1)
       descendantIds.push(child.id)
       const childDescendants = descendantIdsById.get(child.id) ?? []
       descendantIds.push(...childDescendants)
@@ -40,6 +44,7 @@ function createTreeIndex(tree) {
     parentById,
     childrenById,
     descendantIdsById,
+    depthById,
     totalPastas,
   }
 }
@@ -64,12 +69,79 @@ function collectVisibleNodeIds(tree, expandedQuestionIds) {
 }
 
 export function useTreeExpansion(tree) {
-  const treeIndex = createTreeIndex(tree)
+  const treeIndex = useMemo(() => createTreeIndex(tree), [tree])
   const [expandedQuestionIds, setExpandedQuestionIds] = useState(() => new Set())
-  const [openPastaIds, setOpenPastaIds] = useState(() => new Set())
+  const [activePastaId, setActivePastaId] = useState(null)
+  const [closingPastaId, setClosingPastaId] = useState(null)
+  const [focusRequest, setFocusRequest] = useState(null)
+  const transitionTimerRef = useRef(null)
+  const pendingPastaIdRef = useRef(null)
+  const activePastaIdRef = useRef(null)
+  const closingPastaIdRef = useRef(null)
+
+  useEffect(() => {
+    activePastaIdRef.current = activePastaId
+  }, [activePastaId])
+
+  useEffect(() => {
+    closingPastaIdRef.current = closingPastaId
+  }, [closingPastaId])
+
+  useEffect(() => {
+    return () => {
+      if (transitionTimerRef.current) {
+        window.clearTimeout(transitionTimerRef.current)
+      }
+    }
+  }, [])
+
+  function clearTransition() {
+    if (transitionTimerRef.current) {
+      window.clearTimeout(transitionTimerRef.current)
+      transitionTimerRef.current = null
+    }
+
+    pendingPastaIdRef.current = null
+  }
+
+  function requestFocus(nodeId) {
+    setFocusRequest((current) => ({
+      id: nodeId,
+      version: (current?.version ?? 0) + 1,
+    }))
+  }
+
+  function closeDisplayedPasta(nodeId, nextPastaId = null) {
+    if (!nodeId) {
+      if (nextPastaId) {
+        setActivePastaId(nextPastaId)
+        requestFocus(nextPastaId)
+      }
+
+      return
+    }
+
+    clearTransition()
+    pendingPastaIdRef.current = nextPastaId
+    setActivePastaId(null)
+    setClosingPastaId(nodeId)
+
+    transitionTimerRef.current = window.setTimeout(() => {
+      setClosingPastaId((current) => (current === nodeId ? null : current))
+      transitionTimerRef.current = null
+      const pendingPastaId = pendingPastaIdRef.current
+      pendingPastaIdRef.current = null
+
+      if (pendingPastaId) {
+        setActivePastaId(pendingPastaId)
+        requestFocus(pendingPastaId)
+      }
+    }, CARD_CLOSE_DURATION_MS)
+  }
 
   function toggleQuestionNode(nodeId) {
     const descendantIds = treeIndex.descendantIdsById.get(nodeId) ?? []
+
     setExpandedQuestionIds((current) => {
       const next = new Set(current)
 
@@ -83,41 +155,60 @@ export function useTreeExpansion(tree) {
       return next
     })
 
-    setOpenPastaIds((current) => {
-      if (!expandedQuestionIds.has(nodeId)) {
-        return current
-      }
+    if (expandedQuestionIds.has(nodeId)) {
+      const visiblePastaId = activePastaIdRef.current ?? closingPastaIdRef.current
 
-      const next = new Set(current)
-      descendantIds.forEach((descendantId) => next.delete(descendantId))
-      return next
-    })
+      if (visiblePastaId && descendantIds.includes(visiblePastaId)) {
+        clearTransition()
+        setActivePastaId(null)
+        setClosingPastaId(null)
+      }
+    }
   }
 
   function togglePastaNode(nodeId) {
-    setOpenPastaIds((current) => {
-      const next = new Set(current)
+    const displayedPastaId = activePastaIdRef.current ?? closingPastaIdRef.current
 
-      if (next.has(nodeId)) {
-        next.delete(nodeId)
-      } else {
-        next.add(nodeId)
-      }
+    if (displayedPastaId === nodeId) {
+      closeDisplayedPasta(nodeId)
+      return
+    }
 
-      return next
-    })
+    if (displayedPastaId) {
+      closeDisplayedPasta(displayedPastaId, nodeId)
+      return
+    }
+
+    clearTransition()
+    setClosingPastaId(null)
+    setActivePastaId(nodeId)
+    requestFocus(nodeId)
   }
 
   function resetTree() {
+    clearTransition()
     setExpandedQuestionIds(new Set())
-    setOpenPastaIds(new Set())
+    setActivePastaId(null)
+    setClosingPastaId(null)
+    setFocusRequest(null)
   }
+
+  const openPastaIds = new Set(
+    [activePastaId, closingPastaId].filter(Boolean),
+  )
+  const visibleNodeIds = useMemo(
+    () => collectVisibleNodeIds(tree, expandedQuestionIds),
+    [tree, expandedQuestionIds],
+  )
 
   return {
     treeIndex,
-    visibleNodeIds: collectVisibleNodeIds(tree, expandedQuestionIds),
+    visibleNodeIds,
     expandedQuestionIds,
     openPastaIds,
+    activePastaId,
+    closingPastaId,
+    focusRequest,
     totalPastas: treeIndex.totalPastas,
     toggleQuestionNode,
     togglePastaNode,

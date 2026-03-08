@@ -25,6 +25,14 @@
               "pronunciation": "pehr-chah-TEL-lee",
               "icon": "🕳️",
               "fact": "In southern Italy, it is often treated as the rustic cousin of bucatini."
+            },
+            {
+              "id": "bigoli",
+              "label": "Bigoli",
+              "type": "pasta",
+              "pronunciation": "BEE-goh-lee",
+              "icon": "🍝",
+              "fact": "A thick hollow pasta from Venice, traditionally made with whole wheat or duck eggs, and historically the pasta of the poor — served on days when meat was forbidden."
             }
           ]
         },
@@ -63,6 +71,22 @@
                       "pronunciation": "vehr-mee-CHEL-lee",
                       "icon": "〰️",
                       "fact": "In Italy it is slightly thicker than spaghetti, the opposite of some export labels."
+                    },
+                    {
+                      "id": "spaghetti-alla-chitarra",
+                      "label": "Spaghetti alla chitarra",
+                      "type": "pasta",
+                      "pronunciation": "spah-GET-tee ah-la kee-TAR-rah",
+                      "icon": "🎸",
+                      "fact": "Made by pressing dough through a wooden frame strung with guitar wires — each strand has a square cross-section, not round, which holds sauce differently than regular spaghetti."
+                    },
+                    {
+                      "id": "pici",
+                      "label": "Pici",
+                      "type": "pasta",
+                      "pronunciation": "PEE-chee",
+                      "icon": "🐛",
+                      "fact": "A hand-rolled pasta from Tuscany, each strand rolled by hand into an uneven thick rope. No two pieces are identical, and that irregularity is considered the point."
                     }
                   ]
                 },
@@ -107,6 +131,14 @@
                       "pronunciation": "kah-pehl-LEE-nee dahn-JEH-loh",
                       "icon": "😇",
                       "fact": "Angel-hair style strands can overcook in well under two minutes."
+                    },
+                    {
+                      "id": "filindeu",
+                      "label": "Filindeu",
+                      "type": "pasta",
+                      "pronunciation": "fee-leen-DEH-oo",
+                      "icon": "🕸️",
+                      "fact": "One of the rarest pastas in Italy, it is pulled and folded into 256 fine threads, dried as a woven sheet, then broken into broth for a Sardinian pilgrimage feast."
                     }
                   ]
                 }
@@ -165,6 +197,14 @@
                   "pronunciation": "fet-too-CHEE-neh",
                   "icon": "📏",
                   "fact": "Its name means little ribbons, which is the whole design brief."
+                },
+                {
+                  "id": "scialatielli",
+                  "label": "Scialatielli",
+                  "type": "pasta",
+                  "pronunciation": "shah-lah-tee-EL-lee",
+                  "icon": "🌊",
+                  "fact": "Invented in 1978 by a single chef in Amalfi — one of the few modern pastas with a known inventor and a documented birth date."
                 }
               ]
             },
@@ -195,6 +235,22 @@
                   "pronunciation": "leen-gwet-TEE-neh",
                   "icon": "📎",
                   "fact": "This slimmer linguine variant is prized for lighter seafood sauces."
+                },
+                {
+                  "id": "trenette",
+                  "label": "Trenette",
+                  "type": "pasta",
+                  "pronunciation": "treh-NET-teh",
+                  "icon": "🌿",
+                  "fact": "In Liguria, the classic pesto plate is often trenette with potatoes and green beans mixed directly into the pasta, not served as sides."
+                },
+                {
+                  "id": "tajarin",
+                  "label": "Tajarin",
+                  "type": "pasta",
+                  "pronunciation": "tah-yah-REEN",
+                  "icon": "🥚",
+                  "fact": "A Piedmontese ribbon made with an unusually egg-rich dough, traditionally so rich that old recipes call for dozens of yolks per kilo of flour."
                 }
               ]
             },
@@ -206,9 +262,23 @@
                   "id": "mafaldine",
                   "label": "Mafaldine",
                   "type": "pasta",
-                  "pronunciation": "mah-fahl-DEE-neh",
-                  "icon": "〰️",
-                  "fact": "It was named after Princess Mafalda of Savoy."
+                  "pronunciation": "mah-fal-DEE-neh",
+                  "icon": "👑",
+                  "fact": "Named after Princess Mafalda of Savoy — the ruffled edges were meant to resemble the lace trim of royal dresses."
+                }
+              ]
+            },
+            {
+              "id": "long-flat-buckwheat",
+              "label": "Buckwheat / dark",
+              "children": [
+                {
+                  "id": "pizzoccheri",
+                  "label": "Pizzoccheri",
+                  "type": "pasta",
+                  "pronunciation": "peet-SOK-keh-ree",
+                  "icon": "🏔️",
+                  "fact": "Made with buckwheat flour from the Valtellina valley in Lombardy — one of the very few Italian pastas not made from wheat. Traditionally baked with cabbage, potato, and melted cheese."
                 }
               ]
             }
@@ -266,7 +336,7 @@
               "children": [
                 {
                   "id": "short-tubular-straight-surface",
-                  "label": "Ridged or smooth?",
+                  "label": "Ridged, smooth, or small?",
                   "children": [
                     {
                       "id": "short-tubular-ridged",
@@ -281,12 +351,12 @@
                           "fact": "Its grooves were made for meaty sauces to lodge in every channel."
                         },
                         {
-                          "id": "paccheri",
-                          "label": "Paccheri",
+                          "id": "tortiglioni",
+                          "label": "Tortiglioni",
                           "type": "pasta",
-                          "pronunciation": "pahk-KEH-ree",
-                          "icon": "⭕",
-                          "fact": "The name likely echoes the slapping sound it makes in sauce."
+                          "pronunciation": "tor-tee-LYOH-nee",
+                          "icon": "🧵",
+                          "fact": "Unlike rigatoni, the grooves twist around the tube in a spiral, so sauce winds through the pasta instead of sitting in straight channels."
                         }
                       ]
                     },
@@ -295,20 +365,70 @@
                       "label": "Smooth",
                       "children": [
                         {
-                          "id": "macaroni",
-                          "label": "Macaroni",
-                          "type": "pasta",
-                          "pronunciation": "mah-kah-ROH-nee",
-                          "icon": "🌙",
-                          "fact": "The elbow shape became standard later than the word itself."
+                          "id": "short-tubular-smooth-large",
+                          "label": "Large",
+                          "children": [
+                            {
+                              "id": "paccheri",
+                              "label": "Paccheri",
+                              "type": "pasta",
+                              "pronunciation": "PAK-keh-ree",
+                              "icon": "🫁",
+                              "fact": "So large you can stuff individual tubes like small cannelloni. The name likely comes from a Neapolitan word for a slap — because of the slapping sound they make against the plate."
+                            },
+                            {
+                              "id": "calamarata",
+                              "label": "Calamarata",
+                              "type": "pasta",
+                              "pronunciation": "kah-lah-mah-RAH-tah",
+                              "icon": "🦑",
+                              "fact": "Shaped to mimic rings of calamari — traditionally served with actual squid so the pasta and the seafood are visually indistinguishable on the plate."
+                            }
+                          ]
                         },
                         {
-                          "id": "ziti",
-                          "label": "Ziti",
+                          "id": "short-tubular-smooth-medium",
+                          "label": "Medium",
+                          "children": [
+                            {
+                              "id": "macaroni",
+                              "label": "Macaroni",
+                              "type": "pasta",
+                              "pronunciation": "mah-kah-ROH-nee",
+                              "icon": "🌙",
+                              "fact": "The elbow shape became standard later than the word itself."
+                            },
+                            {
+                              "id": "ziti",
+                              "label": "Ziti",
+                              "type": "pasta",
+                              "pronunciation": "ZEE-tee",
+                              "icon": "📎",
+                              "fact": "Traditionally it was snapped by hand before going into baked dishes."
+                            },
+                            {
+                              "id": "mezze-maniche",
+                              "label": "Mezze maniche",
+                              "type": "pasta",
+                              "pronunciation": "MED-zeh MAH-nee-keh",
+                              "icon": "👕",
+                              "fact": "Means \"half sleeves\" — a shorter, wider version of rigatoni. A Roman staple, almost always the pasta used in an authentic amatriciana."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "short-tubular-small",
+                      "label": "Small",
+                      "children": [
+                        {
+                          "id": "ditaloni",
+                          "label": "Ditaloni",
                           "type": "pasta",
-                          "pronunciation": "ZEE-tee",
-                          "icon": "📎",
-                          "fact": "Traditionally it was snapped by hand before going into baked dishes."
+                          "pronunciation": "dee-tah-LOH-nee",
+                          "icon": "🔩",
+                          "fact": "A larger version of ditalini, the name means \"big thimbles.\" The preferred pasta for pasta e fagioli in Naples — the thick tube traps beans inside it."
                         }
                       ]
                     }
@@ -329,8 +449,8 @@
           "label": "What shape catches your eye?",
           "children": [
             {
-              "id": "short-twisted-spiral",
-              "label": "Spiral",
+              "id": "short-twisted-tight-spiral",
+              "label": "Tight spiral",
               "children": [
                 {
                   "id": "fusilli",
@@ -341,6 +461,36 @@
                   "fact": "The spiral was originally formed by wrapping dough around a spindle."
                 },
                 {
+                  "id": "spirali",
+                  "label": "Spirali",
+                  "type": "pasta",
+                  "pronunciation": "spee-RAH-lee",
+                  "icon": "🧬",
+                  "fact": "Many brands use this name for tighter corkscrews than classic fusilli."
+                },
+                {
+                  "id": "trofie",
+                  "label": "Trofie",
+                  "type": "pasta",
+                  "pronunciation": "TROH-fyeh",
+                  "icon": "🌀",
+                  "fact": "The only pasta traditionally designed specifically for pesto — its tight twist and rough texture grip the sauce so well that Ligurians consider it almost a rule that trofie must be served with pesto genovese."
+                },
+                {
+                  "id": "gramigna",
+                  "label": "Gramigna",
+                  "type": "pasta",
+                  "pronunciation": "grah-MEEN-yah",
+                  "icon": "➿",
+                  "fact": "In Bologna, gramigna is so closely tied to sausage that menus often list the pair together as if they were a single dish rather than pasta plus sauce."
+                }
+              ]
+            },
+            {
+              "id": "short-twisted-spiral-tube",
+              "label": "Spiral tube",
+              "children": [
+                {
                   "id": "fusilli-bucati",
                   "label": "Fusilli bucati",
                   "type": "pasta",
@@ -349,12 +499,12 @@
                   "fact": "It combines spiral grooves with a hollow center for double sauce capture."
                 },
                 {
-                  "id": "spirali",
-                  "label": "Spirali",
+                  "id": "cavatappi",
+                  "label": "Cavatappi",
                   "type": "pasta",
-                  "pronunciation": "spee-RAH-lee",
-                  "icon": "🧬",
-                  "fact": "Many brands use this name for tighter corkscrews than classic fusilli."
+                  "pronunciation": "kah-vah-TAP-pee",
+                  "icon": "🍾",
+                  "fact": "Means \"corkscrews\" — a hollow spiral that combines the sauce-trapping of a tube with the grip of a twist. Invented in the 1970s and now one of the most copied shapes globally."
                 }
               ]
             },
@@ -372,11 +522,11 @@
                 },
                 {
                   "id": "rotelle",
-                  "label": "Rotelle",
+                  "label": "Mandala / Rotelle",
                   "type": "pasta",
                   "pronunciation": "roh-TEL-leh",
-                  "icon": "🎡",
-                  "fact": "The little-wheel shape turns every bowl into a tiny mechanical toy."
+                  "icon": "☸️",
+                  "fact": "Designed in the 1960s to mimic wagon wheels. Food engineers spent months perfecting the spoke-to-rim ratio so the whole piece cooks evenly — the spokes and rim are different thicknesses."
                 },
                 {
                   "id": "farfalline",
@@ -389,16 +539,46 @@
               ]
             },
             {
-              "id": "short-twisted-handformed",
-              "label": "Hand-formed twists",
+              "id": "short-twisted-hand-rolled",
+              "label": "Hand-rolled",
               "children": [
                 {
-                  "id": "trofie",
-                  "label": "Trofie",
+                  "id": "strozzapreti",
+                  "label": "Strozzapreti",
                   "type": "pasta",
-                  "pronunciation": "TROH-fyeh",
-                  "icon": "🪵",
-                  "fact": "The twisted shape was made to catch every slick of Ligurian pesto."
+                  "pronunciation": "stroht-tsah-PREH-tee",
+                  "icon": "🙏",
+                  "fact": "Means \"priest stranglers\" — legend says local women made this pasta for the clergy as payment, and the priests ate so greedily they choked on it."
+                }
+              ]
+            },
+            {
+              "id": "short-twisted-rolled-curled",
+              "label": "Rolled / curled",
+              "children": [
+                {
+                  "id": "casarecce",
+                  "label": "Casarecce",
+                  "type": "pasta",
+                  "pronunciation": "kah-sah-REH-cheh",
+                  "icon": "📜",
+                  "fact": "Each piece is a small sheet rolled into a loose S-scroll. The name means \"homemade\" — it was originally a pasta made only at home, never commercially produced."
+                },
+                {
+                  "id": "busiate",
+                  "label": "Busiate",
+                  "type": "pasta",
+                  "pronunciation": "boo-ZYAH-teh",
+                  "icon": "🪡",
+                  "fact": "From western Sicily, each spiral is rolled around a thin rod or reed called a busa, the same tool that gave the pasta its name."
+                },
+                {
+                  "id": "fileja",
+                  "label": "Fileja",
+                  "type": "pasta",
+                  "pronunciation": "fee-LAY-yah",
+                  "icon": "🧶",
+                  "fact": "A Calabrian pasta rolled around a thin metal rod called a dinaculu, creating a hollow center without any extrusion at all."
                 },
                 {
                   "id": "gemelli",
@@ -407,14 +587,6 @@
                   "pronunciation": "jeh-MEL-lee",
                   "icon": "👯",
                   "fact": "They look like two strands twisted together, but are usually a single folded rope."
-                },
-                {
-                  "id": "casarecce",
-                  "label": "Casarecce",
-                  "type": "pasta",
-                  "pronunciation": "kah-zah-RET-cheh",
-                  "icon": "📜",
-                  "fact": "Its rolled scroll shape literally reads as homemade."
                 }
               ]
             },
@@ -429,6 +601,14 @@
                   "pronunciation": "rah-dee-ah-TOH-ree",
                   "icon": "🧱",
                   "fact": "It was inspired by industrial radiator fins in the twentieth century."
+                },
+                {
+                  "id": "malloreddus",
+                  "label": "Malloreddus",
+                  "type": "pasta",
+                  "pronunciation": "mahl-loh-RED-doos",
+                  "icon": "🪹",
+                  "fact": "Known as gnocchetti sardi, these striped Sardinian shells were traditionally rolled over wicker baskets and often tinted yellow with saffron."
                 }
               ]
             }
@@ -501,6 +681,14 @@
                   "pronunciation": "pah-STEE-nah",
                   "icon": "🥄",
                   "fact": "Pastina is both a shape family and a comfort-food category."
+                },
+                {
+                  "id": "fregola",
+                  "label": "Fregola",
+                  "type": "pasta",
+                  "pronunciation": "FREH-goh-lah",
+                  "icon": "🔥",
+                  "fact": "One of the few Italian pastas intentionally toasted before cooking, these Sardinian semolina beads keep a nutty flavor even after simmering in broth."
                 }
               ]
             },
@@ -557,7 +745,13 @@
                   "pronunciation": "tor-tehl-LOH-nee",
                   "icon": "🥟",
                   "fact": "It is larger than tortellini and usually filled with softer, meatless fillings."
-                },
+                }
+              ]
+            },
+            {
+              "id": "stuffed-hat-shaped",
+              "label": "Larger, hat-shaped",
+              "children": [
                 {
                   "id": "cappelletti",
                   "label": "Cappelletti",
@@ -565,6 +759,28 @@
                   "pronunciation": "kah-pel-LET-tee",
                   "icon": "🎩",
                   "fact": "Its name means little hats, and the folded brim is easy to spot."
+                },
+                {
+                  "id": "cappellacci",
+                  "label": "Cappellacci",
+                  "type": "pasta",
+                  "pronunciation": "kap-pel-LAH-chee",
+                  "icon": "🎩",
+                  "fact": "Means \"big ugly hats\" — a larger, more rustic version of cappelletti from Ferrara. Traditionally filled with pumpkin and amaretti biscuits, a combination that sounds wrong and tastes extraordinary."
+                }
+              ]
+            },
+            {
+              "id": "stuffed-pinched-small",
+              "label": "Small, pinched",
+              "children": [
+                {
+                  "id": "agnolotti-del-plin",
+                  "label": "Agnolotti del plin",
+                  "type": "pasta",
+                  "pronunciation": "ah-nyoh-LOT-tee del PLIN",
+                  "icon": "🤌",
+                  "fact": "\"Plin\" means \"pinch\" in Piedmontese dialect — each tiny parcel is sealed with a single pinch of the fingers. Traditionally filled with leftover roast meat, making it a pasta born from frugality."
                 }
               ]
             },
@@ -591,6 +807,42 @@
               ]
             },
             {
+              "id": "stuffed-braided-seal",
+              "label": "Pinched / braided seal",
+              "children": [
+                {
+                  "id": "culurgiones",
+                  "label": "Culurgiones",
+                  "type": "pasta",
+                  "pronunciation": "koo-lur-JOH-nehs",
+                  "icon": "🌾",
+                  "fact": "A Sardinian stuffed pasta sealed with an elaborate braided edge that looks like a wheat stalk. The folding technique is so specific that each village in Ogliastra has its own variation, and locals can identify which village made it by the braid pattern."
+                }
+              ]
+            },
+            {
+              "id": "stuffed-half-moon",
+              "label": "Half-moon",
+              "children": [
+                {
+                  "id": "schlutzkrapfen",
+                  "label": "Schlutzkrapfen",
+                  "type": "pasta",
+                  "pronunciation": "SHLOOTS-krahp-fen",
+                  "icon": "🏔️",
+                  "fact": "A half-moon pasta from South Tyrol, where Italian and Austrian traditions meet — the dough uses rye flour and the filling is spinach and ricotta. It sits on the border between pasta and dumpling, and locals debate which it is."
+                },
+                {
+                  "id": "pansotti",
+                  "label": "Pansotti",
+                  "type": "pasta",
+                  "pronunciation": "pan-SOT-tee",
+                  "icon": "🌰",
+                  "fact": "These Ligurian stuffed triangles are traditionally filled with wild preboggion greens and dressed with walnut sauce, not tomato or meat ragù."
+                }
+              ]
+            },
+            {
               "id": "stuffed-pouch-large",
               "label": "Pouch or large tube",
               "children": [
@@ -609,6 +861,98 @@
                   "pronunciation": "kah-nel-LOH-nee",
                   "icon": "📯",
                   "fact": "These large tubes are usually filled first and baked second."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hand-shaped",
+      "label": "Is it hand-shaped?",
+      "children": [
+        {
+          "id": "hand-shaped-style",
+          "label": "What kind of hand-shape is it?",
+          "children": [
+            {
+              "id": "hand-shaped-pressed",
+              "label": "Thumb-pressed or ear-shaped",
+              "children": [
+                {
+                  "id": "orecchiette",
+                  "label": "Orecchiette",
+                  "type": "pasta",
+                  "pronunciation": "oh-reh-kyeh-TEH",
+                  "icon": "👂",
+                  "fact": "Means \"little ears.\" In Bari, it is still made by street vendors who sit outside their homes dragging small rounds of dough across wooden boards with a butter knife — a technique passed from mother to daughter for generations."
+                },
+                {
+                  "id": "cavatelli",
+                  "label": "Cavatelli",
+                  "type": "pasta",
+                  "pronunciation": "kah-vah-TEL-lee",
+                  "icon": "🐚",
+                  "fact": "Made by pressing a finger along a small piece of dough and dragging it to create a curl — one of the oldest pasta-making gestures, essentially unchanged since the Middle Ages."
+                },
+                {
+                  "id": "cencioni",
+                  "label": "Cencioni",
+                  "type": "pasta",
+                  "pronunciation": "chen-CHOH-nee",
+                  "icon": "🍃",
+                  "fact": "Means \"little rags\" — small irregular petal shapes from Tuscany, pressed with a thumb to create a curved, rough surface. Each piece looks slightly different from the last."
+                }
+              ]
+            },
+            {
+              "id": "hand-shaped-ragged",
+              "label": "Torn or ragged",
+              "children": [
+                {
+                  "id": "maltagliati",
+                  "label": "Maltagliati",
+                  "type": "pasta",
+                  "pronunciation": "mahl-tah-LYAH-tee",
+                  "icon": "🗺️",
+                  "fact": "The name means \"badly cut\" — these are intentionally irregular triangles torn or cut from pasta sheets without any uniform shape. Imperfection is the entire aesthetic."
+                },
+                {
+                  "id": "sagne-mpastrate",
+                  "label": "Sagne 'mpastrate",
+                  "type": "pasta",
+                  "pronunciation": "SAH-nyeh mpah-STRAH-teh",
+                  "icon": "🌿",
+                  "fact": "A Calabrian pasta of hand-torn ribbons deliberately made uneven. The rough edges catch thick vegetable sauces in ways a clean-cut pasta cannot — the irregularity is functional, not accidental."
+                }
+              ]
+            },
+            {
+              "id": "hand-shaped-braided",
+              "label": "Braided rings",
+              "children": [
+                {
+                  "id": "lorighittas",
+                  "label": "Lorighittas",
+                  "type": "pasta",
+                  "pronunciation": "loh-ree-GHEE-tahs",
+                  "icon": "💍",
+                  "fact": "A Sardinian pasta made by twisting two strands together into a ring, then braiding the join. Traditionally made only on All Saints' Day — each ring takes about a minute to form by hand."
+                }
+              ]
+            },
+            {
+              "id": "hand-shaped-stamped",
+              "label": "Stamped or patterned",
+              "children": [
+                {
+                  "id": "corzetti",
+                  "label": "Corzetti",
+                  "type": "pasta",
+                  "pronunciation": "kor-ZET-tee",
+                  "icon": "🪙",
+                  "fact": "These coin-like rounds from Liguria are pressed with carved wooden stamps, and older molds often carried aristocratic family crests or symbolic patterns."
                 }
               ]
             }
@@ -643,36 +987,6 @@
                   "pronunciation": "NYOO-dee",
                   "icon": "🧀",
                   "fact": "The name means naked because it is ravioli filling without the wrapper."
-                }
-              ]
-            },
-            {
-              "id": "dumpling-handcut",
-              "label": "Hand-cut or ear-shaped",
-              "children": [
-                {
-                  "id": "maltagliati",
-                  "label": "Maltagliati",
-                  "type": "pasta",
-                  "pronunciation": "mahl-tah-LYAH-tee",
-                  "icon": "🔺",
-                  "fact": "Its name literally means badly cut, turning scraps into a pasta style."
-                },
-                {
-                  "id": "orecchiette",
-                  "label": "Orecchiette",
-                  "type": "pasta",
-                  "pronunciation": "oh-rek-KYEHT-teh",
-                  "icon": "👂",
-                  "fact": "Each piece is dragged by thumb to make the little-ear cup."
-                },
-                {
-                  "id": "cavatelli",
-                  "label": "Cavatelli",
-                  "type": "pasta",
-                  "pronunciation": "kah-vah-TEL-lee",
-                  "icon": "🛶",
-                  "fact": "The hollowed center is made by pressing dough with fingers, not stuffing it."
                 }
               ]
             }

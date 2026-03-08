@@ -37,6 +37,11 @@ button {
 
 .react-flow__edge-path {
   stroke-linecap: round;
+  transition:
+    stroke 180ms ease,
+    stroke-width 180ms ease,
+    stroke-dasharray 180ms ease,
+    opacity 180ms ease;
 }
 
 .react-flow__controls-button {
@@ -48,4 +53,8 @@ button {
 .react-flow__controls-button svg {
   max-width: 14px;
   max-height: 14px;
+}
+
+.react-flow__attribution {
+  display: none;
 }
