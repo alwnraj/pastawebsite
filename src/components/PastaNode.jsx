@@ -1,4 +1,5 @@
-import { Handle, Position } from 'reactflow'
+import { useEffect, useRef } from 'react'
+import { Handle, Position, useUpdateNodeInternals } from 'reactflow'
 import { AnimatePresence, motion } from 'framer-motion'
 import PastaCard from './PastaCard'
 
@@ -60,9 +61,48 @@ function FlowHandles() {
   )
 }
 
-function PastaNode({ data }) {
+function PastaNode({ id, data }) {
+  const nodeRef = useRef(null)
+  const updateNodeInternals = useUpdateNodeInternals()
+
+  useEffect(() => {
+    const element = nodeRef.current
+
+    if (!element) {
+      return undefined
+    }
+
+    let frameId = null
+    const syncHandles = () => {
+      if (frameId !== null) {
+        window.cancelAnimationFrame(frameId)
+      }
+
+      frameId = window.requestAnimationFrame(() => {
+        updateNodeInternals(id)
+      })
+    }
+
+    syncHandles()
+
+    const resizeObserver = new ResizeObserver(() => {
+      syncHandles()
+    })
+
+    resizeObserver.observe(element)
+
+    return () => {
+      resizeObserver.disconnect()
+
+      if (frameId !== null) {
+        window.cancelAnimationFrame(frameId)
+      }
+    }
+  }, [id, updateNodeInternals, data.isDisplayedOpen, data.isClosing])
+
   return (
     <motion.div
+      ref={nodeRef}
       initial={{ opacity: 0, scale: 0.92, y: 8 }}
       animate={{ opacity: 1, scale: 1, y: 0 }}
       transition={{ duration: 0.34, ease: [0.16, 1, 0.3, 1] }}
@@ -77,7 +117,7 @@ function PastaNode({ data }) {
             : 'border-[#ecdcca]'
         }`}
       >
-        <div className="nodrag nopan w-full cursor-pointer text-left">
+        <div className="nodrag w-full cursor-pointer text-left">
           <div className="flex items-start justify-between gap-3">
             <div>
               <p className="text-[0.68rem] font-semibold uppercase tracking-[0.22em] text-olive/70">

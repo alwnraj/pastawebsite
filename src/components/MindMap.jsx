@@ -3,6 +3,7 @@ import ReactFlow, {
   Background,
   Controls,
   ReactFlowProvider,
+  getViewportForBounds,
   useReactFlow,
 } from 'reactflow'
 import 'reactflow/dist/style.css'
@@ -19,11 +20,24 @@ const defaultEdgeOptions = {
   type: 'smoothstep',
 }
 
-function AutoViewport({ structureKey, focusKey, focusTarget }) {
+const BRANCH_FOCUS_PADDING = 0.18
+const BRANCH_FOCUS_ZOOM_FLOOR = 0.68
+const ROOT_BRANCH_MIN_ZOOM = 0.35
+
+function AutoViewport({ structureKey, focusKey, focusTarget, shouldFitStructure }) {
   const { fitView, getZoom, setCenter } = useReactFlow()
   const firstRenderRef = useRef(true)
+  const focusTargetRef = useRef(null)
 
   useEffect(() => {
+    focusTargetRef.current = focusTarget
+  }, [focusTarget])
+
+  useEffect(() => {
+    if (!firstRenderRef.current && !shouldFitStructure) {
+      return undefined
+    }
+
     const frame = window.requestAnimationFrame(() => {
       fitView({
         duration: firstRenderRef.current ? 0 : 650,
@@ -34,22 +48,62 @@ function AutoViewport({ structureKey, focusKey, focusTarget }) {
     })
 
     return () => window.cancelAnimationFrame(frame)
-  }, [structureKey, fitView])
+  }, [structureKey, fitView, shouldFitStructure])
 
   useEffect(() => {
-    if (!focusTarget) {
+    if (!focusKey || !focusTargetRef.current) {
       return
     }
 
     const frame = window.requestAnimationFrame(() => {
-      setCenter(focusTarget.x, focusTarget.y, {
-        duration: 700,
+      const target = focusTargetRef.current
+
+      if (!target) {
+        return
+      }
+
+      if (target.type === 'branch' && target.bounds) {
+        const flowElement = document.querySelector('.react-flow')
+
+        if (flowElement) {
+          const currentZoom = getZoom()
+          const { width, height } = flowElement.getBoundingClientRect()
+
+          if (width > 0 && height > 0) {
+            const targetViewport = getViewportForBounds(
+              target.bounds,
+              width,
+              height,
+              0.15,
+              currentZoom,
+              BRANCH_FOCUS_PADDING,
+            )
+            const minimumZoom =
+              target.id === 'root'
+                ? ROOT_BRANCH_MIN_ZOOM
+                : currentZoom * BRANCH_FOCUS_ZOOM_FLOOR
+            const zoom = Math.max(
+              targetViewport.zoom,
+              minimumZoom,
+            )
+
+            setCenter(target.x, target.y, {
+              duration: 460,
+              zoom,
+            })
+            return
+          }
+        }
+      }
+
+      setCenter(target.x, target.y, {
+        duration: target.type === 'branch' ? 460 : 700,
         zoom: getZoom(),
       })
     })
 
     return () => window.cancelAnimationFrame(frame)
-  }, [focusKey, focusTarget, getZoom, setCenter])
+  }, [focusKey, getZoom, setCenter])
 
   return null
 }
@@ -60,6 +114,7 @@ function MindMapCanvas(props) {
     ...props,
     hoveredNodeId,
   })
+  const shouldFitStructure = props.visibleNodeIds.length === 1
 
   function handleNodeClick(_, node) {
     node.data.onToggle()
@@ -72,7 +127,7 @@ function MindMapCanvas(props) {
         nodes={nodes}
         nodeTypes={nodeTypes}
         style={{ width: '100%', height: '100%' }}
-        minZoom={0.35}
+        minZoom={0.15}
         maxZoom={1.5}
         nodesDraggable={false}
         nodesConnectable={false}
@@ -89,6 +144,7 @@ function MindMapCanvas(props) {
           structureKey={structureKey}
           focusKey={focusKey}
           focusTarget={focusTarget}
+          shouldFitStructure={shouldFitStructure}
         />
         <Background
           color="rgba(82, 101, 67, 0.12)"

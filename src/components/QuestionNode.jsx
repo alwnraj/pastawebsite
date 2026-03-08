@@ -72,20 +72,22 @@ function QuestionNode({ data }) {
       <FlowHandles />
 
       <div
-        className={`nodrag nopan h-full w-full cursor-pointer rounded-[1.7rem] border px-5 py-4 text-left shadow-lg transition-all duration-300 hover:-translate-y-0.5 ${
+        className={`nodrag flex h-full w-full min-w-[10rem] cursor-pointer flex-col justify-between rounded-[1.7rem] border px-5 py-4 text-left shadow-lg transition-all duration-300 hover:-translate-y-0.5 ${
           data.isRoot
             ? 'border-olive/20 bg-[linear-gradient(135deg,_rgba(82,101,67,0.95),_rgba(91,123,75,0.92))] text-white shadow-[0_28px_60px_-32px_rgba(82,101,67,0.75)]'
             : 'border-terracotta/10 bg-[linear-gradient(135deg,_rgba(184,92,56,0.96),_rgba(221,143,62,0.92))] text-white shadow-[0_24px_52px_-30px_rgba(184,92,56,0.7)]'
         }`}
       >
         <div className="flex items-start justify-between gap-4">
-          <div>
+          <div className="min-w-0 flex-1">
             <p className="text-[0.7rem] font-semibold uppercase tracking-[0.24em] text-white/70">
               {data.isRoot ? 'Start here' : 'Question'}
             </p>
-            <p className="mt-2 text-lg font-semibold leading-6">{data.label}</p>
+            <p className="mt-2 break-words text-lg font-semibold leading-6">
+              {data.label}
+            </p>
           </div>
-          <span className="mt-1 rounded-full border border-white/25 bg-white/10 px-2 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-white/75">
+          <span className="mt-1 shrink-0 rounded-full border border-white/25 bg-white/10 px-2 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-white/75">
             {data.childCount}
           </span>
         </div>

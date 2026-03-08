@@ -104,9 +104,10 @@ export function useTreeExpansion(tree) {
     pendingPastaIdRef.current = null
   }
 
-  function requestFocus(nodeId) {
+  function requestFocus(nodeId, type = 'pasta') {
     setFocusRequest((current) => ({
       id: nodeId,
+      type,
       version: (current?.version ?? 0) + 1,
     }))
   }
@@ -115,7 +116,7 @@ export function useTreeExpansion(tree) {
     if (!nodeId) {
       if (nextPastaId) {
         setActivePastaId(nextPastaId)
-        requestFocus(nextPastaId)
+        requestFocus(nextPastaId, 'pasta')
       }
 
       return
@@ -134,13 +135,14 @@ export function useTreeExpansion(tree) {
 
       if (pendingPastaId) {
         setActivePastaId(pendingPastaId)
-        requestFocus(pendingPastaId)
+        requestFocus(pendingPastaId, 'pasta')
       }
     }, CARD_CLOSE_DURATION_MS)
   }
 
   function toggleQuestionNode(nodeId) {
     const descendantIds = treeIndex.descendantIdsById.get(nodeId) ?? []
+    const isExpanded = expandedQuestionIds.has(nodeId)
 
     setExpandedQuestionIds((current) => {
       const next = new Set(current)
@@ -155,7 +157,7 @@ export function useTreeExpansion(tree) {
       return next
     })
 
-    if (expandedQuestionIds.has(nodeId)) {
+    if (isExpanded) {
       const visiblePastaId = activePastaIdRef.current ?? closingPastaIdRef.current
 
       if (visiblePastaId && descendantIds.includes(visiblePastaId)) {
@@ -163,7 +165,11 @@ export function useTreeExpansion(tree) {
         setActivePastaId(null)
         setClosingPastaId(null)
       }
+
+      return
     }
+
+    requestFocus(nodeId, 'branch')
   }
 
   function togglePastaNode(nodeId) {
@@ -182,7 +188,7 @@ export function useTreeExpansion(tree) {
     clearTransition()
     setClosingPastaId(null)
     setActivePastaId(nodeId)
-    requestFocus(nodeId)
+    requestFocus(nodeId, 'pasta')
   }
 
   function resetTree() {
