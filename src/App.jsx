@@ -1,7 +1,8 @@
-import MindMap from './components/MindMap'
-import ResetButton from './components/ResetButton'
-import pastaTree from './data/pastaTree.json'
-import { useTreeExpansion } from './hooks/useTreeExpansion'
+import MindMap from "./components/MindMap";
+import ResetButton from "./components/ResetButton";
+import TouchHint from "./components/TouchHint";
+import pastaTree from "./data/pastaTree.json";
+import { useTreeExpansion } from "./hooks/useTreeExpansion";
 
 function App() {
   const {
@@ -13,10 +14,11 @@ function App() {
     closingPastaId,
     focusRequest,
     totalPastas,
+    discoveredCount,
     toggleQuestionNode,
     togglePastaNode,
     resetTree,
-  } = useTreeExpansion(pastaTree)
+  } = useTreeExpansion(pastaTree);
 
   return (
     <main className="min-h-screen overflow-hidden bg-cream text-espresso">
@@ -37,20 +39,41 @@ function App() {
                 Build your own pasta map.
               </h1>
               <p className="mt-4 max-w-2xl text-sm leading-6 text-espresso/75 sm:text-base">
-                Start at the center, reveal branches one question at a time, and open any pasta endpoint for a quick pronunciation guide and a fact worth repeating at dinner.
+                Start at the center, reveal branches one question at a time, and
+                open any pasta endpoint for a quick pronunciation guide and a
+                fact worth repeating at dinner.
               </p>
             </div>
 
-            <div className="flex items-center gap-3 rounded-2xl border border-olive/10 bg-white/80 px-4 py-3 text-sm shadow-sm">
-              <div>
-                <p className="text-xs uppercase tracking-[0.2em] text-olive/70">
-                  Pastas
-                </p>
-                <p className="font-display text-2xl text-olive">{totalPastas}</p>
+            <div className="flex min-w-[17rem] flex-col gap-3 rounded-2xl border border-olive/10 bg-white/80 px-4 py-3 text-sm shadow-sm">
+              <div className="flex items-center justify-between gap-4">
+                <div>
+                  <p className="text-xs uppercase tracking-[0.2em] text-olive/70">
+                    Discovered
+                  </p>
+                  <p className="mt-0.5 font-display text-2xl leading-none text-olive">
+                    {discoveredCount}
+                    <span className="ml-1 text-sm font-normal text-olive/50">
+                      / {totalPastas}
+                    </span>
+                  </p>
+                </div>
+                <div className="h-10 w-px bg-olive/15" />
+                <div className="max-w-[12rem] text-xs leading-5 text-espresso/70">
+                  Tap question nodes to expand branches. Open pasta cards to
+                  discover.
+                </div>
               </div>
-              <div className="h-10 w-px bg-olive/15" />
-              <div className="max-w-[14rem] text-xs leading-5 text-espresso/70 sm:text-sm">
-                Tap question nodes to expand or collapse branches. Pasta cards open in place.
+              <div className="h-1.5 w-full overflow-hidden rounded-full bg-olive/10">
+                <div
+                  className="h-full rounded-full bg-olive transition-all duration-500 ease-out"
+                  style={{
+                    width:
+                      totalPastas > 0
+                        ? `${Math.round((discoveredCount / totalPastas) * 100)}%`
+                        : "0%",
+                  }}
+                />
               </div>
             </div>
           </div>
@@ -61,6 +84,7 @@ function App() {
           <div className="absolute right-4 top-4 z-10">
             <ResetButton onReset={resetTree} />
           </div>
+          <TouchHint />
           <MindMap
             tree={pastaTree}
             treeIndex={treeIndex}
@@ -76,7 +100,7 @@ function App() {
         </section>
       </div>
     </main>
-  )
+  );
 }
 
-export default App
+export default App;

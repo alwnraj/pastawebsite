@@ -1,43 +1,43 @@
-import { useEffect, useMemo, useRef, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from "react";
 
-const CARD_CLOSE_DURATION_MS = 180
+const CARD_CLOSE_DURATION_MS = 180;
 
 function createTreeIndex(tree) {
-  const nodesById = new Map()
-  const parentById = new Map()
-  const childrenById = new Map()
-  const descendantIdsById = new Map()
-  const depthById = new Map()
-  let totalPastas = 0
+  const nodesById = new Map();
+  const parentById = new Map();
+  const childrenById = new Map();
+  const descendantIdsById = new Map();
+  const depthById = new Map();
+  let totalPastas = 0;
 
   function visit(node, parentId = null, depth = 0) {
-    nodesById.set(node.id, node)
-    parentById.set(node.id, parentId)
-    depthById.set(node.id, depth)
+    nodesById.set(node.id, node);
+    parentById.set(node.id, parentId);
+    depthById.set(node.id, depth);
 
-    const children = node.children ?? []
+    const children = node.children ?? [];
     childrenById.set(
       node.id,
       children.map((child) => child.id),
-    )
+    );
 
-    if (node.type === 'pasta') {
-      totalPastas += 1
+    if (node.type === "pasta") {
+      totalPastas += 1;
     }
 
-    const descendantIds = []
+    const descendantIds = [];
 
     children.forEach((child) => {
-      visit(child, node.id, depth + 1)
-      descendantIds.push(child.id)
-      const childDescendants = descendantIdsById.get(child.id) ?? []
-      descendantIds.push(...childDescendants)
-    })
+      visit(child, node.id, depth + 1);
+      descendantIds.push(child.id);
+      const childDescendants = descendantIdsById.get(child.id) ?? [];
+      descendantIds.push(...childDescendants);
+    });
 
-    descendantIdsById.set(node.id, descendantIds)
+    descendantIdsById.set(node.id, descendantIds);
   }
 
-  visit(tree)
+  visit(tree);
 
   return {
     nodesById,
@@ -46,166 +46,181 @@ function createTreeIndex(tree) {
     descendantIdsById,
     depthById,
     totalPastas,
-  }
+  };
 }
 
 function collectVisibleNodeIds(tree, expandedQuestionIds) {
-  const visible = []
+  const visible = [];
 
   function visit(node) {
-    visible.push(node.id)
+    visible.push(node.id);
 
     if (!expandedQuestionIds.has(node.id)) {
-      return
+      return;
     }
 
-    ;(node.children ?? []).forEach((child) => {
-      visit(child)
-    })
+    (node.children ?? []).forEach((child) => {
+      visit(child);
+    });
   }
 
-  visit(tree)
-  return visible
+  visit(tree);
+  return visible;
 }
 
 export function useTreeExpansion(tree) {
-  const treeIndex = useMemo(() => createTreeIndex(tree), [tree])
-  const [expandedQuestionIds, setExpandedQuestionIds] = useState(() => new Set())
-  const [activePastaId, setActivePastaId] = useState(null)
-  const [closingPastaId, setClosingPastaId] = useState(null)
-  const [focusRequest, setFocusRequest] = useState(null)
-  const transitionTimerRef = useRef(null)
-  const pendingPastaIdRef = useRef(null)
-  const activePastaIdRef = useRef(null)
-  const closingPastaIdRef = useRef(null)
+  const treeIndex = useMemo(() => createTreeIndex(tree), [tree]);
+  const [expandedQuestionIds, setExpandedQuestionIds] = useState(
+    () => new Set(),
+  );
+  const [activePastaId, setActivePastaId] = useState(null);
+  const [closingPastaId, setClosingPastaId] = useState(null);
+  const [focusRequest, setFocusRequest] = useState(null);
+  const [discoveredPastaIds, setDiscoveredPastaIds] = useState(() => new Set());
+  const transitionTimerRef = useRef(null);
+  const pendingPastaIdRef = useRef(null);
+  const activePastaIdRef = useRef(null);
+  const closingPastaIdRef = useRef(null);
 
   useEffect(() => {
-    activePastaIdRef.current = activePastaId
-  }, [activePastaId])
+    activePastaIdRef.current = activePastaId;
+  }, [activePastaId]);
 
   useEffect(() => {
-    closingPastaIdRef.current = closingPastaId
-  }, [closingPastaId])
+    closingPastaIdRef.current = closingPastaId;
+  }, [closingPastaId]);
 
   useEffect(() => {
     return () => {
       if (transitionTimerRef.current) {
-        window.clearTimeout(transitionTimerRef.current)
+        window.clearTimeout(transitionTimerRef.current);
       }
-    }
-  }, [])
+    };
+  }, []);
 
   function clearTransition() {
     if (transitionTimerRef.current) {
-      window.clearTimeout(transitionTimerRef.current)
-      transitionTimerRef.current = null
+      window.clearTimeout(transitionTimerRef.current);
+      transitionTimerRef.current = null;
     }
 
-    pendingPastaIdRef.current = null
+    pendingPastaIdRef.current = null;
   }
 
-  function requestFocus(nodeId, type = 'pasta') {
+  function requestFocus(nodeId, type = "pasta") {
     setFocusRequest((current) => ({
       id: nodeId,
       type,
       version: (current?.version ?? 0) + 1,
-    }))
+    }));
   }
 
   function closeDisplayedPasta(nodeId, nextPastaId = null) {
     if (!nodeId) {
       if (nextPastaId) {
-        setActivePastaId(nextPastaId)
-        requestFocus(nextPastaId, 'pasta')
+        setActivePastaId(nextPastaId);
+        requestFocus(nextPastaId, "pasta");
       }
 
-      return
+      return;
     }
 
-    clearTransition()
-    pendingPastaIdRef.current = nextPastaId
-    setActivePastaId(null)
-    setClosingPastaId(nodeId)
+    clearTransition();
+    pendingPastaIdRef.current = nextPastaId;
+    setActivePastaId(null);
+    setClosingPastaId(nodeId);
 
     transitionTimerRef.current = window.setTimeout(() => {
-      setClosingPastaId((current) => (current === nodeId ? null : current))
-      transitionTimerRef.current = null
-      const pendingPastaId = pendingPastaIdRef.current
-      pendingPastaIdRef.current = null
+      setClosingPastaId((current) => (current === nodeId ? null : current));
+      transitionTimerRef.current = null;
+      const pendingPastaId = pendingPastaIdRef.current;
+      pendingPastaIdRef.current = null;
 
       if (pendingPastaId) {
-        setActivePastaId(pendingPastaId)
-        requestFocus(pendingPastaId, 'pasta')
+        setActivePastaId(pendingPastaId);
+        requestFocus(pendingPastaId, "pasta");
       }
-    }, CARD_CLOSE_DURATION_MS)
+    }, CARD_CLOSE_DURATION_MS);
   }
 
   function toggleQuestionNode(nodeId) {
-    const descendantIds = treeIndex.descendantIdsById.get(nodeId) ?? []
-    const isExpanded = expandedQuestionIds.has(nodeId)
+    const descendantIds = treeIndex.descendantIdsById.get(nodeId) ?? [];
+    const isExpanded = expandedQuestionIds.has(nodeId);
 
     setExpandedQuestionIds((current) => {
-      const next = new Set(current)
+      const next = new Set(current);
 
       if (next.has(nodeId)) {
-        next.delete(nodeId)
-        descendantIds.forEach((descendantId) => next.delete(descendantId))
+        next.delete(nodeId);
+        descendantIds.forEach((descendantId) => next.delete(descendantId));
       } else {
-        next.add(nodeId)
+        next.add(nodeId);
       }
 
-      return next
-    })
+      return next;
+    });
 
     if (isExpanded) {
-      const visiblePastaId = activePastaIdRef.current ?? closingPastaIdRef.current
+      const visiblePastaId =
+        activePastaIdRef.current ?? closingPastaIdRef.current;
 
       if (visiblePastaId && descendantIds.includes(visiblePastaId)) {
-        clearTransition()
-        setActivePastaId(null)
-        setClosingPastaId(null)
+        clearTransition();
+        setActivePastaId(null);
+        setClosingPastaId(null);
       }
 
-      return
+      return;
     }
 
-    requestFocus(nodeId, 'branch')
+    requestFocus(nodeId, "branch");
+  }
+
+  function markDiscovered(nodeId) {
+    setDiscoveredPastaIds((current) => {
+      if (current.has(nodeId)) return current;
+      const next = new Set(current);
+      next.add(nodeId);
+      return next;
+    });
   }
 
   function togglePastaNode(nodeId) {
-    const displayedPastaId = activePastaIdRef.current ?? closingPastaIdRef.current
+    const displayedPastaId =
+      activePastaIdRef.current ?? closingPastaIdRef.current;
 
     if (displayedPastaId === nodeId) {
-      closeDisplayedPasta(nodeId)
-      return
+      closeDisplayedPasta(nodeId);
+      return;
     }
 
     if (displayedPastaId) {
-      closeDisplayedPasta(displayedPastaId, nodeId)
-      return
+      markDiscovered(nodeId);
+      closeDisplayedPasta(displayedPastaId, nodeId);
+      return;
     }
 
-    clearTransition()
-    setClosingPastaId(null)
-    setActivePastaId(nodeId)
-    requestFocus(nodeId, 'pasta')
+    markDiscovered(nodeId);
+    clearTransition();
+    setClosingPastaId(null);
+    setActivePastaId(nodeId);
+    requestFocus(nodeId, "pasta");
   }
 
   function resetTree() {
-    clearTransition()
-    setExpandedQuestionIds(new Set())
-    setActivePastaId(null)
-    setClosingPastaId(null)
-    setFocusRequest(null)
+    clearTransition();
+    setExpandedQuestionIds(new Set());
+    setActivePastaId(null);
+    setClosingPastaId(null);
+    setFocusRequest(null);
+    setDiscoveredPastaIds(new Set());
   }
 
-  const openPastaIds = new Set(
-    [activePastaId, closingPastaId].filter(Boolean),
-  )
+  const openPastaIds = new Set([activePastaId, closingPastaId].filter(Boolean));
   const visibleNodeIds = useMemo(
     () => collectVisibleNodeIds(tree, expandedQuestionIds),
     [tree, expandedQuestionIds],
-  )
+  );
 
   return {
     treeIndex,
@@ -216,8 +231,9 @@ export function useTreeExpansion(tree) {
     closingPastaId,
     focusRequest,
     totalPastas: treeIndex.totalPastas,
+    discoveredCount: discoveredPastaIds.size,
     toggleQuestionNode,
     togglePastaNode,
     resetTree,
-  }
+  };
 }

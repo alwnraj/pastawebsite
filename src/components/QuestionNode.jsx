@@ -1,8 +1,7 @@
-import { Handle, Position } from 'reactflow'
-import { motion } from 'framer-motion'
+import { Handle, Position } from "reactflow";
+import { motion } from "framer-motion";
 
-const HANDLE_CLASSNAME =
-  '!h-3 !w-3 !border-0 !bg-transparent !opacity-0'
+const HANDLE_CLASSNAME = "!h-3 !w-3 !border-0 !bg-transparent !opacity-0";
 
 function FlowHandles() {
   return (
@@ -56,11 +55,11 @@ function FlowHandles() {
         className={HANDLE_CLASSNAME}
       />
     </>
-  )
+  );
 }
 
 function QuestionNode({ data }) {
-  const helperCopy = data.isExpanded ? 'Hide branch' : 'Reveal options'
+  const helperCopy = data.isExpanded ? "Hide branch" : "Reveal options";
 
   return (
     <motion.div
@@ -72,16 +71,26 @@ function QuestionNode({ data }) {
       <FlowHandles />
 
       <div
-        className={`nodrag flex h-full w-full min-w-[10rem] cursor-pointer flex-col justify-between rounded-[1.7rem] border px-5 py-4 text-left shadow-lg transition-all duration-300 hover:-translate-y-0.5 ${
+        role="button"
+        tabIndex={0}
+        aria-expanded={data.isExpanded}
+        aria-label={`${data.label} — ${data.isExpanded ? "collapse" : "expand"} branch (${data.childCount} options)`}
+        onKeyDown={(e) => {
+          if (e.key === "Enter" || e.key === " ") {
+            e.preventDefault();
+            data.onToggle();
+          }
+        }}
+        className={`nodrag flex h-full w-full min-w-[10rem] cursor-pointer flex-col justify-between rounded-[1.7rem] border px-5 py-4 text-left shadow-lg transition-all duration-300 hover:-translate-y-0.5 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white/60 ${
           data.isRoot
-            ? 'border-olive/20 bg-[linear-gradient(135deg,_rgba(82,101,67,0.95),_rgba(91,123,75,0.92))] text-white shadow-[0_28px_60px_-32px_rgba(82,101,67,0.75)]'
-            : 'border-terracotta/10 bg-[linear-gradient(135deg,_rgba(184,92,56,0.96),_rgba(221,143,62,0.92))] text-white shadow-[0_24px_52px_-30px_rgba(184,92,56,0.7)]'
+            ? "border-olive/20 bg-[linear-gradient(135deg,_rgba(82,101,67,0.95),_rgba(91,123,75,0.92))] text-white shadow-[0_28px_60px_-32px_rgba(82,101,67,0.75)]"
+            : "border-terracotta/10 bg-[linear-gradient(135deg,_rgba(184,92,56,0.96),_rgba(221,143,62,0.92))] text-white shadow-[0_24px_52px_-30px_rgba(184,92,56,0.7)]"
         }`}
       >
         <div className="flex items-start justify-between gap-4">
           <div className="min-w-0 flex-1">
             <p className="text-[0.7rem] font-semibold uppercase tracking-[0.24em] text-white/70">
-              {data.isRoot ? 'Start here' : 'Question'}
+              {data.isRoot ? "Start here" : "Question"}
             </p>
             <p className="mt-2 break-words text-lg font-semibold leading-6">
               {data.label}
@@ -94,11 +103,11 @@ function QuestionNode({ data }) {
 
         <div className="mt-4 flex items-center justify-between text-xs uppercase tracking-[0.18em] text-white/70">
           <span>{helperCopy}</span>
-          <span>{data.isExpanded ? '−' : '+'}</span>
+          <span>{data.isExpanded ? "−" : "+"}</span>
         </div>
       </div>
     </motion.div>
-  )
+  );
 }
 
-export default QuestionNode
+export default QuestionNode;

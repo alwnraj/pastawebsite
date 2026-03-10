@@ -1,10 +1,9 @@
-import { useEffect, useRef } from 'react'
-import { Handle, Position, useUpdateNodeInternals } from 'reactflow'
-import { AnimatePresence, motion } from 'framer-motion'
-import PastaCard from './PastaCard'
+import { useEffect, useRef } from "react";
+import { Handle, Position, useUpdateNodeInternals } from "reactflow";
+import { AnimatePresence, motion } from "framer-motion";
+import PastaCard from "./PastaCard";
 
-const HANDLE_CLASSNAME =
-  '!h-3 !w-3 !border-0 !bg-transparent !opacity-0'
+const HANDLE_CLASSNAME = "!h-3 !w-3 !border-0 !bg-transparent !opacity-0";
 
 function FlowHandles() {
   return (
@@ -58,47 +57,47 @@ function FlowHandles() {
         className={HANDLE_CLASSNAME}
       />
     </>
-  )
+  );
 }
 
 function PastaNode({ id, data }) {
-  const nodeRef = useRef(null)
-  const updateNodeInternals = useUpdateNodeInternals()
+  const nodeRef = useRef(null);
+  const updateNodeInternals = useUpdateNodeInternals();
 
   useEffect(() => {
-    const element = nodeRef.current
+    const element = nodeRef.current;
 
     if (!element) {
-      return undefined
+      return undefined;
     }
 
-    let frameId = null
+    let frameId = null;
     const syncHandles = () => {
       if (frameId !== null) {
-        window.cancelAnimationFrame(frameId)
+        window.cancelAnimationFrame(frameId);
       }
 
       frameId = window.requestAnimationFrame(() => {
-        updateNodeInternals(id)
-      })
-    }
+        updateNodeInternals(id);
+      });
+    };
 
-    syncHandles()
+    syncHandles();
 
     const resizeObserver = new ResizeObserver(() => {
-      syncHandles()
-    })
+      syncHandles();
+    });
 
-    resizeObserver.observe(element)
+    resizeObserver.observe(element);
 
     return () => {
-      resizeObserver.disconnect()
+      resizeObserver.disconnect();
 
       if (frameId !== null) {
-        window.cancelAnimationFrame(frameId)
+        window.cancelAnimationFrame(frameId);
       }
-    }
-  }, [id, updateNodeInternals, data.isDisplayedOpen, data.isClosing])
+    };
+  }, [id, updateNodeInternals, data.isDisplayedOpen, data.isClosing]);
 
   return (
     <motion.div
@@ -113,11 +112,23 @@ function PastaNode({ id, data }) {
       <div
         className={`h-full w-full rounded-[1.7rem] border bg-white/95 p-4 shadow-lg transition-all duration-300 ${
           data.isActive
-            ? 'border-terracotta/35 shadow-[0_30px_60px_-36px_rgba(184,92,56,0.8)]'
-            : 'border-[#ecdcca]'
+            ? "border-terracotta/35 shadow-[0_30px_60px_-36px_rgba(184,92,56,0.8)]"
+            : "border-[#ecdcca]"
         }`}
       >
-        <div className="nodrag w-full cursor-pointer text-left">
+        <div
+          role="button"
+          tabIndex={0}
+          aria-expanded={data.isDisplayedOpen}
+          aria-label={`${data.label} pasta — ${data.isDisplayedOpen ? "close" : "open"} card`}
+          onKeyDown={(e) => {
+            if (e.key === "Enter" || e.key === " ") {
+              e.preventDefault();
+              data.onToggle();
+            }
+          }}
+          className="nodrag w-full cursor-pointer text-left focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-terracotta/50"
+        >
           <div className="flex items-start justify-between gap-3">
             <div>
               <p className="text-[0.68rem] font-semibold uppercase tracking-[0.22em] text-olive/70">
@@ -133,8 +144,14 @@ function PastaNode({ id, data }) {
           </div>
 
           <div className="mt-4 flex items-center justify-between text-xs uppercase tracking-[0.18em] text-olive/65">
-            <span>{data.isClosing ? 'Closing card' : data.isOpen ? 'Close card' : 'Open card'}</span>
-            <span>{data.isDisplayedOpen ? '−' : '+'}</span>
+            <span>
+              {data.isClosing
+                ? "Closing card"
+                : data.isOpen
+                  ? "Close card"
+                  : "Open card"}
+            </span>
+            <span>{data.isDisplayedOpen ? "−" : "+"}</span>
           </div>
         </div>
 
@@ -150,7 +167,7 @@ function PastaNode({ id, data }) {
         </AnimatePresence>
       </div>
     </motion.div>
-  )
+  );
 }
 
-export default PastaNode
+export default PastaNode;
