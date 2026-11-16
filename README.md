@@ -1,11 +1,11 @@
 # The Atlas of Pasta
 
-A zoomable, branching map of 378 pasta shapes, noodles and dumplings. Zoom out to see the great families; zoom in until every shape has a drawing, a name, a hometown and a story.
+A zoomable, branching map of 292 pasta shapes, from Italy and the pasta traditions around it. Zoom out to see the great families; zoom in until every shape has a drawing, a name, a hometown and a story.
 
 ## What you can do
 
 - **Zoom and wander.** Scroll to zoom, drag to pan, double-click to zoom in. Far out you see territories and families; closer in, sub-families; closer still, every shape drawn and labelled.
-- **Rearrange the whole map** by **Shape** (10 families), **Origin** (Italian regions and the rest of the world) or **Dough** (dried durum, fresh egg, potato, rice…). Shapes fly to their new branches.
+- **Rearrange the whole map** by **Shape** (10 families), **Origin** (Italian regions and the rest of the world) or **Dough** (dried durum, fresh egg, potato, buckwheat…). Shapes fly to their new branches.
 - **Click any shape** for its pronunciation, what the name means, what it looks like, where it is from, what it is made of, classic pairings and its neighbours.
 - **Search** by name, alias, meaning or place (press `/`).
 - **Guided tour** walks through each territory in turn; **Surprise me** jumps to a random shape.

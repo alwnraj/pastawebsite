@@ -2,7 +2,7 @@
 // pastas into group → subgroup → pasta.
 
 export const FAMILIES = [
-  { id: 'strands', label: 'Strands', color: '#c4472f', blurb: 'Long and round. The spaghetti line, from angel-hair threads to hand-rolled ropes and hollow bucatini, plus the pulled and cut noodles of Asia.' },
+  { id: 'strands', label: 'Strands', color: '#c4472f', blurb: 'Long and round. The spaghetti line, from angel-hair threads to hand-rolled ropes and hollow bucatini.' },
   { id: 'ribbons', label: 'Ribbons', color: '#d98a1f', blurb: 'Long and flat. Rolled sheets cut into bands: tagliolini at the narrow end, pappardelle at the wide, with ruffles and buckwheat along the way.' },
   { id: 'sheets', label: 'Sheets', color: '#8a8f3a', blurb: 'Pasta before the knife gets to it. Layered lasagne, silk handkerchiefs, and the "badly cut" scraps that became shapes of their own.' },
   { id: 'tubes', label: 'Tubes', color: '#2f8f83', blurb: 'Short and hollow. Sauce goes inside as well as outside, which is why ridges, diagonal cuts and sheer size all matter here.' },
@@ -90,11 +90,8 @@ export const AREAS = [
   { id: 'south', label: 'Southern Italy', color: '#c4472f', blurb: 'Durum wheat country. Dried pasta was industrialised around Naples, while Puglia, Basilicata and Calabria still shape semolina by hand.', regions: ['abruzzo', 'molise', 'campania', 'puglia', 'basilicata', 'calabria'] },
   { id: 'islands', label: 'The islands', color: '#d98a1f', blurb: 'Sicily and Sardinia: some of the oldest pasta records in Europe, and shapes found nowhere else, from busiate to the threads of su filindeu.', regions: ['sicily', 'sardinia'] },
   { id: 'italy', label: 'All over Italy', color: '#8b6b4a', blurb: 'Shapes with no single hometown: factory classics sold in every supermarket, and old forms claimed by several regions at once.', regions: ['italy'] },
-  { id: 'europe', label: 'Rest of Europe', color: '#7a5ba8', blurb: 'Spätzle, pierogi, nokedli and their kin. Noodles and dumplings from the Alps to the Baltic and the Iberian coast.' },
-  { id: 'mideast', label: 'Eastern Mediterranean', color: '#2f8f83', blurb: 'From Greek kritharaki to Persian reshteh: the lands that carried noodles and tiny dumplings between Asia and Europe.' },
-  { id: 'central-asia', label: 'Central Asia', color: '#b8488a', blurb: 'The Silk Road dumpling belt: khinkali, manti, chuchvara, and hand-pulled laghman.' },
-  { id: 'east-asia', label: 'East Asia', color: '#8e2f45', blurb: 'The other great noodle civilisation. Wheat, rice, buckwheat and starch, pulled, cut, shaved and folded.' },
-  { id: 'south-asia', label: 'South & SE Asia', color: '#4e9a51', blurb: 'Rice noodles, Himalayan momo, and the wheat threads that travelled with traders.' },
+  { id: 'europe', label: 'Rest of Europe', color: '#7a5ba8', blurb: 'Egg noodles, pasta squares and tiny pellets from Poland, Hungary and the Alps, plus the fideos and macarrones of Spain.' },
+  { id: 'mideast', label: 'Eastern Mediterranean', color: '#2f8f83', blurb: 'From Greek kritharaki to Turkish erişte and Levantine moghrabieh: the pasta of the lands around the eastern Mediterranean.' },
   { id: 'americas', label: 'Americas', color: '#5b6770', blurb: 'What emigrants built: Italian-American inventions and the noodles that took root in the New World.' },
   { id: 'elsewhere', label: 'Elsewhere', color: '#5b6770', blurb: 'Everything that does not fit a single place.' },
 ]
@@ -102,9 +99,6 @@ export const AREAS = [
 const COUNTRY_AREA = {
   europe: ['Germany', 'Austria', 'Switzerland', 'Poland', 'Hungary', 'Slovakia', 'Czechia', 'Czech Republic', 'Slovenia', 'Croatia', 'Ukraine', 'Russia', 'Lithuania', 'Belarus', 'Spain', 'France', 'Portugal', 'Romania', 'Serbia', 'Bulgaria', 'Malta', 'Netherlands', 'Sweden', 'Finland', 'Latvia', 'Estonia', 'Bosnia and Herzegovina', 'Ashkenazi Jewish', 'Central Europe', 'Eastern Europe'],
   mideast: ['Greece', 'Turkey', 'Cyprus', 'Lebanon', 'Syria', 'Israel', 'Palestine', 'Jordan', 'Egypt', 'Iran', 'Iraq', 'Tunisia', 'Morocco', 'Algeria', 'Libya', 'Levant'],
-  'central-asia': ['Georgia', 'Armenia', 'Azerbaijan', 'Uzbekistan', 'Kazakhstan', 'Kyrgyzstan', 'Tajikistan', 'Turkmenistan', 'Afghanistan', 'Mongolia', 'Central Asia'],
-  'east-asia': ['China', 'Japan', 'Korea', 'South Korea', 'North Korea', 'Taiwan', 'Hong Kong'],
-  'south-asia': ['Vietnam', 'Thailand', 'Philippines', 'Malaysia', 'Indonesia', 'Singapore', 'India', 'Nepal', 'Tibet', 'Bhutan', 'Myanmar', 'Laos', 'Cambodia', 'Sri Lanka', 'Pakistan'],
   americas: ['United States', 'USA', 'Argentina', 'Mexico', 'Brazil', 'Peru', 'Canada', 'Chile', 'Uruguay'],
 }
 
@@ -127,12 +121,11 @@ export const MAKES = [
   { id: 'dried', label: 'Dried durum', short: 'Dried durum semolina', fill: '#edc55f', color: '#d98a1f', blurb: 'Semolina and water, forced through a die and dried. It keeps for years, which is how pasta conquered the world.' },
   { id: 'egg', label: 'Fresh egg dough', short: 'Fresh egg dough', fill: '#f3b029', color: '#c4472f', blurb: 'Soft wheat flour and eggs, rolled thin. The sfoglia of Emilia and the base of most stuffed pasta.' },
   { id: 'semola-fresh', label: 'Fresh semolina', short: 'Fresh semolina & water', fill: '#ecd98f', color: '#8a8f3a', blurb: 'Durum semolina and water, shaped by hand and cooked fresh. The everyday pasta of the Italian south.' },
-  { id: 'flour-water', label: 'Flour & water', short: 'Flour & water dough', fill: '#f0e3b6', color: '#2f8f83', blurb: 'Plain wheat flour and water, no egg. The frugal dough behind pici, strozzapreti and most of the world\'s dumpling wrappers.' },
+  { id: 'flour-water', label: 'Flour & water', short: 'Flour & water dough', fill: '#f0e3b6', color: '#2f8f83', blurb: 'Plain wheat flour and water, no egg. The frugal dough behind pici, strozzapreti and trofie.' },
   { id: 'potato', label: 'Potato', short: 'Potato dough', fill: '#f5e8bf', color: '#8b6b4a', blurb: 'Mashed potato bound with a little flour. A New World ingredient that redefined the dumpling.' },
   { id: 'bread-cheese', label: 'Bread, ricotta & greens', short: 'Bread, ricotta or greens', fill: '#dfd39a', color: '#4e9a51', blurb: 'Doughs built from stale bread, fresh cheese or vegetables. Thrift turned into a category.' },
   { id: 'alt-grain', label: 'Other grains', short: 'Buckwheat, chestnut & other grains', fill: '#b08c63', color: '#7a5ba8', blurb: 'Buckwheat, chestnut, farro, rye and corn: what mountain kitchens used when wheat would not grow.' },
-  { id: 'rice-starch', label: 'Rice & starch', short: 'Rice or starch', fill: '#f8f4e6', color: '#3f6fb5', blurb: 'Rice flour, mung bean and sweet potato starch. Translucent, springy, and wheat-free.' },
-  { id: 'wheat-noodle', label: 'Wheat noodles', short: 'Wheat noodle dough', fill: '#f0d894', color: '#8e2f45', blurb: 'The wheat noodles of Asia and beyond: pulled, cut, alkaline or enriched with egg.' },
+  { id: 'wheat-noodle', label: 'Egg noodles', short: 'Egg noodle dough', fill: '#f0d894', color: '#8e2f45', blurb: 'The egg noodles of Central and Eastern Europe: rolled, cut into ribbons or squares, and often dried.' },
 ]
 
 const by = (list) => Object.fromEntries(list.map((x) => [x.id, x]))
