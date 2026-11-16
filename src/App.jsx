@@ -1,106 +1,338 @@
-import MindMap from "./components/MindMap";
-import ResetButton from "./components/ResetButton";
-import TouchHint from "./components/TouchHint";
-import pastaTree from "./data/pastaTree.json";
-import { useTreeExpansion } from "./hooks/useTreeExpansion";
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
+import { Atlas } from './lib/atlas.js'
+import { PASTA, PASTAS } from './data/index.js'
+import { LENS, LENSES, MAKES } from './data/taxonomy.js'
+import Panel from './components/Panel.jsx'
+import Search from './components/Search.jsx'
 
-function App() {
-  const {
-    treeIndex,
-    visibleNodeIds,
-    expandedQuestionIds,
-    openPastaIds,
-    activePastaId,
-    closingPastaId,
-    focusRequest,
-    totalPastas,
-    discoveredCount,
-    toggleQuestionNode,
-    togglePastaNode,
-    resetTree,
-  } = useTreeExpansion(pastaTree);
+const PANEL_W = 440
 
-  return (
-    <main className="min-h-screen overflow-hidden bg-cream text-espresso">
-      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(255,248,239,0.9),_transparent_36%),radial-gradient(circle_at_bottom_right,_rgba(221,143,62,0.24),_transparent_30%),linear-gradient(140deg,_rgba(184,92,56,0.08),_transparent_55%)]" />
-      <div className="pointer-events-none absolute inset-x-0 top-0 h-64 bg-[linear-gradient(180deg,_rgba(255,255,255,0.58),_transparent)]" />
-
-      <div className="relative mx-auto flex min-h-screen max-w-7xl flex-col px-4 pb-6 pt-6 sm:px-6 lg:px-8">
-        <header className="relative overflow-hidden rounded-[2rem] border border-white/70 bg-parchment/80 px-6 py-6 shadow-card backdrop-blur sm:px-8">
-          <div className="absolute -right-10 top-0 h-28 w-28 rounded-full bg-saffron/20 blur-2xl" />
-          <div className="absolute bottom-0 left-8 h-20 w-20 rounded-full bg-terracotta/15 blur-2xl" />
-
-          <div className="relative flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
-            <div className="max-w-3xl">
-              <p className="mb-3 inline-flex rounded-full border border-terracotta/20 bg-white/80 px-3 py-1 text-xs font-semibold uppercase tracking-[0.25em] text-terracotta">
-                Interactive Pasta Atlas
-              </p>
-              <h1 className="font-display text-4xl leading-none text-espresso sm:text-5xl">
-                Build your own pasta map.
-              </h1>
-              <p className="mt-4 max-w-2xl text-sm leading-6 text-espresso/75 sm:text-base">
-                Start at the center, reveal branches one question at a time, and
-                open any pasta endpoint for a quick pronunciation guide and a
-                fact worth repeating at dinner.
-              </p>
-            </div>
-
-            <div className="flex min-w-[17rem] flex-col gap-3 rounded-2xl border border-olive/10 bg-white/80 px-4 py-3 text-sm shadow-sm">
-              <div className="flex items-center justify-between gap-4">
-                <div>
-                  <p className="text-xs uppercase tracking-[0.2em] text-olive/70">
-                    Discovered
-                  </p>
-                  <p className="mt-0.5 font-display text-2xl leading-none text-olive">
-                    {discoveredCount}
-                    <span className="ml-1 text-sm font-normal text-olive/50">
-                      / {totalPastas}
-                    </span>
-                  </p>
-                </div>
-                <div className="h-10 w-px bg-olive/15" />
-                <div className="max-w-[12rem] text-xs leading-5 text-espresso/70">
-                  Tap question nodes to expand branches. Open pasta cards to
-                  discover.
-                </div>
-              </div>
-              <div className="h-1.5 w-full overflow-hidden rounded-full bg-olive/10">
-                <div
-                  className="h-full rounded-full bg-olive transition-all duration-500 ease-out"
-                  style={{
-                    width:
-                      totalPastas > 0
-                        ? `${Math.round((discoveredCount / totalPastas) * 100)}%`
-                        : "0%",
-                  }}
-                />
-              </div>
-            </div>
-          </div>
-        </header>
-
-        <section className="relative mt-6 h-[72vh] min-h-[540px] flex-1 overflow-hidden rounded-[2rem] border border-white/70 bg-[#fbf5ec]/85 shadow-card backdrop-blur sm:min-h-[620px]">
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(255,255,255,0.78),_transparent_45%),linear-gradient(180deg,_rgba(255,255,255,0.28),_rgba(246,239,228,0.28))]" />
-          <div className="absolute right-4 top-4 z-10">
-            <ResetButton onReset={resetTree} />
-          </div>
-          <TouchHint />
-          <MindMap
-            tree={pastaTree}
-            treeIndex={treeIndex}
-            visibleNodeIds={visibleNodeIds}
-            expandedQuestionIds={expandedQuestionIds}
-            openPastaIds={openPastaIds}
-            activePastaId={activePastaId}
-            closingPastaId={closingPastaId}
-            focusRequest={focusRequest}
-            onQuestionToggle={toggleQuestionNode}
-            onPastaToggle={togglePastaNode}
-          />
-        </section>
-      </div>
-    </main>
-  );
+function readHash() {
+  const [lens, id] = window.location.hash.replace(/^#\/?/, '').split('/')
+  return { lens: LENS[lens] ? lens : 'shape', id: PASTA[id] ? id : null }
 }
 
-export default App;
+export default function App() {
+  const initial = useMemo(readHash, [])
+  const canvasRef = useRef(null)
+  const atlasRef = useRef(null)
+  const searchRef = useRef(null)
+  const [lens, setLens] = useState(initial.lens)
+  const [selected, setSelected] = useState(initial.id)
+  const [hover, setHover] = useState(null)
+  const [context, setContext] = useState(null)
+  const [intro, setIntro] = useState(!initial.id)
+  const [tour, setTour] = useState(null)
+  const [showKey, setShowKey] = useState(false)
+  const [, setReady] = useState(0)
+
+  const stats = useMemo(() => {
+    const countries = new Set(PASTAS.filter((p) => p.region === 'world').map((p) => p.country))
+    const regions = new Set(PASTAS.filter((p) => p.region !== 'world' && p.region !== 'italy').map((p) => p.region))
+    return { total: PASTAS.length, countries: countries.size, regions: regions.size }
+  }, [])
+
+  // ----- engine -----
+  useEffect(() => {
+    const atlas = new Atlas(canvasRef.current, PASTAS, LENSES, {
+      onSelect: (id) => {
+        setSelected(id)
+        if (id) setTour(null)
+      },
+      onHover: setHover,
+      onContext: setContext,
+    })
+    atlasRef.current = atlas
+    setReady((n) => n + 1)
+    if (initial.lens !== 'shape') {
+      atlas.layout = atlas.layouts[initial.lens]
+      atlas.resize()
+      atlas.view = atlas._fitView(atlas.layout.bounds)
+    }
+    const ro = new ResizeObserver(() => atlas.resize())
+    ro.observe(canvasRef.current)
+    return () => {
+      ro.disconnect()
+      atlas.destroy()
+    }
+  }, [initial])
+
+  // ----- selection / lens → camera -----
+  const first = useRef(true)
+  useEffect(() => {
+    const atlas = atlasRef.current
+    atlas.setLens(lens)
+    atlas.setSelected(selected)
+    atlas.setInset(selected ? PANEL_W : 0)
+    if (selected) atlas.focusPasta(selected, first.current ? 0 : 1100)
+    first.current = false
+    const hash = `#/${lens}${selected ? '/' + selected : ''}`
+    if (window.location.hash !== hash) window.history.replaceState(null, '', hash)
+  }, [lens, selected])
+
+  useEffect(() => {
+    const onHash = () => {
+      const h = readHash()
+      setLens(h.lens)
+      setSelected(h.id)
+      if (h.id) setIntro(false)
+    }
+    window.addEventListener('hashchange', onHash)
+    return () => window.removeEventListener('hashchange', onHash)
+  }, [])
+
+  const changeLens = useCallback(
+    (id) => {
+      if (id === lens) return
+      setTour(null)
+      atlasRef.current.focusGroup = null
+      setLens(id)
+      if (!selected) {
+        const a = atlasRef.current
+        a.setLens(id)
+        a.fitAll(1300)
+      }
+    },
+    [lens, selected],
+  )
+
+  const jump = useCallback((lensId, groupId, subId) => {
+    const a = atlasRef.current
+    setTour(null)
+    a.focusGroup = null
+    setLens(lensId)
+    setSelected(null)
+    a.setLens(lensId)
+    a.setInset(0)
+    const node = a.findGroup(lensId, groupId, subId)
+    if (node) a.fitNode(node, 1400)
+  }, [])
+
+  const close = useCallback(() => {
+    setSelected(null)
+  }, [])
+
+  const surprise = useCallback(() => {
+    setTour(null)
+    atlasRef.current.focusGroup = null
+    let p
+    do p = PASTAS[Math.floor(Math.random() * PASTAS.length)]
+    while (p.id === selected)
+    setSelected(p.id)
+  }, [selected])
+
+  // ----- tour -----
+  const stops = atlasRef.current?.layouts[lens].groups || []
+  const goTour = useCallback(
+    (i) => {
+      const a = atlasRef.current
+      const groups = a.layouts[lens].groups
+      if (i == null || i < 0 || i >= groups.length) {
+        a.focusGroup = null
+        setTour(null)
+        a.setInset(0)
+        a.fitAll(1200)
+        return
+      }
+      setSelected(null)
+      a.setInset(0)
+      a.focusGroup = groups[i].id
+      a.fitNode(groups[i], 1500)
+      setTour(i)
+    },
+    [lens],
+  )
+
+  const begin = () => {
+    setIntro(false)
+    atlasRef.current.intro()
+  }
+
+  // ----- keyboard -----
+  useEffect(() => {
+    const onKey = (e) => {
+      const typing = /INPUT|TEXTAREA/.test(document.activeElement?.tagName)
+      const a = atlasRef.current
+      if (intro) {
+        if (e.key === 'Enter' || e.key === ' ') begin()
+        return
+      }
+      if (e.key === '/' && !typing) {
+        e.preventDefault()
+        searchRef.current?.focus()
+      } else if (typing) return
+      else if (e.key === 'Escape') {
+        if (selected) close()
+        else if (tour != null) goTour(null)
+        else a.fitAll()
+      } else if (e.key === '+' || e.key === '=') a.zoomBy(1.5)
+      else if (e.key === '-') a.zoomBy(1 / 1.5)
+      else if (e.key === '0') a.fitAll()
+      else if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+        const d = e.key === 'ArrowRight' ? 1 : -1
+        if (tour != null) goTour(tour + d)
+        else if (selected) {
+          const sib = a.layout.leaf[selected].sub.leaves
+          const i = sib.findIndex((s) => s.id === selected)
+          setSelected(sib[(i + d + sib.length) % sib.length].id)
+        }
+      }
+    }
+    window.addEventListener('keydown', onKey)
+    return () => window.removeEventListener('keydown', onKey)
+  })
+
+  const pasta = selected ? PASTA[selected] : null
+  const leaf = pasta && atlasRef.current?.layouts[lens].leaf[pasta.id]
+  const stop = tour != null ? stops[tour] : null
+
+  return (
+    <div className={`app${pasta ? ' has-panel' : ''}`}>
+      <canvas ref={canvasRef} className="map" aria-label="Zoomable map of pasta shapes. Use search to find a shape by name." />
+
+      <header className="bar">
+        <button className="brand" onClick={() => atlasRef.current.fitAll()} title="Back to the whole map">
+          <span>The Atlas of</span> Pasta
+        </button>
+        <Search ref={searchRef} total={stats.total} onPick={(id) => { setTour(null); atlasRef.current.focusGroup = null; setSelected(id) }} />
+        <nav className="lenses" aria-label="Arrange the map">
+          <span>Arrange by</span>
+          {LENSES.map((l) => (
+            <button key={l.id} className={l.id === lens ? 'on' : ''} aria-pressed={l.id === lens} onClick={() => changeLens(l.id)}>
+              {l.label}
+            </button>
+          ))}
+        </nav>
+        <div className="actions">
+          <button onClick={() => goTour(0)}>Guided tour</button>
+          <button onClick={surprise}>Surprise me</button>
+        </div>
+      </header>
+
+      {!intro && !stop && (
+        <div className="crumb" aria-live="polite">
+          {context ? (
+            <>
+              <i style={{ background: context.group.color }} />
+              {context.group.label}
+              {context.sub && (
+                <>
+                  <span>›</span>
+                  {context.sub.label}
+                </>
+              )}
+            </>
+          ) : (
+            <em>The whole world of pasta, {LENS[lens].title}. Scroll to zoom, drag to wander, click anything.</em>
+          )}
+        </div>
+      )}
+
+      {hover && hover.pasta.id !== selected && (
+        <div className="tip" style={{ left: hover.x, top: hover.y - hover.r - 10 }}>
+          <b>{hover.pasta.name}</b>
+          <span>{hover.pasta.look}</span>
+        </div>
+      )}
+
+      {pasta && leaf && (
+        <Panel
+          pasta={pasta}
+          siblings={leaf.sub.leaves}
+          groupLabel={leaf.sub.label}
+          onClose={close}
+          onPick={setSelected}
+          onJump={jump}
+        />
+      )}
+
+      {stop && (
+        <div className="tour" style={{ '--accent': stop.color }}>
+          <div className="tour-step">
+            Stop {tour + 1} of {stops.length}
+          </div>
+          <h2>{stop.label}</h2>
+          <p>{stop.blurb}</p>
+          <p className="tour-meta">
+            {stop.count} shapes · {stop.subs.map((s) => s.label).slice(0, 6).join(', ')}
+            {stop.subs.length > 6 ? '…' : ''}
+          </p>
+          <div className="tour-nav">
+            <button onClick={() => goTour(null)}>End tour</button>
+            <span />
+            <button disabled={tour === 0} onClick={() => goTour(tour - 1)}>
+              ← Back
+            </button>
+            <button className="primary" onClick={() => goTour(tour + 1 < stops.length ? tour + 1 : null)}>
+              {tour + 1 < stops.length ? 'Next →' : 'Finish'}
+            </button>
+          </div>
+        </div>
+      )}
+
+      <div className="corner">
+        {showKey && (
+          <div className="key">
+            <h3>The colour of each pasta is its dough</h3>
+            <ul>
+              {MAKES.map((m) => (
+                <li key={m.id}>
+                  <i style={{ background: m.fill }} />
+                  {m.label}
+                </li>
+              ))}
+            </ul>
+            <p>Ring and branch colour show the group in the current arrangement.</p>
+          </div>
+        )}
+        <div className="zoom">
+          <button onClick={() => setShowKey((v) => !v)} aria-pressed={showKey}>
+            Key
+          </button>
+          <button onClick={() => atlasRef.current.zoomBy(1 / 1.6)} aria-label="Zoom out">
+            −
+          </button>
+          <button onClick={() => atlasRef.current.fitAll()} aria-label="Show whole map" title="Whole map (0)">
+            ◎
+          </button>
+          <button onClick={() => atlasRef.current.zoomBy(1.6)} aria-label="Zoom in">
+            +
+          </button>
+        </div>
+      </div>
+
+      {intro && (
+        <div className="intro">
+          <div className="intro-card">
+            <p className="kicker">An explorable map</p>
+            <h1>
+              The Atlas <span>of</span> Pasta
+            </h1>
+            <p className="lede">
+              {stats.total} shapes, from spaghetti to su filindeu, drawn and sorted into one branching map. Start far out, where the great
+              families are, then zoom in until every shape has a name, a hometown and a story.
+            </p>
+            <ul className="stats">
+              <li>
+                <b>{stats.total}</b> shapes
+              </li>
+              <li>
+                <b>10</b> families
+              </li>
+              <li>
+                <b>{stats.regions}</b> Italian regions
+              </li>
+              <li>
+                <b>{stats.countries}</b> other countries
+              </li>
+            </ul>
+            <button className="begin" onClick={begin} autoFocus>
+              Begin the journey
+            </button>
+            <p className="hint">Scroll to zoom · drag to wander · click any shape</p>
+          </div>
+        </div>
+      )}
+    </div>
+  )
+}
