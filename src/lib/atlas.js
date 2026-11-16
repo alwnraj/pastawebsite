@@ -41,7 +41,8 @@ export class Atlas {
     this.layout = this.layouts[lenses[0].id]
     this.h = handlers
     this.view = { x: 0, y: 0, k: 0.2 }
-    this.inset = { right: 0 }
+    this.inset = { right: 0, top: 0, bottom: 0 }
+    this.coarse = window.matchMedia?.('(pointer: coarse)').matches
     this.selected = null
     this.hover = null // {kind, node|id}
     this.focusGroup = null
@@ -62,7 +63,7 @@ export class Atlas {
     this.dpr = dpr
     this.canvas.width = Math.round(this.W * dpr)
     this.canvas.height = Math.round(this.H * dpr)
-    this.kMin = this._fitView(this.layout.bounds, 0).k * 0.75
+    this.kMin = this._fitView(this.layout.bounds, {}).k * 0.75
     this.invalidate()
   }
   toWorld(sx, sy) {
@@ -73,11 +74,12 @@ export class Atlas {
     const v = this.view
     return { x: (wx - v.x) * v.k + this.W / 2, y: (wy - v.y) * v.k + this.H / 2 }
   }
-  _fitView(b, inset = this.inset.right, pad = 70, maxK = 1.25) {
-    const w = this.W - inset - pad * 2
-    const h = this.H - pad * 2 - 40
+  _fitView(b, inset = this.inset, pad = Math.min(70, this.W * 0.05), maxK = 1.25) {
+    const { right = 0, top = 0, bottom = 0 } = inset || {}
+    const w = this.W - right - pad * 2
+    const h = this.H - top - bottom - pad * 2 - 40
     const k = Math.min(maxK, Math.max(0.02, Math.min(w / (b.x1 - b.x0 || 1), h / (b.y1 - b.y0 || 1))))
-    return { x: (b.x0 + b.x1) / 2 + inset / 2 / k, y: (b.y0 + b.y1) / 2 - 14 / k, k }
+    return { x: (b.x0 + b.x1) / 2 + right / 2 / k, y: (b.y0 + b.y1) / 2 + ((bottom - top) / 2 - 14) / k, k }
   }
   leafPos(id) {
     const cur = this.layout.leaf[id]
@@ -118,7 +120,8 @@ export class Atlas {
     const l = this.layout.leaf[id]
     if (!l) return
     const k = clamp(Math.max(this.view.k, 1.15), 1.15, 1.7)
-    this.flyTo({ x: l.x + this.inset.right / 2 / k, y: l.y, k }, dur)
+    const i = this.inset
+    this.flyTo({ x: l.x + i.right / 2 / k, y: l.y + (i.bottom - i.top) / 2 / k, k }, dur)
   }
   zoomBy(f) {
     const k = clamp(this.view.k * f, this.kMin, 3)
@@ -142,7 +145,7 @@ export class Atlas {
     const from = this.layout
     this.layout = next
     this.hover = null
-    this.kMin = this._fitView(next.bounds, 0).k * 0.75
+    this.kMin = this._fitView(next.bounds, {}).k * 0.75
     if (!this.reduced) this.morph = { from, t0: performance.now(), dur: 1300, e: 0 }
     this.invalidate()
   }
@@ -150,8 +153,8 @@ export class Atlas {
     this.selected = id
     this.invalidate()
   }
-  setInset(right) {
-    this.inset.right = right
+  setInset(inset) {
+    this.inset = { right: 0, top: 0, bottom: 0, ...inset }
   }
 
   // ---------- input ----------
@@ -259,12 +262,12 @@ export class Atlas {
     const L = this.layout
     if (Math.hypot(w.x, w.y) < Math.max(105, 26 / k)) return { kind: 'root' }
     for (const g of L.groups) {
-      if (Math.hypot(w.x - g.x, w.y - g.y) < Math.max(62, 17 / k)) return { kind: 'group', node: g }
+      if (Math.hypot(w.x - g.x, w.y - g.y) < Math.max(62, (this.coarse ? 24 : 17) / k)) return { kind: 'group', node: g }
       for (const s of g.subs)
         if (s._hw && Math.abs(w.x - s.x) < s._hw && Math.abs(w.y - s.y) < s._hh) return { kind: 'sub', node: s }
     }
     let best = null
-    let bd = Math.max(LEAF_R + 8, 13 / k)
+    let bd = Math.max(LEAF_R + 8, (this.coarse ? 22 : 13) / k)
     for (const p of this.pastas) {
       const l = L.leaf[p.id]
       if (!l) continue

@@ -6,6 +6,12 @@ import Panel from './components/Panel.jsx'
 import Search from './components/Search.jsx'
 
 const PANEL_W = 440
+const isPhone = () => window.matchMedia('(max-width: 820px)').matches
+// how much of the canvas the overlays cover, so the camera can frame around them
+const insetFor = (mode) =>
+  isPhone()
+    ? { top: 104, bottom: mode === 'panel' ? Math.round(window.innerHeight * 0.56) : mode === 'tour' ? 250 : 50 }
+    : { right: mode === 'panel' ? PANEL_W : 0 }
 
 function readHash() {
   const [lens, id] = window.location.hash.replace(/^#\/?/, '').split('/')
@@ -23,6 +29,9 @@ export default function App() {
   const [context, setContext] = useState(null)
   const [intro, setIntro] = useState(!initial.id)
   const [tour, setTour] = useState(null)
+  const tourRef = useRef(null)
+  tourRef.current = tour
+  const [phone, setPhone] = useState(isPhone)
   const [showKey, setShowKey] = useState(false)
   const [, setReady] = useState(0)
 
@@ -49,7 +58,12 @@ export default function App() {
       atlas.resize()
       atlas.view = atlas._fitView(atlas.layout.bounds)
     }
-    const ro = new ResizeObserver(() => atlas.resize())
+    atlas.setInset(insetFor(null))
+    atlas.view = atlas._fitView(atlas.layout.bounds)
+    const ro = new ResizeObserver(() => {
+      setPhone(isPhone())
+      atlas.resize()
+    })
     ro.observe(canvasRef.current)
     return () => {
       ro.disconnect()
@@ -63,7 +77,7 @@ export default function App() {
     const atlas = atlasRef.current
     atlas.setLens(lens)
     atlas.setSelected(selected)
-    atlas.setInset(selected ? PANEL_W : 0)
+    atlas.setInset(insetFor(selected ? 'panel' : tourRef.current != null ? 'tour' : null))
     if (selected) atlas.focusPasta(selected, first.current ? 0 : 1100)
     first.current = false
     const hash = `#/${lens}${selected ? '/' + selected : ''}`
@@ -103,7 +117,7 @@ export default function App() {
     setLens(lensId)
     setSelected(null)
     a.setLens(lensId)
-    a.setInset(0)
+    a.setInset(insetFor(null))
     const node = a.findGroup(lensId, groupId, subId)
     if (node) a.fitNode(node, 1400)
   }, [])
@@ -130,12 +144,12 @@ export default function App() {
       if (i == null || i < 0 || i >= groups.length) {
         a.focusGroup = null
         setTour(null)
-        a.setInset(0)
+        a.setInset(insetFor(null))
         a.fitAll(1200)
         return
       }
       setSelected(null)
-      a.setInset(0)
+      a.setInset(insetFor('tour'))
       a.focusGroup = groups[i].id
       a.fitNode(groups[i], 1500)
       setTour(i)
@@ -187,14 +201,14 @@ export default function App() {
   const stop = tour != null ? stops[tour] : null
 
   return (
-    <div className={`app${pasta ? ' has-panel' : ''}`}>
+    <div className={`app${pasta ? ' has-panel' : ''}${stop ? ' has-tour' : ''}`}>
       <canvas ref={canvasRef} className="map" aria-label="Zoomable map of pasta shapes. Use search to find a shape by name." />
 
       <header className="bar">
         <button className="brand" onClick={() => atlasRef.current.fitAll()} title="Back to the whole map">
           <span>The Atlas of</span> Pasta
         </button>
-        <Search ref={searchRef} total={stats.total} onPick={(id) => { setTour(null); atlasRef.current.focusGroup = null; setSelected(id) }} />
+        <Search ref={searchRef} total={stats.total} compact={phone} onPick={(id) => { setTour(null); atlasRef.current.focusGroup = null; setSelected(id) }} />
         <nav className="lenses" aria-label="Arrange the map">
           <span>Arrange by</span>
           {LENSES.map((l) => (
@@ -204,8 +218,8 @@ export default function App() {
           ))}
         </nav>
         <div className="actions">
-          <button onClick={() => goTour(0)}>Guided tour</button>
-          <button onClick={surprise}>Surprise me</button>
+          <button onClick={() => goTour(0)}>{phone ? 'Tour' : 'Guided tour'}</button>
+          <button onClick={surprise}>{phone ? 'Surprise' : 'Surprise me'}</button>
         </div>
       </header>
 
@@ -289,13 +303,13 @@ export default function App() {
           <button onClick={() => setShowKey((v) => !v)} aria-pressed={showKey}>
             Key
           </button>
-          <button onClick={() => atlasRef.current.zoomBy(1 / 1.6)} aria-label="Zoom out">
+          <button className="zoom-step" onClick={() => atlasRef.current.zoomBy(1 / 1.6)} aria-label="Zoom out">
             −
           </button>
           <button onClick={() => atlasRef.current.fitAll()} aria-label="Show whole map" title="Whole map (0)">
             ◎
           </button>
-          <button onClick={() => atlasRef.current.zoomBy(1.6)} aria-label="Zoom in">
+          <button className="zoom-step" onClick={() => atlasRef.current.zoomBy(1.6)} aria-label="Zoom in">
             +
           </button>
         </div>
@@ -329,7 +343,7 @@ export default function App() {
             <button className="begin" onClick={begin} autoFocus>
               Begin the journey
             </button>
-            <p className="hint">Scroll to zoom · drag to wander · click any shape</p>
+            <p className="hint">{phone ? 'Pinch to zoom · drag to wander · tap any shape' : 'Scroll to zoom · drag to wander · click any shape'}</p>
           </div>
         </div>
       )}

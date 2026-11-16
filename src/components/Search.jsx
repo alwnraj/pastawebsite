@@ -3,7 +3,7 @@ import Glyph from './Glyph.jsx'
 import { search } from '../data/index.js'
 import { FAMILY, placeLabel } from '../data/taxonomy.js'
 
-const Search = forwardRef(function Search({ onPick, total }, ref) {
+const Search = forwardRef(function Search({ onPick, total, compact }, ref) {
   const [q, setQ] = useState('')
   const [open, setOpen] = useState(false)
   const [active, setActive] = useState(0)
@@ -22,7 +22,7 @@ const Search = forwardRef(function Search({ onPick, total }, ref) {
         ref={ref}
         type="search"
         value={q}
-        placeholder={`Search ${total} shapes…  ( / )`}
+        placeholder={compact ? `Search ${total} shapes…` : `Search ${total} shapes…  ( / )`}
         aria-label="Search pasta shapes"
         onChange={(e) => {
           setQ(e.target.value)
