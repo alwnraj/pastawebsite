@@ -90,7 +90,7 @@ export default function Panel({ pasta, siblings, groupLabel, onClose, onPick, on
             <div className="neighbours">
               {others.map((s) => (
                 <button key={s.id} onClick={() => onPick(s.id)} title={s.look}>
-                  <Glyph pasta={s} size={34} />
+                  <Glyph pasta={s} size={34} lazy />
                   <span>{s.name}</span>
                 </button>
               ))}

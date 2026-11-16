@@ -56,7 +56,7 @@ export default function App() {
     atlasRef.current = atlas
     setReady((n) => n + 1)
     if (initial.lens !== 'shape') {
-      atlas.layout = atlas.layouts[initial.lens]
+      atlas.layout = atlas.getLayout(initial.lens)
       atlas.resize()
       atlas.view = atlas._fitView(atlas.layout.bounds)
     }
@@ -141,11 +141,11 @@ export default function App() {
   }, [selected])
 
   // ----- tour -----
-  const stops = atlasRef.current?.layouts[lens].groups || []
+  const stops = atlasRef.current?.getLayout(lens).groups || []
   const goTour = useCallback(
     (i) => {
       const a = atlasRef.current
-      const groups = a.layouts[lens].groups
+      const groups = a.getLayout(lens).groups
       if (i == null || i < 0 || i >= groups.length) {
         a.focusGroup = null
         setTour(null)
@@ -202,7 +202,7 @@ export default function App() {
   })
 
   const pasta = selected ? PASTA[selected] : null
-  const leaf = pasta && atlasRef.current?.layouts[lens].leaf[pasta.id]
+  const leaf = pasta && atlasRef.current?.getLayout(lens).leaf[pasta.id]
   const stop = tour != null ? stops[tour] : null
 
   return (

@@ -38,8 +38,9 @@ export class Atlas {
     this.byId = Object.fromEntries(pastas.map((p) => [p.id, p]))
     this.lines = Object.fromEntries(pastas.map((p) => [p.id, wrapName(p.name)]))
     this.arcMetrics = new Map()
-    this.layouts = Object.fromEntries(lenses.map((l) => [l.id, buildLayout(pastas, l)]))
-    this.layout = this.layouts[lenses[0].id]
+    this.lenses = Object.fromEntries(lenses.map((l) => [l.id, l]))
+    this.layouts = {}
+    this.layout = this.getLayout(lenses[0].id)
     this.h = handlers
     this.view = { x: 0, y: 0, k: 0.2 }
     this.inset = { right: 0, top: 0, bottom: 0 }
@@ -133,15 +134,19 @@ export class Atlas {
     this.view = { x: 0, y: 0, k: 1.5 }
     this.flyTo(end, this.coarse ? 700 : 2400)
   }
+  getLayout(id) {
+    if (!this.layouts[id] && this.lenses[id]) this.layouts[id] = buildLayout(this.pastas, this.lenses[id])
+    return this.layouts[id]
+  }
   findGroup(lensId, groupId, subId) {
-    const g = this.layouts[lensId]?.groups.find((x) => x.id === groupId)
+    const g = this.getLayout(lensId)?.groups.find((x) => x.id === groupId)
     if (!g) return null
     return subId ? g.subs.find((s) => s.id === subId) || g : g
   }
 
   // ---------- state ----------
   setLens(id) {
-    const next = this.layouts[id]
+    const next = this.getLayout(id)
     if (!next || next === this.layout) return
     const from = this.layout
     this.layout = next
