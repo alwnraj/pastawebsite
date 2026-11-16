@@ -10,7 +10,7 @@ const isPhone = () => window.matchMedia('(max-width: 820px)').matches
 // how much of the canvas the overlays cover, so the camera can frame around them
 const insetFor = (mode) =>
   isPhone()
-    ? { top: 104, bottom: mode === 'panel' ? Math.round(window.innerHeight * 0.56) : mode === 'tour' ? 250 : 50 }
+    ? { top: window.innerWidth > window.innerHeight ? 60 : 104, bottom: mode === 'panel' ? Math.round(window.innerHeight * 0.56) : mode === 'tour' ? Math.min(250, Math.round(window.innerHeight * 0.6)) : 50 }
     : { right: mode === 'panel' ? PANEL_W : 0 }
 
 function readHash() {
@@ -30,7 +30,9 @@ export default function App() {
   const [intro, setIntro] = useState(!initial.id)
   const [tour, setTour] = useState(null)
   const tourRef = useRef(null)
+  const selectedRef = useRef(selected)
   tourRef.current = tour
+  selectedRef.current = selected
   const [phone, setPhone] = useState(isPhone)
   const [showKey, setShowKey] = useState(false)
   const [, setReady] = useState(0)
@@ -62,6 +64,7 @@ export default function App() {
     atlas.view = atlas._fitView(atlas.layout.bounds)
     const ro = new ResizeObserver(() => {
       setPhone(isPhone())
+      atlas.setInset(insetFor(selectedRef.current ? 'panel' : tourRef.current != null ? 'tour' : null))
       atlas.resize()
     })
     ro.observe(canvasRef.current)
@@ -73,12 +76,14 @@ export default function App() {
 
   // ----- selection / lens → camera -----
   const first = useRef(true)
+  const previousLens = useRef(lens)
   useEffect(() => {
     const atlas = atlasRef.current
     atlas.setLens(lens)
     atlas.setSelected(selected)
     atlas.setInset(insetFor(selected ? 'panel' : tourRef.current != null ? 'tour' : null))
-    if (selected) atlas.focusPasta(selected, first.current ? 0 : 1100)
+    if (selected) atlas.focusPasta(selected, first.current || (atlas.coarse && previousLens.current !== lens) ? 0 : 1100)
+    previousLens.current = lens
     first.current = false
     const hash = `#/${lens}${selected ? '/' + selected : ''}`
     if (window.location.hash !== hash) window.history.replaceState(null, '', hash)
@@ -104,7 +109,7 @@ export default function App() {
       if (!selected) {
         const a = atlasRef.current
         a.setLens(id)
-        a.fitAll(1300)
+        a.fitAll(a.coarse ? 0 : 1300)
       }
     },
     [lens, selected],

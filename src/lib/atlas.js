@@ -37,6 +37,7 @@ export class Atlas {
     this.pastas = pastas
     this.byId = Object.fromEntries(pastas.map((p) => [p.id, p]))
     this.lines = Object.fromEntries(pastas.map((p) => [p.id, wrapName(p.name)]))
+    this.arcMetrics = new Map()
     this.layouts = Object.fromEntries(lenses.map((l) => [l.id, buildLayout(pastas, l)]))
     this.layout = this.layouts[lenses[0].id]
     this.h = handlers
@@ -56,10 +57,10 @@ export class Atlas {
 
   // ---------- geometry ----------
   resize() {
-    const dpr = Math.min(window.devicePixelRatio || 1, 2)
+    const dpr = Math.min(window.devicePixelRatio || 1, this.coarse ? 1.5 : 2)
     const r = this.canvas.getBoundingClientRect()
-    this.W = Math.max(320, r.width)
-    this.H = Math.max(320, r.height)
+    this.W = Math.max(1, r.width)
+    this.H = Math.max(1, r.height)
     this.dpr = dpr
     this.canvas.width = Math.round(this.W * dpr)
     this.canvas.height = Math.round(this.H * dpr)
@@ -130,7 +131,7 @@ export class Atlas {
   intro() {
     const end = this._fitView(this.layout.bounds)
     this.view = { x: 0, y: 0, k: 1.5 }
-    this.flyTo(end, 2400)
+    this.flyTo(end, this.coarse ? 700 : 2400)
   }
   findGroup(lensId, groupId, subId) {
     const g = this.layouts[lensId]?.groups.find((x) => x.id === groupId)
@@ -146,7 +147,7 @@ export class Atlas {
     this.layout = next
     this.hover = null
     this.kMin = this._fitView(next.bounds, {}).k * 0.75
-    if (!this.reduced) this.morph = { from, t0: performance.now(), dur: 1300, e: 0 }
+    if (!this.reduced && !this.coarse) this.morph = { from, t0: performance.now(), dur: 1300, e: 0 }
     this.invalidate()
   }
   setSelected(id) {
@@ -220,7 +221,7 @@ export class Atlas {
         const p = pos(e)
         this._click(this._hit(p.x, p.y))
       }
-      this.drag = null
+      this.drag = this.pointers.size ? { moved: 99 } : null
     }
     c.addEventListener('pointerup', up)
     c.addEventListener('pointercancel', up)
@@ -481,12 +482,20 @@ export class Atlas {
       const ws = [...text].map((ch) => ctx.measureText(ch).width + sp)
       return { ws, total: ws.reduce((a, b) => a + b, 0) }
     }
-    let m = measure()
-    const max = span * r * 0.94
-    if (m.total > max) {
-      size = Math.max(54, (size * max) / m.total)
-      m = measure()
+    const cacheKey = `${text}:${r}:${span}`
+    let cached = this.arcMetrics.get(cacheKey)
+    if (!cached) {
+      let m = measure()
+      const max = span * r * 0.94
+      if (m.total > max) {
+        size = Math.max(54, (size * max) / m.total)
+        m = measure()
+      }
+      cached = { size, ...m }
+      this.arcMetrics.set(cacheKey, cached)
     }
+    const m = cached
+    ctx.font = `700 ${cached.size}px ${SERIF}`
     const flip = Math.sin(aMid) > 0.15
     const dir = flip ? -1 : 1
     let a = aMid - (dir * m.total) / r / 2
