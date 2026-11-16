@@ -1,0 +1,1782 @@
+[
+  {
+    "id": "orzo",
+    "name": "Orzo",
+    "aliases": [
+      "risoni",
+      "risi",
+      "puntalette"
+    ],
+    "family": "soup",
+    "sub": "soup-grains",
+    "glyph": "grain",
+    "region": "italy",
+    "country": null,
+    "make": "dried",
+    "pron": "OR-tso",
+    "meaning": "barley",
+    "look": "Smooth pasta grain the size and shape of a large grain of rice.",
+    "fact": "The name means barley, but it is entirely wheat pasta; Italians more often call it risoni, \"big rice\".",
+    "pairings": [
+      "brodo",
+      "minestrone",
+      "pasta salad"
+    ]
+  },
+  {
+    "id": "semi-di-melone",
+    "name": "Semi di melone",
+    "aliases": [
+      "semini",
+      "semillas de melón"
+    ],
+    "family": "soup",
+    "sub": "soup-grains",
+    "glyph": "grain",
+    "region": "italy",
+    "country": null,
+    "make": "dried",
+    "pron": "SEH-mee dee meh-LOH-neh",
+    "meaning": "melon seeds",
+    "look": "Tiny flat teardrop, pointed at one end like a melon seed.",
+    "fact": "Small and flat enough to cook in a few minutes in broth. The same shape is a pantry staple in Mexico, sold as semillas de melón for sopa aguada.",
+    "pairings": [
+      "brodo",
+      "vegetable soup"
+    ]
+  },
+  {
+    "id": "puntine",
+    "name": "Puntine",
+    "aliases": [
+      "punte d'ago"
+    ],
+    "family": "soup",
+    "sub": "soup-grains",
+    "glyph": "grain",
+    "region": "italy",
+    "country": null,
+    "make": "dried",
+    "pron": "poon-TEE-neh",
+    "meaning": "little points",
+    "look": "Minute pointed grains, noticeably smaller than orzo.",
+    "fact": "Among the smallest pastina, typically one of the first solid foods given to Italian babies, stirred into vegetable broth.",
+    "pairings": [
+      "brodo",
+      "butter and Parmigiano"
+    ]
+  },
+  {
+    "id": "midolline",
+    "name": "Midolline",
+    "aliases": [],
+    "family": "soup",
+    "sub": "soup-grains",
+    "glyph": "grain",
+    "region": "italy",
+    "country": null,
+    "make": "dried",
+    "pron": "mee-dohl-LEE-neh",
+    "meaning": null,
+    "look": "Tiny flat teardrop-shaped grains, close to a melon seed.",
+    "fact": "A catalogue pastina from the big dried-pasta makers, made for clear broths, where a small flat piece cooks through in minutes and stays on the spoon.",
+    "pairings": [
+      "brodo",
+      "light vegetable soup"
+    ]
+  },
+  {
+    "id": "kritharaki",
+    "name": "Kritharáki",
+    "aliases": [
+      "manestra",
+      "Greek orzo"
+    ],
+    "family": "soup",
+    "sub": "soup-grains",
+    "glyph": "grain",
+    "region": "world",
+    "country": "Greece",
+    "make": "dried",
+    "pron": "kree-thah-RAH-kee",
+    "meaning": "little barley",
+    "look": "Rice-shaped pasta grain, often a little plumper than Italian orzo.",
+    "fact": "Greece's barley-shaped pasta is the heart of giouvetsi, where it bakes in a clay pot with lamb or beef and tomato, drinking up the cooking juices.",
+    "pairings": [
+      "giouvetsi",
+      "tomato broth",
+      "kritharoto"
+    ]
+  },
+  {
+    "id": "arpa-sehriye",
+    "name": "Arpa şehriye",
+    "aliases": [
+      "şehriye",
+      "arpa şehriyesi"
+    ],
+    "family": "soup",
+    "sub": "soup-grains",
+    "glyph": "grain",
+    "region": "world",
+    "country": "Turkey",
+    "make": "dried",
+    "pron": "ar-PAH sheh-ree-YEH",
+    "meaning": "barley noodle",
+    "look": "Small barley-shaped pasta grain.",
+    "fact": "In Turkey it is usually browned in butter first, then simmered with rice for şehriyeli pilav, or dropped into tomato and chicken soups.",
+    "pairings": [
+      "şehriyeli pilav",
+      "şehriye çorbası"
+    ]
+  },
+  {
+    "id": "lisan-al-asfur",
+    "name": "Lisān al-ʿaṣfūr",
+    "aliases": [
+      "lesan asfour",
+      "bird's tongue pasta"
+    ],
+    "family": "soup",
+    "sub": "soup-grains",
+    "glyph": "grain",
+    "region": "world",
+    "country": "Egypt",
+    "make": "dried",
+    "pron": "lee-SAHN al-ahs-FOOR",
+    "meaning": "sparrow's tongue",
+    "look": "Small slender rice-shaped pasta grain.",
+    "fact": "Egypt's version of orzo is toasted in ghee until golden and then simmered in chicken or meat stock, giving a soup that is a home-cooking standard.",
+    "pairings": [
+      "shorbet lesan asfour",
+      "chicken broth"
+    ]
+  },
+  {
+    "id": "acini-di-pepe",
+    "name": "Acini di pepe",
+    "aliases": [
+      "pepe",
+      "munición"
+    ],
+    "family": "soup",
+    "sub": "soup-dots",
+    "glyph": "dots",
+    "region": "italy",
+    "country": null,
+    "make": "dried",
+    "pron": "AH-chee-nee dee PEH-peh",
+    "meaning": "peppercorns",
+    "look": "Tiny round beads of pasta about the size of a peppercorn.",
+    "fact": "Its name means peppercorns, even though the bits look more like couscous. In the US it is the pasta in Italian wedding soup and in sweet frog-eye salad.",
+    "pairings": [
+      "Italian wedding soup",
+      "brodo",
+      "frog-eye salad"
+    ]
+  },
+  {
+    "id": "fregola",
+    "name": "Fregola",
+    "aliases": [
+      "fregula",
+      "fregola sarda"
+    ],
+    "family": "soup",
+    "sub": "soup-dots",
+    "glyph": "dots",
+    "region": "sardinia",
+    "country": null,
+    "make": "semola-fresh",
+    "pron": "FREH-goh-lah",
+    "meaning": null,
+    "look": "Irregular toasted semolina beads, 2–6 mm, in mixed shades of gold and brown.",
+    "fact": "Semolina is rubbed with water in a wide bowl until it beads up, then the beads are oven-toasted, so these Sardinian pearls keep a nutty flavour even after simmering.",
+    "pairings": [
+      "clams (arselle)",
+      "tomato broth",
+      "sausage ragù"
+    ]
+  },
+  {
+    "id": "grattini",
+    "name": "Grattini",
+    "aliases": [
+      "pasta grattata",
+      "grattoni",
+      "manfrigoli",
+      "pasta rasa"
+    ],
+    "family": "soup",
+    "sub": "soup-dots",
+    "glyph": "dots",
+    "region": "emilia-romagna",
+    "country": null,
+    "make": "egg",
+    "pron": "graht-TEE-nee",
+    "meaning": "little gratings",
+    "look": "Small irregular egg-pasta crumbs, like coarse grated cheese.",
+    "fact": "A firm ball of egg dough is rubbed on a coarse grater and the crumbs are dried briefly, then cooked straight in broth: pasta with no rolling pin required.",
+    "pairings": [
+      "meat broth",
+      "bean soup"
+    ]
+  },
+  {
+    "id": "pastina",
+    "name": "Pastina",
+    "aliases": [
+      "pastine"
+    ],
+    "family": "soup",
+    "sub": "soup-dots",
+    "glyph": "dots",
+    "region": "italy",
+    "country": null,
+    "make": "dried",
+    "pron": "pah-STEE-nah",
+    "meaning": "little pasta",
+    "look": "Any very small pasta; in the US, usually tiny star- or grain-shaped specks.",
+    "fact": "Pastina is both a shape family and a comfort-food category: cooked in broth with butter and cheese, it is the classic Italian food for children and convalescents.",
+    "pairings": [
+      "brodo",
+      "butter and Parmigiano",
+      "egg and cheese"
+    ]
+  },
+  {
+    "id": "tempestine",
+    "name": "Tempestine",
+    "aliases": [
+      "tempesta",
+      "grandinine"
+    ],
+    "family": "soup",
+    "sub": "soup-dots",
+    "glyph": "dots",
+    "region": "italy",
+    "country": null,
+    "make": "dried",
+    "pron": "tem-peh-STEE-neh",
+    "meaning": "little storms",
+    "look": "Minute round-ish pellets of pasta, smaller than a peppercorn.",
+    "fact": "The name likens the pellets to a hailstorm falling into the pot. They are among the first pastas Italian children eat, cooked in a few minutes in broth.",
+    "pairings": [
+      "brodo",
+      "vegetable broth"
+    ]
+  },
+  {
+    "id": "ptitim",
+    "name": "Ptitim",
+    "aliases": [
+      "Israeli couscous",
+      "pearl couscous",
+      "Ben-Gurion rice"
+    ],
+    "family": "soup",
+    "sub": "soup-dots",
+    "glyph": "dots",
+    "region": "world",
+    "country": "Israel",
+    "make": "dried",
+    "pron": "p-tee-TEEM",
+    "meaning": "flakes",
+    "look": "Small uniform toasted pasta pearls about 3 mm across.",
+    "fact": "Created in Israel in the 1950s, when rice was scarce and prime minister David Ben-Gurion asked the Osem company for a wheat substitute. It is extruded and oven-toasted, not rolled like couscous.",
+    "pairings": [
+      "fried onion and stock",
+      "tomato sauce",
+      "salads"
+    ]
+  },
+  {
+    "id": "moghrabieh",
+    "name": "Moghrabieh",
+    "aliases": [
+      "mograbieh",
+      "Lebanese couscous"
+    ],
+    "family": "soup",
+    "sub": "soup-dots",
+    "glyph": "dots",
+    "region": "world",
+    "country": "Lebanon",
+    "make": "semola-fresh",
+    "pron": "moh-grah-BEE-yeh",
+    "meaning": "from the Maghreb",
+    "look": "Large rolled semolina pearls roughly the size of small chickpeas.",
+    "fact": "The name points to the couscous of North Africa, but the Lebanese pearls are far bigger. They are stewed with chicken, baby onions and chickpeas, scented with caraway and cinnamon.",
+    "pairings": [
+      "chicken and chickpea stew",
+      "lamb stew"
+    ]
+  },
+  {
+    "id": "maftoul",
+    "name": "Maftoul",
+    "aliases": [
+      "Palestinian couscous"
+    ],
+    "family": "soup",
+    "sub": "soup-dots",
+    "glyph": "dots",
+    "region": "world",
+    "country": "Palestine",
+    "make": "alt-grain",
+    "pron": "maf-TOOL",
+    "meaning": "rolled",
+    "look": "Small irregular hand-rolled pearls, tan from wholewheat flour and bulgur.",
+    "fact": "Hand-rolled by coating grains of bulgur with moistened wheat flour, then steamed over broth. The bulgur core gives it a chew that semolina couscous does not have.",
+    "pairings": [
+      "chicken and chickpea stew",
+      "tomato and onion broth"
+    ]
+  },
+  {
+    "id": "berkoukes",
+    "name": "Berkoukes",
+    "aliases": [
+      "berkoukech",
+      "mhamsa",
+      "aïch"
+    ],
+    "family": "soup",
+    "sub": "soup-dots",
+    "glyph": "dots",
+    "region": "world",
+    "country": "Algeria",
+    "make": "semola-fresh",
+    "pron": "ber-koo-KESS",
+    "meaning": null,
+    "look": "Hand-rolled semolina pearls a few millimetres across, larger than couscous.",
+    "fact": "North Africa's large-grain couscous. Unlike fine couscous, which is steamed, these pearls are usually simmered directly in a spiced tomato stew with vegetables and pulses.",
+    "pairings": [
+      "spiced vegetable stew",
+      "lamb and chickpea soup"
+    ]
+  },
+  {
+    "id": "tarhonya",
+    "name": "Tarhonya",
+    "aliases": [
+      "egg barley",
+      "tarhoňa"
+    ],
+    "family": "soup",
+    "sub": "soup-dots",
+    "glyph": "dots",
+    "region": "world",
+    "country": "Hungary",
+    "make": "egg",
+    "pron": "TAR-hohn-yah",
+    "meaning": null,
+    "look": "Hard dried egg-dough pellets the size of barley grains.",
+    "fact": "Stiff egg dough is rubbed or grated into pellets and dried, which kept for months on the Hungarian plain. It is browned in fat before simmering, rather like a pilaf.",
+    "pairings": [
+      "pörkölt",
+      "goulash",
+      "braised as a side"
+    ]
+  },
+  {
+    "id": "farfel",
+    "name": "Farfel",
+    "aliases": [
+      "farfl",
+      "egg barley"
+    ],
+    "family": "soup",
+    "sub": "soup-dots",
+    "glyph": "dots",
+    "region": "world",
+    "country": "Poland",
+    "make": "egg",
+    "pron": "FAR-fel",
+    "meaning": null,
+    "look": "Small pellets or flakes of egg noodle dough, often toasted brown.",
+    "fact": "The grated or chopped egg noodle of Ashkenazi Jewish cooking across Eastern Europe, usually toasted and served in chicken soup or baked as a side dish with onions and mushrooms.",
+    "pairings": [
+      "chicken soup",
+      "onions and mushrooms"
+    ]
+  },
+  {
+    "id": "trahana",
+    "name": "Trahanás",
+    "aliases": [
+      "trahana",
+      "tarhana",
+      "kishk"
+    ],
+    "family": "soup",
+    "sub": "soup-dots",
+    "glyph": "dots",
+    "region": "world",
+    "country": "Greece",
+    "make": "flour-water",
+    "pron": "trah-hah-NAHS",
+    "meaning": null,
+    "look": "Coarse dried pebbles and crumbs, cream to pale yellow.",
+    "fact": "Wheat is cooked or kneaded with milk or soured milk, then crumbled and sun-dried for winter. It sits on the border between pasta and porridge and dissolves into a thick, tangy soup.",
+    "pairings": [
+      "trahana soup",
+      "tomato and feta"
+    ]
+  },
+  {
+    "id": "scucuzzu",
+    "name": "Scucuzzu",
+    "aliases": [
+      "scucuzzun"
+    ],
+    "family": "soup",
+    "sub": "soup-dots",
+    "glyph": "dots",
+    "region": "liguria",
+    "country": null,
+    "make": "dried",
+    "pron": "skoo-KOOT-soo",
+    "meaning": null,
+    "look": "Tiny semolina balls resembling large couscous.",
+    "fact": "A Genoese soup pasta whose name and look echo couscous, a trace of the port's old trade with North Africa. It is the traditional pasta for minestrone alla genovese.",
+    "pairings": [
+      "minestrone alla genovese",
+      "brodo"
+    ]
+  },
+  {
+    "id": "malfattini",
+    "name": "Malfattini",
+    "aliases": [
+      "manfettini",
+      "monfettini"
+    ],
+    "family": "soup",
+    "sub": "soup-dots",
+    "glyph": "dots",
+    "region": "emilia-romagna",
+    "country": null,
+    "make": "egg",
+    "pron": "mahl-faht-TEE-nee",
+    "meaning": "little badly-made ones",
+    "look": "Rice-sized irregular crumbs of chopped egg pasta.",
+    "fact": "In Romagna a sheet or loaf of egg dough is left to dry a little and then chopped with a knife into rough crumbs, classically cooked in bean soup.",
+    "pairings": [
+      "bean soup",
+      "meat broth"
+    ]
+  },
+  {
+    "id": "frascarelli",
+    "name": "Frascarelli",
+    "aliases": [
+      "frascarej",
+      "frascatelli"
+    ],
+    "family": "soup",
+    "sub": "soup-dots",
+    "glyph": "dots",
+    "region": "marche",
+    "country": null,
+    "make": "flour-water",
+    "pron": "frah-skah-REL-lee",
+    "meaning": null,
+    "look": "Small irregular flour lumps of uneven size.",
+    "fact": "Water is sprinkled over flour, traditionally with a leafy twig (frasca), and the lumps that form are sieved out and boiled into something between pasta and polenta. Made across Marche, Umbria and Lazio.",
+    "pairings": [
+      "tomato and sausage sauce",
+      "lard and pecorino"
+    ]
+  },
+  {
+    "id": "zacierki",
+    "name": "Zacierki",
+    "aliases": [
+      "kluski zacierane"
+    ],
+    "family": "soup",
+    "sub": "soup-dots",
+    "glyph": "dots",
+    "region": "world",
+    "country": "Poland",
+    "make": "egg",
+    "pron": "zah-CHYER-kee",
+    "meaning": "rubbed ones",
+    "look": "Tiny irregular crumbs and short shreds of stiff dough.",
+    "fact": "A very stiff dough is rubbed between the hands or grated straight into the pot. In Poland it is a thrifty old soup noodle, served in broth or cooked in hot milk.",
+    "pairings": [
+      "milk soup",
+      "broth"
+    ]
+  },
+  {
+    "id": "kusksu",
+    "name": "Kusksu",
+    "aliases": [],
+    "family": "soup",
+    "sub": "soup-dots",
+    "glyph": "dots",
+    "region": "world",
+    "country": "Malta",
+    "make": "dried",
+    "pron": "KOOSK-soo",
+    "meaning": null,
+    "look": "Small round pasta beads, a little larger than couscous.",
+    "fact": "The bead pasta that gives its name to Malta's springtime soup, kusksu bil-ful, made with fresh broad beans and often finished with egg and soft sheep's cheese.",
+    "pairings": [
+      "kusksu bil-ful (broad bean soup)"
+    ]
+  },
+  {
+    "id": "stelline",
+    "name": "Stelline",
+    "aliases": [
+      "stellette",
+      "stelle",
+      "estrellitas"
+    ],
+    "family": "soup",
+    "sub": "soup-stars-rings",
+    "glyph": "star",
+    "region": "italy",
+    "country": null,
+    "make": "dried",
+    "pron": "stel-LEE-neh",
+    "meaning": "little stars",
+    "look": "Tiny five- or six-pointed stars, often with a pinhole centre.",
+    "fact": "For many Italians, this is the first pasta they ever eat in soup.",
+    "pairings": [
+      "brodo",
+      "butter and Parmigiano"
+    ]
+  },
+  {
+    "id": "anelli",
+    "name": "Anelli",
+    "aliases": [
+      "anelletti",
+      "anelletti siciliani"
+    ],
+    "family": "soup",
+    "sub": "soup-stars-rings",
+    "glyph": "ringlets",
+    "region": "sicily",
+    "country": null,
+    "make": "dried",
+    "pron": "ah-NEL-lee",
+    "meaning": "rings",
+    "look": "Small thin rings roughly a centimetre across.",
+    "fact": "The rings are the classic pasta of Sicilian timballo: baked with ragù, peas and cheese, often inside a shell of fried aubergine, until it can be sliced like a cake.",
+    "pairings": [
+      "timballo di anelletti",
+      "anelletti al forno"
+    ]
+  },
+  {
+    "id": "anellini",
+    "name": "Anellini",
+    "aliases": [
+      "anelline"
+    ],
+    "family": "soup",
+    "sub": "soup-stars-rings",
+    "glyph": "ringlets",
+    "region": "italy",
+    "country": null,
+    "make": "dried",
+    "pron": "ah-nel-LEE-nee",
+    "meaning": "little rings",
+    "look": "Very small thin rings a few millimetres across.",
+    "fact": "It is the smaller ring shape most often packed into brothy soups.",
+    "pairings": [
+      "brodo",
+      "minestrone"
+    ]
+  },
+  {
+    "id": "occhi-di-pernice",
+    "name": "Occhi di pernice",
+    "aliases": [],
+    "family": "soup",
+    "sub": "soup-stars-rings",
+    "glyph": "ringlets",
+    "region": "italy",
+    "country": null,
+    "make": "dried",
+    "pron": "OK-kee dee pehr-NEE-cheh",
+    "meaning": "partridge eyes",
+    "look": "Minute rings with a tiny central hole.",
+    "fact": "Named for their likeness to a bird's small round eye, they are among the tiniest ring pastas, made only for broth.",
+    "pairings": [
+      "brodo",
+      "light soups"
+    ]
+  },
+  {
+    "id": "ditalini",
+    "name": "Ditalini",
+    "aliases": [
+      "ditali piccoli",
+      "salad macaroni"
+    ],
+    "family": "soup",
+    "sub": "soup-tubes",
+    "glyph": "tiny-tubes",
+    "region": "italy",
+    "country": null,
+    "make": "dried",
+    "pron": "dee-tah-LEE-nee",
+    "meaning": "little thimbles",
+    "look": "Very short tubes about as long as they are wide.",
+    "fact": "Its name means little thimbles, which is exactly the silhouette. The tube is the right size to sit on a spoon beside a bean.",
+    "pairings": [
+      "pasta e fagioli",
+      "minestrone",
+      "pasta e ceci"
+    ]
+  },
+  {
+    "id": "tubetti",
+    "name": "Tubetti",
+    "aliases": [],
+    "family": "soup",
+    "sub": "soup-tubes",
+    "glyph": "tiny-tubes",
+    "region": "italy",
+    "country": null,
+    "make": "dried",
+    "pron": "too-BET-tee",
+    "meaning": "little tubes",
+    "look": "Short straight tubes, slightly longer and wider than ditalini.",
+    "fact": "A southern Italian soup staple, cooked directly in thick legume or seafood stews so its starch thickens the broth.",
+    "pairings": [
+      "pasta e ceci",
+      "pasta e patate",
+      "mussels and beans"
+    ]
+  },
+  {
+    "id": "tubettini",
+    "name": "Tubettini",
+    "aliases": [],
+    "family": "soup",
+    "sub": "soup-tubes",
+    "glyph": "tiny-tubes",
+    "region": "italy",
+    "country": null,
+    "make": "dried",
+    "pron": "too-bet-TEE-nee",
+    "meaning": "tiny little tubes",
+    "look": "The smallest of the short soup tubes, only a few millimetres long.",
+    "fact": "The miniature of tubetti, sized for clear broths and light soups rather than thick bean stews.",
+    "pairings": [
+      "brodo",
+      "minestrina"
+    ]
+  },
+  {
+    "id": "corallini",
+    "name": "Corallini",
+    "aliases": [
+      "coralli"
+    ],
+    "family": "soup",
+    "sub": "soup-tubes",
+    "glyph": "tiny-tubes",
+    "region": "italy",
+    "country": null,
+    "make": "dried",
+    "pron": "koh-rahl-LEE-nee",
+    "meaning": "little corals",
+    "look": "Tiny short tubes like small beads.",
+    "fact": "Named after the little coral beads strung into necklaces, which the short pierced tubes resemble.",
+    "pairings": [
+      "brodo",
+      "minestrone"
+    ]
+  },
+  {
+    "id": "stortini",
+    "name": "Stortini",
+    "aliases": [],
+    "family": "soup",
+    "sub": "soup-tubes",
+    "glyph": "tiny-tubes",
+    "region": "italy",
+    "country": null,
+    "make": "dried",
+    "pron": "stor-TEE-nee",
+    "meaning": "little crooked ones",
+    "look": "Tiny curved tubes, like miniature elbow macaroni.",
+    "fact": "Essentially elbow macaroni shrunk to soup size; the bend keeps the pieces from packing together in the bowl.",
+    "pairings": [
+      "minestrone",
+      "brodo"
+    ]
+  },
+  {
+    "id": "avemarie",
+    "name": "Avemarie",
+    "aliases": [
+      "ave maria"
+    ],
+    "family": "soup",
+    "sub": "soup-tubes",
+    "glyph": "tiny-tubes",
+    "region": "italy",
+    "country": null,
+    "make": "dried",
+    "pron": "ah-veh-mah-REE-eh",
+    "meaning": "Hail Marys",
+    "look": "Small short tubes, like beads of a rosary.",
+    "fact": "Named after the small beads of a rosary; the larger bead gave its name to the bigger paternoster tubes. Another story says cooks timed them by reciting the prayer.",
+    "pairings": [
+      "minestrone",
+      "bean soups"
+    ]
+  },
+  {
+    "id": "conchigliette",
+    "name": "Conchigliette",
+    "aliases": [
+      "small shells"
+    ],
+    "family": "soup",
+    "sub": "soup-shapes",
+    "glyph": "shell",
+    "region": "italy",
+    "country": null,
+    "make": "dried",
+    "pron": "kon-keel-YET-teh",
+    "meaning": "little shells",
+    "look": "Tiny ridged conch shells about a centimetre long.",
+    "fact": "The shell cup is perfect for catching broth and grated cheese.",
+    "pairings": [
+      "minestrone",
+      "brodo",
+      "pasta e piselli"
+    ]
+  },
+  {
+    "id": "lumachine",
+    "name": "Lumachine",
+    "aliases": [],
+    "family": "soup",
+    "sub": "soup-shapes",
+    "glyph": "shell",
+    "region": "italy",
+    "country": null,
+    "make": "dried",
+    "pron": "loo-mah-KEE-neh",
+    "meaning": "little snails",
+    "look": "Tiny curled snail-shell tubes, pinched at one end.",
+    "fact": "The soup-size version of lumache; the pinched shell scoops up small vegetables and beans.",
+    "pairings": [
+      "minestrone",
+      "bean soups"
+    ]
+  },
+  {
+    "id": "farfalline",
+    "name": "Farfalline",
+    "aliases": [],
+    "family": "soup",
+    "sub": "soup-shapes",
+    "glyph": "bowtie",
+    "region": "italy",
+    "country": null,
+    "make": "dried",
+    "pron": "far-fah-LEE-neh",
+    "meaning": "little butterflies",
+    "look": "Miniature bow ties under a centimetre across.",
+    "fact": "These miniature butterflies often show up in brothy soups.",
+    "pairings": [
+      "brodo",
+      "vegetable soup"
+    ]
+  },
+  {
+    "id": "quadrucci",
+    "name": "Quadrucci",
+    "aliases": [
+      "quadretti",
+      "quadrettini"
+    ],
+    "family": "soup",
+    "sub": "soup-shapes",
+    "glyph": "tiny-squares",
+    "region": "italy",
+    "country": null,
+    "make": "egg",
+    "pron": "kwah-DROOT-chee",
+    "meaning": "little squares",
+    "look": "Small flat squares of egg pasta, about a centimetre or less per side.",
+    "fact": "Traditionally cut from the trimmings of a sheet of egg pasta so nothing was wasted, then cooked in broth, classically with peas in Rome.",
+    "pairings": [
+      "brodo",
+      "quadrucci e piselli"
+    ]
+  },
+  {
+    "id": "alfabeto",
+    "name": "Alfabeto",
+    "aliases": [
+      "lettere",
+      "alphabet pasta",
+      "sopa de letras"
+    ],
+    "family": "soup",
+    "sub": "soup-shapes",
+    "glyph": "letters",
+    "region": "italy",
+    "country": null,
+    "make": "dried",
+    "pron": "al-fah-BEH-toh",
+    "meaning": "alphabet",
+    "look": "Tiny extruded letters and numerals.",
+    "fact": "Letter-shaped pasta has been made industrially since the 19th century and became a children's soup classic across Europe and the Americas.",
+    "pairings": [
+      "brodo",
+      "tomato soup"
+    ]
+  },
+  {
+    "id": "filini",
+    "name": "Filini",
+    "aliases": [
+      "capellini spezzati",
+      "capellini tagliati"
+    ],
+    "family": "soup",
+    "sub": "soup-shapes",
+    "glyph": "squiggle",
+    "region": "italy",
+    "country": null,
+    "make": "dried",
+    "pron": "fee-LEE-nee",
+    "meaning": "little threads",
+    "look": "Very fine threads cut into pieces a centimetre or two long.",
+    "fact": "Essentially angel hair cut short, so it can be eaten with a spoon; it cooks in two or three minutes.",
+    "pairings": [
+      "brodo",
+      "egg and broth soups"
+    ]
+  },
+  {
+    "id": "fideos",
+    "name": "Fideos",
+    "aliases": [
+      "fideo",
+      "fideus"
+    ],
+    "family": "soup",
+    "sub": "soup-shapes",
+    "glyph": "squiggle",
+    "region": "world",
+    "country": "Spain",
+    "make": "dried",
+    "pron": "fee-DEH-ohs",
+    "meaning": "noodles",
+    "look": "Short thin noodle lengths, straight or slightly curved.",
+    "fact": "In Spain these short noodles are toasted in oil and cooked in the pan like rice for fideuà, a dish from the Valencian coast. In Mexico they go into tomato-based sopa de fideo.",
+    "pairings": [
+      "fideuà",
+      "sopa de fideo",
+      "rossejat"
+    ]
+  },
+  {
+    "id": "hilopites",
+    "name": "Hilopítes",
+    "aliases": [
+      "chylopites",
+      "hilopittes"
+    ],
+    "family": "soup",
+    "sub": "soup-shapes",
+    "glyph": "tiny-squares",
+    "region": "world",
+    "country": "Greece",
+    "make": "egg",
+    "pron": "hee-loh-PEE-tes",
+    "meaning": null,
+    "look": "Small flat squares, or short ribbons, of egg-and-milk pasta.",
+    "fact": "Greek village pasta made at the end of summer with eggs and milk, cut small and dried in the sun to last through winter.",
+    "pairings": [
+      "braised chicken or rooster",
+      "tomato sauce",
+      "soups"
+    ]
+  },
+  {
+    "id": "sorpresine",
+    "name": "Sorpresine",
+    "aliases": [],
+    "family": "soup",
+    "sub": "soup-shapes",
+    "glyph": "hat",
+    "region": "italy",
+    "country": null,
+    "make": "dried",
+    "pron": "sor-preh-ZEE-neh",
+    "meaning": "little surprises",
+    "look": "Tiny squares folded and pinched into a hollow, hat-like shape.",
+    "fact": "They look like miniature stuffed pasta, and the \"surprise\" is commonly explained as there being nothing inside.",
+    "pairings": [
+      "brodo",
+      "minestrone"
+    ]
+  },
+  {
+    "id": "funghetti",
+    "name": "Funghetti",
+    "aliases": [
+      "funghini"
+    ],
+    "family": "soup",
+    "sub": "soup-shapes",
+    "glyph": "bell",
+    "region": "italy",
+    "country": null,
+    "make": "dried",
+    "pron": "foon-GHET-tee",
+    "meaning": "little mushrooms",
+    "look": "Tiny domed caps shaped like button mushrooms.",
+    "fact": "A decorative soup shape whose hollow cap holds a drop of broth.",
+    "pairings": [
+      "brodo",
+      "minestrone"
+    ]
+  },
+  {
+    "id": "pasta-mista",
+    "name": "Pasta mista",
+    "aliases": [
+      "pasta ammescata",
+      "munnezzaglia"
+    ],
+    "family": "soup",
+    "sub": "soup-shapes",
+    "glyph": "tiny-tubes",
+    "region": "campania",
+    "country": null,
+    "make": "dried",
+    "pron": "PAH-stah MEE-stah",
+    "meaning": "mixed pasta",
+    "look": "A jumble of broken and odd short shapes of different sizes.",
+    "fact": "It began in Naples as the broken ends and leftovers of many shapes, sold cheaply by weight. Producers now mix it on purpose; the uneven cooking helps make soups creamy.",
+    "pairings": [
+      "pasta e patate",
+      "pasta e fagioli"
+    ]
+  },
+  {
+    "id": "gnocchi",
+    "name": "Gnocchi di patate",
+    "aliases": [
+      "gnocchi",
+      "ñoquis",
+      "strangulaprievete"
+    ],
+    "family": "gnocchi",
+    "sub": "gnocchi-potato",
+    "glyph": "gnocco",
+    "region": "italy",
+    "country": null,
+    "make": "potato",
+    "pron": "NYOH-kee",
+    "meaning": "lumps",
+    "look": "Soft thumb-sized potato dumplings, often ridged on a fork or board.",
+    "fact": "Potato gnocchi only spread in the 18th–19th centuries; earlier gnocchi were flour or bread. Many Italians will happily argue all night about whether it counts as pasta.",
+    "pairings": [
+      "butter and sage",
+      "tomato and mozzarella (alla sorrentina)",
+      "ragù"
+    ]
+  },
+  {
+    "id": "chicche",
+    "name": "Chicche",
+    "aliases": [
+      "gnocchetti di patate",
+      "chicche della nonna"
+    ],
+    "family": "gnocchi",
+    "sub": "gnocchi-potato",
+    "glyph": "ball",
+    "region": "emilia-romagna",
+    "country": null,
+    "make": "potato",
+    "pron": "KEEK-keh",
+    "meaning": "sweets",
+    "look": "Very small smooth potato gnocchi, the size of a hazelnut.",
+    "fact": "Miniature unridged gnocchi; around Parma, \"chicche della nonna\" are served in a tomato and cream sauce. Spinach is often added to make green ones.",
+    "pairings": [
+      "tomato and cream",
+      "butter and Parmigiano"
+    ]
+  },
+  {
+    "id": "kopytka",
+    "name": "Kopytka",
+    "aliases": [],
+    "family": "gnocchi",
+    "sub": "gnocchi-potato",
+    "glyph": "gnocco",
+    "region": "world",
+    "country": "Poland",
+    "make": "potato",
+    "pron": "koh-PIT-kah",
+    "meaning": "little hooves",
+    "look": "Small diamond-shaped potato dumplings cut on the diagonal.",
+    "fact": "A rope of cooked-potato dough is sliced at an angle, giving the hoof shape of the name. Leftovers are commonly fried in butter the next day.",
+    "pairings": [
+      "fried onion and bacon",
+      "goulash",
+      "buttered breadcrumbs"
+    ]
+  },
+  {
+    "id": "kluski-slaskie",
+    "name": "Kluski śląskie",
+    "aliases": [
+      "Silesian dumplings",
+      "schlesische Kartoffelklöße"
+    ],
+    "family": "gnocchi",
+    "sub": "gnocchi-potato",
+    "glyph": "ball",
+    "region": "world",
+    "country": "Poland",
+    "make": "potato",
+    "pron": "KLOO-skee SHLON-skyeh",
+    "meaning": "Silesian dumplings",
+    "look": "Round, slightly flattened potato dumplings with a thumb dimple in the middle.",
+    "fact": "Made from mashed potato and potato starch with no wheat flour, which makes them springy. The dimple is there to hold gravy.",
+    "pairings": [
+      "beef roulade and gravy",
+      "red cabbage"
+    ]
+  },
+  {
+    "id": "schupfnudeln",
+    "name": "Schupfnudeln",
+    "aliases": [
+      "Fingernudeln",
+      "Bubespitzle",
+      "nudli",
+      "shlishkes"
+    ],
+    "family": "gnocchi",
+    "sub": "gnocchi-potato",
+    "glyph": "gnocco",
+    "region": "world",
+    "country": "Germany",
+    "make": "potato",
+    "pron": "SHOOPF-noo-deln",
+    "meaning": "rolled noodles",
+    "look": "Finger-length potato dumplings tapered to a point at both ends.",
+    "fact": "Rolled between the palms, boiled and then usually pan-fried until golden. In southern Germany they come with sauerkraut; sweet versions get poppy seeds or buttered crumbs.",
+    "pairings": [
+      "sauerkraut and bacon",
+      "butter and poppy seeds"
+    ]
+  },
+  {
+    "id": "kartoffelkloesse",
+    "name": "Kartoffelklöße",
+    "aliases": [
+      "Kartoffelknödel",
+      "Thüringer Klöße"
+    ],
+    "family": "gnocchi",
+    "sub": "gnocchi-potato",
+    "glyph": "ball",
+    "region": "world",
+    "country": "Germany",
+    "make": "potato",
+    "pron": "kar-TOF-fel-kluh-seh",
+    "meaning": "potato dumplings",
+    "look": "Large smooth potato balls about the size of a tennis ball.",
+    "fact": "Regional recipes differ in the ratio of raw grated to cooked potato; Thuringian ones are mostly raw potato and traditionally hide toasted bread cubes in the centre.",
+    "pairings": [
+      "roast pork and gravy",
+      "Sauerbraten",
+      "red cabbage"
+    ]
+  },
+  {
+    "id": "halusky",
+    "name": "Halušky",
+    "aliases": [
+      "galushki"
+    ],
+    "family": "gnocchi",
+    "sub": "gnocchi-pressed",
+    "glyph": "squiggle",
+    "region": "world",
+    "country": "Slovakia",
+    "make": "potato",
+    "pron": "HAH-loosh-kee",
+    "meaning": null,
+    "look": "Small soft irregular nubs of potato dough.",
+    "fact": "A batter of raw grated potato and flour is pushed through a perforated sieve into boiling water. Tossed with bryndza sheep cheese and bacon, it is Slovakia's national dish.",
+    "pairings": [
+      "bryndza and bacon",
+      "sauerkraut"
+    ]
+  },
+  {
+    "id": "gnocchi-alla-romana",
+    "name": "Gnocchi alla romana",
+    "aliases": [
+      "gnocchi di semolino"
+    ],
+    "family": "gnocchi",
+    "sub": "gnocchi-flour",
+    "glyph": "coin",
+    "region": "lazio",
+    "country": null,
+    "make": "bread-cheese",
+    "pron": "NYOH-kee AHL-lah roh-MAH-nah",
+    "meaning": "Roman-style gnocchi",
+    "look": "Flat discs about 5 cm across, overlapped and baked golden.",
+    "fact": "Semolina is cooked in milk like polenta, enriched with egg yolk and cheese, spread out to cool, then cut into discs and baked with butter. No potato and no boiling of the gnocchi.",
+    "pairings": [
+      "butter and Parmigiano, gratinéed"
+    ]
+  },
+  {
+    "id": "gnocchi-di-ricotta",
+    "name": "Gnocchi di ricotta",
+    "aliases": [],
+    "family": "gnocchi",
+    "sub": "gnocchi-flour",
+    "glyph": "gnocco",
+    "region": "italy",
+    "country": null,
+    "make": "bread-cheese",
+    "pron": "NYOH-kee dee ree-KOT-tah",
+    "meaning": "ricotta gnocchi",
+    "look": "Soft pale pillows, similar to potato gnocchi but lighter.",
+    "fact": "Ricotta replaces the potato, so there is nothing to boil and mash first; the dough comes together in minutes and needs only a little flour to hold.",
+    "pairings": [
+      "tomato and basil",
+      "butter and sage"
+    ]
+  },
+  {
+    "id": "gnudi",
+    "name": "Gnudi",
+    "aliases": [
+      "ravioli nudi",
+      "ignudi"
+    ],
+    "family": "gnocchi",
+    "sub": "gnocchi-flour",
+    "glyph": "ball",
+    "region": "tuscany",
+    "country": null,
+    "make": "bread-cheese",
+    "pron": "NYOO-dee",
+    "meaning": "naked",
+    "look": "Soft green-flecked balls of ricotta and spinach, lightly floured.",
+    "fact": "The name means naked because it is ravioli filling without the wrapper.",
+    "pairings": [
+      "butter and sage",
+      "tomato sauce"
+    ]
+  },
+  {
+    "id": "malfatti",
+    "name": "Malfatti",
+    "aliases": [
+      "gnocchi verdi"
+    ],
+    "family": "gnocchi",
+    "sub": "gnocchi-flour",
+    "glyph": "ball",
+    "region": "lombardy",
+    "country": null,
+    "make": "bread-cheese",
+    "pron": "mahl-FAHT-tee",
+    "meaning": "badly made",
+    "look": "Rough, irregular ricotta-and-greens dumplings.",
+    "fact": "The name owns up to the look: a soft mix of spinach or chard, ricotta and cheese is shaped by hand or spoon into lumps too delicate to make neat.",
+    "pairings": [
+      "butter and sage",
+      "tomato sauce"
+    ]
+  },
+  {
+    "id": "strangolapreti",
+    "name": "Strangolapreti",
+    "aliases": [
+      "strangolapreti trentini"
+    ],
+    "family": "gnocchi",
+    "sub": "gnocchi-flour",
+    "glyph": "gnocco",
+    "region": "trentino-alto-adige",
+    "country": null,
+    "make": "bread-cheese",
+    "pron": "strahn-goh-lah-PREH-tee",
+    "meaning": "priest stranglers",
+    "look": "Small green oval dumplings of bread and spinach.",
+    "fact": "In Trentino the \"priest stranglers\" are gnocchi of stale bread, spinach or chard, egg and milk. Legend says they were a favourite of the clergy at the Council of Trent.",
+    "pairings": [
+      "melted butter, sage and Trentingrana"
+    ]
+  },
+  {
+    "id": "canederli",
+    "name": "Canederli",
+    "aliases": [
+      "Knödel",
+      "Semmelknödel",
+      "Speckknödel"
+    ],
+    "family": "gnocchi",
+    "sub": "gnocchi-flour",
+    "glyph": "ball",
+    "region": "trentino-alto-adige",
+    "country": null,
+    "make": "bread-cheese",
+    "pron": "kah-NEH-der-lee",
+    "meaning": "dumplings",
+    "look": "Bread dumplings the size of a small orange, flecked with speck and herbs.",
+    "fact": "Stale bread bound with milk and egg, the thrift cooking of the Alps. A fresco of about 1200 in the chapel of Castel d'Appiano, South Tyrol, shows a woman eating them from a pot.",
+    "pairings": [
+      "beef broth",
+      "melted butter",
+      "goulash"
+    ]
+  },
+  {
+    "id": "ndunderi",
+    "name": "Ndunderi",
+    "aliases": [
+      "'ndunderi",
+      "dunderi"
+    ],
+    "family": "gnocchi",
+    "sub": "gnocchi-flour",
+    "glyph": "gnocco",
+    "region": "campania",
+    "country": null,
+    "make": "bread-cheese",
+    "pron": "n-DOON-deh-ree",
+    "meaning": null,
+    "look": "Plump ridged ricotta dumplings, larger than potato gnocchi.",
+    "fact": "The ricotta gnocchi of Minori on the Amalfi Coast, made for the feast of the town's patron, Santa Trofimena. Locals trace them back to a Roman-era cheese-and-flour dumpling.",
+    "pairings": [
+      "tomato sauce and smoked provola",
+      "ragù"
+    ]
+  },
+  {
+    "id": "rabaton",
+    "name": "Rabatòn",
+    "aliases": [
+      "rabaton alessandrini"
+    ],
+    "family": "gnocchi",
+    "sub": "gnocchi-flour",
+    "glyph": "gnocco",
+    "region": "piedmont",
+    "country": null,
+    "make": "bread-cheese",
+    "pron": "rah-bah-TOHN",
+    "meaning": "rolled ones",
+    "look": "Short stubby cylinders of ricotta and greens.",
+    "fact": "From the plain around Alessandria: ricotta, chard or wild herbs, egg and cheese are rolled in flour (rabatà means to roll), poached in broth, then baked with butter and cheese.",
+    "pairings": [
+      "butter, sage and Parmigiano, gratinéed"
+    ]
+  },
+  {
+    "id": "gnocchi-di-zucca",
+    "name": "Gnocchi di zucca",
+    "aliases": [],
+    "family": "gnocchi",
+    "sub": "gnocchi-flour",
+    "glyph": "gnocco",
+    "region": "italy",
+    "country": null,
+    "make": "bread-cheese",
+    "pron": "NYOH-kee dee DZOOK-kah",
+    "meaning": "pumpkin gnocchi",
+    "look": "Soft orange dumplings, often spooned into irregular shapes.",
+    "fact": "An autumn dish of northern Italy, from Mantua to Friuli. Roasted pumpkin is bound with flour and egg; in Friuli they are finished with smoked ricotta.",
+    "pairings": [
+      "butter and sage",
+      "smoked ricotta"
+    ]
+  },
+  {
+    "id": "gnocchi-di-castagne",
+    "name": "Gnocchi di castagne",
+    "aliases": [
+      "gnocchi di farina di castagne"
+    ],
+    "family": "gnocchi",
+    "sub": "gnocchi-flour",
+    "glyph": "gnocco",
+    "region": "italy",
+    "country": null,
+    "make": "alt-grain",
+    "pron": "NYOH-kee dee kah-STAHN-yeh",
+    "meaning": "chestnut gnocchi",
+    "look": "Brown-tinged gnocchi with a slightly sweet, nutty dough.",
+    "fact": "In the mountains of northern and central Italy chestnut flour long stood in for scarce wheat, and it still goes into gnocchi, usually blended with potato or wheat flour.",
+    "pairings": [
+      "pesto",
+      "butter and sage",
+      "walnut sauce"
+    ]
+  },
+  {
+    "id": "gnocchi-ossolani",
+    "name": "Gnocchi all'ossolana",
+    "aliases": [
+      "gnocchi ossolani"
+    ],
+    "family": "gnocchi",
+    "sub": "gnocchi-flour",
+    "glyph": "gnocco",
+    "region": "piedmont",
+    "country": null,
+    "make": "alt-grain",
+    "pron": "NYOH-kee ahl-lohs-soh-LAH-nah",
+    "meaning": "Ossola-style gnocchi",
+    "look": "Small amber-brown gnocchi.",
+    "fact": "From the Ossola valley near the Swiss border, the dough blends chestnut flour with pumpkin and potato, three mountain staples in one dumpling.",
+    "pairings": [
+      "butter and sage",
+      "mountain cheese cream"
+    ]
+  },
+  {
+    "id": "gnocchi-di-malga",
+    "name": "Gnocchi di malga",
+    "aliases": [
+      "gnocchi sbatùi"
+    ],
+    "family": "gnocchi",
+    "sub": "gnocchi-flour",
+    "glyph": "gnocco",
+    "region": "veneto",
+    "country": null,
+    "make": "flour-water",
+    "pron": "NYOH-kee dee MAHL-gah",
+    "meaning": "alpine-dairy gnocchi",
+    "look": "Small rough spoon-dropped dumplings of plain flour dough.",
+    "fact": "The herdsmen's gnocchi of Lessinia above Verona: no potato, just flour beaten with water or milk and dropped into the pot, then dressed with what the dairy hut had.",
+    "pairings": [
+      "melted butter and smoked ricotta"
+    ]
+  },
+  {
+    "id": "gnocchi-ricci",
+    "name": "Gnocchi ricci",
+    "aliases": [
+      "gnocchi ricci di Amatrice"
+    ],
+    "family": "gnocchi",
+    "sub": "gnocchi-flour",
+    "glyph": "cavatello",
+    "region": "lazio",
+    "country": null,
+    "make": "egg",
+    "pron": "NYOH-kee REET-chee",
+    "meaning": "curly gnocchi",
+    "look": "Small curled, wrinkled pieces of egg dough.",
+    "fact": "A speciality of Amatrice made without potato: pieces of dough are dragged with the fingertips so they curl up, catching a meat sauce in the folds.",
+    "pairings": [
+      "lamb or mixed-meat ragù and pecorino"
+    ]
+  },
+  {
+    "id": "pizzoccheri-di-chiavenna",
+    "name": "Pizzoccheri di Chiavenna",
+    "aliases": [
+      "pizzoccheri bianchi",
+      "gnocchetti di Chiavenna"
+    ],
+    "family": "gnocchi",
+    "sub": "gnocchi-flour",
+    "glyph": "gnocco",
+    "region": "lombardy",
+    "country": null,
+    "make": "bread-cheese",
+    "pron": "peet-SOK-keh-ree dee kyah-VEN-nah",
+    "meaning": null,
+    "look": "Small pale irregular spoon-dropped dumplings.",
+    "fact": "Despite sharing a name with Valtellina's buckwheat ribbons, these are white gnocchetti of wheat flour and bread soaked in milk, dropped from a spoon into the pot.",
+    "pairings": [
+      "melted butter, sage and local cheese"
+    ]
+  },
+  {
+    "id": "donderet",
+    "name": "Donderet",
+    "aliases": [
+      "dunderet"
+    ],
+    "family": "gnocchi",
+    "sub": "gnocchi-flour",
+    "glyph": "gnocco",
+    "region": "piedmont",
+    "country": null,
+    "make": "potato",
+    "pron": "dohn-deh-RET",
+    "meaning": null,
+    "look": "Soft elongated irregular dumplings dropped from a spoon.",
+    "fact": "From the Occitan valleys of the Cuneo area: a loose batter of potato, flour, egg and milk is slid off a spoon or board into boiling water rather than rolled.",
+    "pairings": [
+      "butter and cream",
+      "mountain cheese"
+    ]
+  },
+  {
+    "id": "gnocchi-parisienne",
+    "name": "Gnocchi à la parisienne",
+    "aliases": [
+      "Parisian gnocchi"
+    ],
+    "family": "gnocchi",
+    "sub": "gnocchi-flour",
+    "glyph": "gnocco",
+    "region": "world",
+    "country": "France",
+    "make": "egg",
+    "pron": "NYOH-kee ah lah pah-ree-ZYEN",
+    "meaning": "Parisian-style gnocchi",
+    "look": "Short smooth cylinders that puff up when baked.",
+    "fact": "French gnocchi are choux pastry: the paste is piped over simmering water and snipped into short lengths, then usually gratinéed under béchamel or cheese.",
+    "pairings": [
+      "béchamel and Gruyère, gratinéed",
+      "brown butter"
+    ]
+  },
+  {
+    "id": "kluski-leniwe",
+    "name": "Kluski leniwe",
+    "aliases": [
+      "leniwe pierogi",
+      "leniwe"
+    ],
+    "family": "gnocchi",
+    "sub": "gnocchi-flour",
+    "glyph": "gnocco",
+    "region": "world",
+    "country": "Poland",
+    "make": "bread-cheese",
+    "pron": "KLOO-skee leh-NEE-veh",
+    "meaning": "lazy dumplings",
+    "look": "Soft white diamonds of curd-cheese dough.",
+    "fact": "\"Lazy\" because they taste like cheese pierogi without the rolling, filling and sealing: twaróg curd cheese is kneaded straight into the dough and cut on the diagonal.",
+    "pairings": [
+      "buttered breadcrumbs",
+      "sugar and cinnamon",
+      "sour cream"
+    ]
+  },
+  {
+    "id": "kluski-kladzione",
+    "name": "Kluski kładzione",
+    "aliases": [],
+    "family": "gnocchi",
+    "sub": "gnocchi-flour",
+    "glyph": "gnocco",
+    "region": "world",
+    "country": "Poland",
+    "make": "egg",
+    "pron": "KLOO-skee kwah-DJOH-neh",
+    "meaning": "laid dumplings",
+    "look": "Soft oblong irregular dumplings the size of a teaspoon.",
+    "fact": "A thick batter of flour and egg is \"laid\" into boiling water a spoonful at a time; dipping the spoon in the hot water first stops the batter sticking.",
+    "pairings": [
+      "gravy and stews",
+      "fried onion"
+    ]
+  },
+  {
+    "id": "houskove-knedliky",
+    "name": "Houskové knedlíky",
+    "aliases": [
+      "knedlíky",
+      "Czech bread dumplings"
+    ],
+    "family": "gnocchi",
+    "sub": "gnocchi-flour",
+    "glyph": "coin",
+    "region": "world",
+    "country": "Czech Republic",
+    "make": "bread-cheese",
+    "pron": "HOHS-koh-veh KNED-lee-kee",
+    "meaning": "bread-roll dumplings",
+    "look": "Thick round slices cut from a pale, bread-like loaf.",
+    "fact": "The dough, studded with cubes of stale roll, is shaped into a log, boiled or steamed whole and sliced, traditionally with a thread. The slices exist to mop up sauce.",
+    "pairings": [
+      "svíčková",
+      "goulash",
+      "roast pork and cabbage"
+    ]
+  },
+  {
+    "id": "turogomboc",
+    "name": "Túrógombóc",
+    "aliases": [],
+    "family": "gnocchi",
+    "sub": "gnocchi-flour",
+    "glyph": "ball",
+    "region": "world",
+    "country": "Hungary",
+    "make": "bread-cheese",
+    "pron": "TOO-roh-gohm-bohts",
+    "meaning": "curd-cheese dumplings",
+    "look": "Soft white balls coated in golden toasted breadcrumbs.",
+    "fact": "Balls of túró curd cheese, semolina and egg are poached and rolled in butter-toasted breadcrumbs, then eaten with sour cream and sugar as a sweet main course.",
+    "pairings": [
+      "toasted breadcrumbs, sour cream and sugar"
+    ]
+  },
+  {
+    "id": "pisarei",
+    "name": "Pisarei",
+    "aliases": [
+      "pisarei e fasö"
+    ],
+    "family": "gnocchi",
+    "sub": "gnocchi-pressed",
+    "glyph": "cavatello",
+    "region": "emilia-romagna",
+    "country": null,
+    "make": "bread-cheese",
+    "pron": "pee-zah-RAY",
+    "meaning": null,
+    "look": "Tiny curled dumplings the size of a bean, hollowed by the thumb.",
+    "fact": "From Piacenza: breadcrumbs scalded with hot water and kneaded with flour, each piece pressed with the thumb. Folklore says a callused thumb marked a good pisarei maker.",
+    "pairings": [
+      "borlotti beans and tomato (pisarei e fasö)"
+    ]
+  },
+  {
+    "id": "passatelli",
+    "name": "Passatelli",
+    "aliases": [
+      "passatini"
+    ],
+    "family": "gnocchi",
+    "sub": "gnocchi-pressed",
+    "glyph": "squiggle",
+    "region": "emilia-romagna",
+    "country": null,
+    "make": "bread-cheese",
+    "pron": "pahs-sah-TEL-lee",
+    "meaning": "passed through",
+    "look": "Short rough cylinders about 4 mm thick, like stubby worms.",
+    "fact": "A dough of breadcrumbs, Parmigiano, egg, nutmeg and lemon zest is pressed through a perforated iron disc. Typical of Romagna and northern Marche, usually served in broth.",
+    "pairings": [
+      "capon or beef broth",
+      "seafood sauce (asciutti)"
+    ]
+  },
+  {
+    "id": "spaetzle",
+    "name": "Spätzle",
+    "aliases": [
+      "Spatzen",
+      "Spätzli"
+    ],
+    "family": "gnocchi",
+    "sub": "gnocchi-pressed",
+    "glyph": "squiggle",
+    "region": "world",
+    "country": "Germany",
+    "make": "egg",
+    "pron": "SHPETS-leh",
+    "meaning": "little sparrows",
+    "look": "Short irregular squiggles of soft egg dough.",
+    "fact": "Swabian cooks scrape a wet egg dough off a board into boiling water in thin strips; presses and graters came later. Swabian Spätzle have EU protected status.",
+    "pairings": [
+      "Käsespätzle with fried onions",
+      "gravy and roasts",
+      "lentils and sausages"
+    ]
+  },
+  {
+    "id": "knoepfle",
+    "name": "Knöpfle",
+    "aliases": [
+      "Knöpfli"
+    ],
+    "family": "gnocchi",
+    "sub": "gnocchi-pressed",
+    "glyph": "dots",
+    "region": "world",
+    "country": "Germany",
+    "make": "egg",
+    "pron": "KNUPF-leh",
+    "meaning": "little buttons",
+    "look": "Short round droplets of egg dough, like small buttons.",
+    "fact": "The same dough as Spätzle, but pushed through a slotted grater so it falls in short round drops rather than long strips. Typical of the Allgäu, Baden and Switzerland.",
+    "pairings": [
+      "cheese and fried onions",
+      "gravy"
+    ]
+  },
+  {
+    "id": "nokedli",
+    "name": "Nokedli",
+    "aliases": [
+      "galuska",
+      "Nockerl",
+      "Nockerln"
+    ],
+    "family": "gnocchi",
+    "sub": "gnocchi-pressed",
+    "glyph": "squiggle",
+    "region": "world",
+    "country": "Hungary",
+    "make": "egg",
+    "pron": "NOH-ked-lee",
+    "meaning": null,
+    "look": "Small soft irregular egg dumplings.",
+    "fact": "Hungary's everyday dumpling: a loose egg batter is pushed through a nokedli grater, or cut from a board, into boiling water, then tossed in a little fat.",
+    "pairings": [
+      "chicken paprikash",
+      "pörkölt",
+      "scrambled egg"
+    ]
+  },
+  {
+    "id": "csipetke",
+    "name": "Csipetke",
+    "aliases": [],
+    "family": "gnocchi",
+    "sub": "gnocchi-pressed",
+    "glyph": "dots",
+    "region": "world",
+    "country": "Hungary",
+    "make": "egg",
+    "pron": "CHEE-pet-keh",
+    "meaning": "pinched",
+    "look": "Fingernail-sized irregular pinches of firm egg dough.",
+    "fact": "The name comes from csípni, to pinch: bits of stiff noodle dough are nipped off between the fingers and dropped straight into simmering goulash or bean soup.",
+    "pairings": [
+      "goulash soup",
+      "bean soup"
+    ]
+  },
+  {
+    "id": "gnocchetti-tirolesi",
+    "name": "Gnocchetti tirolesi",
+    "aliases": [
+      "Spinatspätzle",
+      "spätzle verdi",
+      "Spinatspatzln"
+    ],
+    "family": "gnocchi",
+    "sub": "gnocchi-pressed",
+    "glyph": "squiggle",
+    "region": "trentino-alto-adige",
+    "country": null,
+    "make": "egg",
+    "pron": "nyohk-KET-tee tee-roh-LEH-zee",
+    "meaning": "little Tyrolean gnocchi",
+    "look": "Small green teardrop-shaped drops of spinach batter.",
+    "fact": "South Tyrol's take on Spätzle: spinach is puréed into the egg batter, which is pushed through a grater into boiling water.",
+    "pairings": [
+      "cream and speck",
+      "butter and cheese"
+    ]
+  },
+  {
+    "id": "chnefflene",
+    "name": "Chnéffléne",
+    "aliases": [],
+    "family": "gnocchi",
+    "sub": "gnocchi-pressed",
+    "glyph": "dots",
+    "region": "aosta-valley",
+    "country": null,
+    "make": "egg",
+    "pron": "k-NEF-fleh-neh",
+    "meaning": null,
+    "look": "Small round droplets of soft flour-and-egg batter.",
+    "fact": "A dish of the German-speaking Walser villages of the Gressoney valley, close kin to Swabian Knöpfle: batter is dropped through a perforated tool into boiling water.",
+    "pairings": [
+      "fontina fondue",
+      "butter, onion and speck"
+    ]
+  },
+  {
+    "id": "pizokel",
+    "name": "Pizokel",
+    "aliases": [
+      "Pizokels",
+      "Bizochels"
+    ],
+    "family": "gnocchi",
+    "sub": "gnocchi-pressed",
+    "glyph": "squiggle",
+    "region": "world",
+    "country": "Switzerland",
+    "make": "alt-grain",
+    "pron": "PEE-tsoh-kel",
+    "meaning": null,
+    "look": "Short thick rough strips of soft dough.",
+    "fact": "From Graubünden in the Swiss Alps: a batter usually containing buckwheat flour is scraped off a board into boiling water, then layered with cabbage or greens and cheese.",
+    "pairings": [
+      "savoy cabbage and mountain cheese",
+      "butter and fried onions"
+    ]
+  },
+  {
+    "id": "lane-kluski",
+    "name": "Lane kluski",
+    "aliases": [
+      "lane ciasto",
+      "kluski lane"
+    ],
+    "family": "gnocchi",
+    "sub": "gnocchi-pressed",
+    "glyph": "squiggle",
+    "region": "world",
+    "country": "Poland",
+    "make": "egg",
+    "pron": "LAH-neh KLOO-skee",
+    "meaning": "poured noodles",
+    "look": "Thin soft irregular threads and drops of set batter.",
+    "fact": "A runny batter of egg and flour is poured in a thin stream into simmering soup, where it sets instantly into tender strands.",
+    "pairings": [
+      "chicken broth (rosół)",
+      "tomato soup",
+      "milk soup"
+    ]
+  },
+  {
+    "id": "mian-geda",
+    "name": "Miàn gēda",
+    "aliases": [
+      "geda",
+      "gēda tāng"
+    ],
+    "family": "gnocchi",
+    "sub": "gnocchi-pressed",
+    "glyph": "dots",
+    "region": "world",
+    "country": "China",
+    "make": "flour-water",
+    "pron": "myen GUH-dah",
+    "meaning": "dough lumps",
+    "look": "Small irregular flour nubs, pea-sized or smaller.",
+    "fact": "A northern Chinese home dish: water is dribbled into flour while stirring until small lumps form, and these are boiled directly in a tomato and egg soup.",
+    "pairings": [
+      "tomato and egg soup (gēda tāng)"
+    ]
+  }
+]

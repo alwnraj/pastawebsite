@@ -1,0 +1,1763 @@
+[
+  {
+    "id": "capellini",
+    "name": "Capellini",
+    "aliases": [],
+    "family": "strands",
+    "sub": "strands-fine",
+    "glyph": "strand",
+    "region": "italy",
+    "country": null,
+    "make": "dried",
+    "pron": "kah-pehl-LEE-nee",
+    "meaning": "little hairs",
+    "look": "Very thin round strands, under a millimetre across.",
+    "fact": "Its name means little hairs, which is exactly how delicate it is; it suits light sauces and broths that will not weigh it down.",
+    "pairings": [
+      "light tomato sauce",
+      "broth",
+      "olive oil and herbs"
+    ]
+  },
+  {
+    "id": "capellini-dangelo",
+    "name": "Capellini d'angelo",
+    "aliases": [
+      "capelli d'angelo",
+      "angel hair"
+    ],
+    "family": "strands",
+    "sub": "strands-fine",
+    "glyph": "strand-nest",
+    "region": "italy",
+    "country": null,
+    "make": "dried",
+    "pron": "kah-pehl-LEE-nee dahn-JEH-loh",
+    "meaning": "angel's little hairs",
+    "look": "The finest of the dried strands, usually sold coiled into small nests.",
+    "fact": "Even thinner than capellini, angel hair can overcook in well under two minutes, which is why it is often simply dropped into hot broth.",
+    "pairings": [
+      "broth",
+      "butter and Parmigiano",
+      "light seafood sauce"
+    ]
+  },
+  {
+    "id": "fedelini",
+    "name": "Fedelini",
+    "aliases": [
+      "fidelini"
+    ],
+    "family": "strands",
+    "sub": "strands-fine",
+    "glyph": "strand",
+    "region": "liguria",
+    "country": null,
+    "make": "dried",
+    "pron": "feh-deh-LEE-nee",
+    "meaning": null,
+    "look": "Thin round strands, between capellini and spaghettini in thickness.",
+    "fact": "A very old Ligurian shape: Genoa's pasta makers were organised as a guild of \"fidelari\" with written statutes in 1574.",
+    "pairings": [
+      "broth",
+      "pesto",
+      "light tomato sauce"
+    ]
+  },
+  {
+    "id": "spaghettini",
+    "name": "Spaghettini",
+    "aliases": [],
+    "family": "strands",
+    "sub": "strands-fine",
+    "glyph": "strand",
+    "region": "italy",
+    "country": null,
+    "make": "dried",
+    "pron": "spah-ghet-TEE-nee",
+    "meaning": "thin little strings",
+    "look": "Round strands a little thinner than standard spaghetti.",
+    "fact": "It cooks a couple of minutes faster than spaghetti, so a distracted minute can ruin it; cooks favour it for oil-based and seafood sauces.",
+    "pairings": [
+      "aglio e olio",
+      "alle vongole",
+      "puttanesca"
+    ]
+  },
+  {
+    "id": "maccheroncini-di-campofilone",
+    "name": "Maccheroncini di Campofilone",
+    "aliases": [],
+    "family": "strands",
+    "sub": "strands-fine",
+    "glyph": "strand-nest",
+    "region": "marche",
+    "country": null,
+    "make": "egg",
+    "pron": "mahk-keh-ron-CHEE-nee dee kahm-poh-fee-LOH-neh",
+    "meaning": "little macaroni of Campofilone",
+    "look": "Hair-thin golden egg strands, cut very fine and dried in flat skeins.",
+    "fact": "A protected (IGP) pasta from one village in the Marche, made with only eggs and flour, no water. It is cut so fine that it cooks in a minute or two.",
+    "pairings": [
+      "ragù marchigiano",
+      "butter and truffle"
+    ]
+  },
+  {
+    "id": "somen",
+    "name": "Sōmen",
+    "aliases": [
+      "somyeon"
+    ],
+    "family": "strands",
+    "sub": "strands-fine",
+    "glyph": "strand",
+    "region": "world",
+    "country": "Japan",
+    "make": "wheat-noodle",
+    "pron": "SOH-men",
+    "meaning": null,
+    "look": "Very thin, white wheat strands, under 1.3 mm across.",
+    "fact": "The dough is stretched, not cut, with a film of oil to keep it from drying. In summer it is served cold, sometimes sent down a bamboo flume of running water (nagashi-sōmen).",
+    "pairings": [
+      "cold with tsuyu dipping sauce",
+      "nyūmen (hot broth)"
+    ]
+  },
+  {
+    "id": "misua",
+    "name": "Misua",
+    "aliases": [
+      "mee sua",
+      "miàn xiàn"
+    ],
+    "family": "strands",
+    "sub": "strands-fine",
+    "glyph": "strand",
+    "region": "world",
+    "country": "China",
+    "make": "wheat-noodle",
+    "pron": "mee-SWAH",
+    "meaning": "thread noodles",
+    "look": "Hair-thin, salted wheat strands that turn very soft when cooked.",
+    "fact": "From Fujian, the dough is pulled by hand into threads and hung to dry. It is a birthday and festival food because the long strands stand for long life.",
+    "pairings": [
+      "oyster vermicelli soup",
+      "pork and egg soup",
+      "sesame oil chicken"
+    ]
+  },
+  {
+    "id": "rice-vermicelli",
+    "name": "Rice vermicelli",
+    "aliases": [
+      "mǐfěn",
+      "bún",
+      "bee hoon",
+      "mai fun",
+      "pancit bihon"
+    ],
+    "family": "strands",
+    "sub": "strands-fine",
+    "glyph": "strand",
+    "region": "world",
+    "country": "China",
+    "make": "rice-starch",
+    "pron": "rice vehr-mih-CHEL-ee",
+    "meaning": null,
+    "look": "Thin, white, round rice strands, usually sold dried in brittle bundles.",
+    "fact": "Made by extruding rice paste into hot water, it needs only a brief soak. It is the base noodle of much of southern China and Southeast Asia.",
+    "pairings": [
+      "Singapore noodles",
+      "bún chả",
+      "pancit bihon"
+    ]
+  },
+  {
+    "id": "cellophane-noodles",
+    "name": "Cellophane noodles",
+    "aliases": [
+      "glass noodles",
+      "fěnsī",
+      "bean threads",
+      "harusame",
+      "woon sen"
+    ],
+    "family": "strands",
+    "sub": "strands-fine",
+    "glyph": "strand",
+    "region": "world",
+    "country": "China",
+    "make": "rice-starch",
+    "pron": "SEL-oh-fayn NOO-dulz",
+    "meaning": null,
+    "look": "Wiry, thin starch strands that turn clear and slippery when cooked.",
+    "fact": "Made from mung bean starch rather than grain flour, which is why they turn transparent. Longkou in Shandong has been the famous production centre for centuries.",
+    "pairings": [
+      "ants climbing a tree",
+      "hot pot",
+      "yum woon sen"
+    ]
+  },
+  {
+    "id": "naengmyeon",
+    "name": "Naengmyeon",
+    "aliases": [
+      "raengmyŏn"
+    ],
+    "family": "strands",
+    "sub": "strands-fine",
+    "glyph": "strand",
+    "region": "world",
+    "country": "South Korea",
+    "make": "alt-grain",
+    "pron": "NENG-myun",
+    "meaning": "cold noodles",
+    "look": "Thin, very chewy grey-brown strands made from buckwheat and starch.",
+    "fact": "A northern Korean speciality, associated with Pyongyang and Hamhung, that spread south after the Korean War. The strands are so elastic that they are often cut with scissors at the table.",
+    "pairings": [
+      "mul naengmyeon (icy broth)",
+      "bibim naengmyeon (spicy)"
+    ]
+  },
+  {
+    "id": "idiyappam",
+    "name": "Idiyappam",
+    "aliases": [
+      "string hoppers",
+      "nool puttu"
+    ],
+    "family": "strands",
+    "sub": "strands-fine",
+    "glyph": "strand-nest",
+    "region": "world",
+    "country": "India",
+    "make": "rice-starch",
+    "pron": "ih-dee-YAH-pum",
+    "meaning": null,
+    "look": "Lacy little nests of very fine steamed rice strands.",
+    "fact": "Rice-flour dough is squeezed through a perforated press into tangled discs and steamed, not boiled. It is a breakfast staple in Kerala, Tamil Nadu and Sri Lanka.",
+    "pairings": [
+      "coconut milk",
+      "vegetable kurma",
+      "egg curry"
+    ]
+  },
+  {
+    "id": "seviyan",
+    "name": "Seviyan",
+    "aliases": [
+      "semiya",
+      "shemai"
+    ],
+    "family": "strands",
+    "sub": "strands-fine",
+    "glyph": "strand",
+    "region": "world",
+    "country": "India",
+    "make": "wheat-noodle",
+    "pron": "SEV-ee-yahn",
+    "meaning": null,
+    "look": "Very fine wheat vermicelli, usually broken short and often sold pre-roasted.",
+    "fact": "Usually toasted in ghee before cooking, which keeps the strands separate. Simmered in sweet milk with dates and nuts it becomes sheer khurma, a classic Eid dish.",
+    "pairings": [
+      "seviyan kheer",
+      "sheer khurma",
+      "semiya upma"
+    ]
+  },
+  {
+    "id": "khanom-chin",
+    "name": "Khanom chin",
+    "aliases": [
+      "khanom jeen"
+    ],
+    "family": "strands",
+    "sub": "strands-fine",
+    "glyph": "strand-nest",
+    "region": "world",
+    "country": "Thailand",
+    "make": "rice-starch",
+    "pron": "kah-NOM JEEN",
+    "meaning": null,
+    "look": "Thin, soft, white rice strands served fresh, folded into small skeins.",
+    "fact": "The rice is traditionally fermented for a few days before being made into dough and pressed through a sieve into boiling water. The name is thought to come from the Mon language.",
+    "pairings": [
+      "nam ya (fish curry)",
+      "green curry",
+      "nam ngiao"
+    ]
+  },
+  {
+    "id": "wonton-noodles",
+    "name": "Wonton noodles",
+    "aliases": [],
+    "family": "strands",
+    "sub": "strands-fine",
+    "glyph": "strand",
+    "region": "world",
+    "country": "China",
+    "make": "wheat-noodle",
+    "pron": "WON-ton NOO-dulz",
+    "meaning": null,
+    "look": "Thin, yellow, springy egg noodles.",
+    "fact": "A Cantonese alkaline egg noodle. The dough was traditionally kneaded by a cook bouncing on a long bamboo pole, a craft that is now rare.",
+    "pairings": [
+      "wonton noodle soup",
+      "dry-tossed with oyster sauce",
+      "beef brisket"
+    ]
+  },
+  {
+    "id": "spaghetti",
+    "name": "Spaghetti",
+    "aliases": [],
+    "family": "strands",
+    "sub": "strands-classic",
+    "glyph": "strand",
+    "region": "italy",
+    "country": null,
+    "make": "dried",
+    "pron": "spah-GHET-tee",
+    "meaning": "little strings",
+    "look": "Long, round, solid strands about 2 mm across.",
+    "fact": "Its name means little strings, from spago, twine. The word only became common in the 1800s; earlier the shape was simply called vermicelli or maccheroni.",
+    "pairings": [
+      "pomodoro",
+      "aglio e olio",
+      "carbonara"
+    ]
+  },
+  {
+    "id": "vermicelli",
+    "name": "Vermicelli",
+    "aliases": [],
+    "family": "strands",
+    "sub": "strands-classic",
+    "glyph": "strand",
+    "region": "campania",
+    "country": null,
+    "make": "dried",
+    "pron": "vehr-mee-CHEL-lee",
+    "meaning": "little worms",
+    "look": "Long round strands, a touch thicker than spaghetti in Italy.",
+    "fact": "In Italy it is slightly thicker than spaghetti, the opposite of export labels, where the name marks a thinner strand. It is the old Neapolitan name for the shape.",
+    "pairings": [
+      "alle vongole",
+      "puttanesca",
+      "pomodoro"
+    ]
+  },
+  {
+    "id": "spaghetti-alla-chitarra",
+    "name": "Spaghetti alla chitarra",
+    "aliases": [
+      "maccheroni alla chitarra"
+    ],
+    "family": "strands",
+    "sub": "strands-classic",
+    "glyph": "strand",
+    "region": "abruzzo",
+    "country": null,
+    "make": "egg",
+    "pron": "spah-GET-tee ah-la kee-TAR-rah",
+    "meaning": "guitar spaghetti",
+    "look": "Fresh egg strands with a square cross-section and a porous surface.",
+    "fact": "A sheet of dough is pressed with a rolling pin through a wooden frame strung with steel wires, the chitarra. Each strand comes out square, not round, and rough enough to hold sauce.",
+    "pairings": [
+      "lamb ragù",
+      "tiny meatballs (pallottine)",
+      "tomato sauce"
+    ]
+  },
+  {
+    "id": "tonnarelli",
+    "name": "Tonnarelli",
+    "aliases": [],
+    "family": "strands",
+    "sub": "strands-classic",
+    "glyph": "strand",
+    "region": "lazio",
+    "country": null,
+    "make": "egg",
+    "pron": "ton-nah-REL-lee",
+    "meaning": null,
+    "look": "Fresh egg strands with a square section, slightly thicker than spaghetti.",
+    "fact": "The Roman name for chitarra-style square spaghetti. Its rough, starchy surface helps pecorino and pepper emulsify, so many Roman trattorie prefer it for cacio e pepe.",
+    "pairings": [
+      "cacio e pepe",
+      "gricia",
+      "carbonara"
+    ]
+  },
+  {
+    "id": "soba",
+    "name": "Soba",
+    "aliases": [],
+    "family": "strands",
+    "sub": "strands-classic",
+    "glyph": "strand",
+    "region": "world",
+    "country": "Japan",
+    "make": "alt-grain",
+    "pron": "SOH-bah",
+    "meaning": "buckwheat",
+    "look": "Thin, grey-brown buckwheat noodles with a squared-off section.",
+    "fact": "Buckwheat has no gluten, so most soba includes some wheat flour to hold together. Toshikoshi soba is eaten on New Year's Eve; the easily cut strands stand for letting go of the old year.",
+    "pairings": [
+      "zaru soba (cold, dipping sauce)",
+      "kake soba (hot broth)",
+      "tempura"
+    ]
+  },
+  {
+    "id": "hiyamugi",
+    "name": "Hiyamugi",
+    "aliases": [],
+    "family": "strands",
+    "sub": "strands-classic",
+    "glyph": "strand",
+    "region": "world",
+    "country": "Japan",
+    "make": "wheat-noodle",
+    "pron": "hee-yah-MOO-ghee",
+    "meaning": "chilled wheat",
+    "look": "Thin white wheat strands, between sōmen and udon in thickness.",
+    "fact": "Japanese standards separate dried wheat noodles by width: under 1.3 mm is sōmen, 1.3 to 1.7 mm is hiyamugi, thicker is udon. Bundles sometimes include a few pink or green strands.",
+    "pairings": [
+      "cold with tsuyu dipping sauce"
+    ]
+  },
+  {
+    "id": "ramen",
+    "name": "Ramen",
+    "aliases": [
+      "chūka soba"
+    ],
+    "family": "strands",
+    "sub": "strands-classic",
+    "glyph": "strand",
+    "region": "world",
+    "country": "Japan",
+    "make": "wheat-noodle",
+    "pron": "RAH-men",
+    "meaning": "pulled noodles",
+    "look": "Yellowish, springy wheat strands, straight or wavy.",
+    "fact": "The dough is made with kansui, an alkaline mineral water that gives the yellow tint and firm, bouncy chew. Both the noodle and its name came to Japan from China.",
+    "pairings": [
+      "shoyu broth",
+      "tonkotsu broth",
+      "miso broth"
+    ]
+  },
+  {
+    "id": "lo-mein",
+    "name": "Lo mein noodles",
+    "aliases": [
+      "chow mein noodles",
+      "Cantonese egg noodles"
+    ],
+    "family": "strands",
+    "sub": "strands-classic",
+    "glyph": "strand",
+    "region": "world",
+    "country": "China",
+    "make": "wheat-noodle",
+    "pron": "loh MAYN",
+    "meaning": "tossed noodles",
+    "look": "Round, yellow wheat-and-egg noodles about as thick as spaghetti.",
+    "fact": "The same noodle serves two dishes: lo mein is boiled and tossed with sauce, while chow mein (\"fried noodles\") is stir-fried or crisped in the wok.",
+    "pairings": [
+      "lo mein",
+      "chow mein",
+      "soy sauce pan-fried noodles"
+    ]
+  },
+  {
+    "id": "yi-mein",
+    "name": "Yi mein",
+    "aliases": [
+      "e-fu noodles",
+      "yi fu mein",
+      "longevity noodles"
+    ],
+    "family": "strands",
+    "sub": "strands-classic",
+    "glyph": "strand-nest",
+    "region": "world",
+    "country": "China",
+    "make": "wheat-noodle",
+    "pron": "yee MAYN",
+    "meaning": null,
+    "look": "Golden, spongy egg noodles sold as large dried cakes.",
+    "fact": "The noodles are deep-fried before drying, which gives them a spongy, chewy bite. Served uncut at birthdays and banquets, where the long strands stand for long life.",
+    "pairings": [
+      "braised with mushrooms",
+      "lobster yi mein"
+    ]
+  },
+  {
+    "id": "pancit-canton",
+    "name": "Pancit canton",
+    "aliases": [],
+    "family": "strands",
+    "sub": "strands-classic",
+    "glyph": "strand",
+    "region": "world",
+    "country": "Philippines",
+    "make": "wheat-noodle",
+    "pron": "pahn-SIT kahn-TOHN",
+    "meaning": "Cantonese noodles",
+    "look": "Round, yellow wheat-and-egg noodles, usually sold dried in tangled blocks.",
+    "fact": "Brought by Chinese traders and now thoroughly Filipino. Pancit is a fixture at birthday tables, where long noodles stand for long life.",
+    "pairings": [
+      "pancit canton guisado",
+      "calamansi and soy sauce"
+    ]
+  },
+  {
+    "id": "dangmyeon",
+    "name": "Dangmyeon",
+    "aliases": [
+      "Korean glass noodles"
+    ],
+    "family": "strands",
+    "sub": "strands-classic",
+    "glyph": "strand",
+    "region": "world",
+    "country": "South Korea",
+    "make": "rice-starch",
+    "pron": "dahng-MYUN",
+    "meaning": "Tang (Chinese) noodles",
+    "look": "Long, greyish, translucent strands, thicker and chewier than other glass noodles.",
+    "fact": "Made from sweet potato starch, the noodles turn glassy and springy when boiled. They are the base of japchae, stir-fried with vegetables and sesame oil.",
+    "pairings": [
+      "japchae",
+      "stews and hot pots",
+      "stuffed in dumplings"
+    ]
+  },
+  {
+    "id": "mixian",
+    "name": "Mixian",
+    "aliases": [
+      "mǐxiàn"
+    ],
+    "family": "strands",
+    "sub": "strands-classic",
+    "glyph": "strand",
+    "region": "world",
+    "country": "China",
+    "make": "rice-starch",
+    "pron": "mee-SHYEN",
+    "meaning": "rice threads",
+    "look": "Round, smooth, white rice noodles about as thick as spaghetti.",
+    "fact": "The everyday noodle of Yunnan. In \"crossing-the-bridge\" noodles it is slipped at the table into a bowl of broth kept scalding under a layer of fat.",
+    "pairings": [
+      "crossing-the-bridge noodles",
+      "small-pot mixian",
+      "cold with chili and vinegar"
+    ]
+  },
+  {
+    "id": "spaghettoni",
+    "name": "Spaghettoni",
+    "aliases": [],
+    "family": "strands",
+    "sub": "strands-thick",
+    "glyph": "strand-thick",
+    "region": "italy",
+    "country": null,
+    "make": "dried",
+    "pron": "spah-ghet-TOH-nee",
+    "meaning": "big strings",
+    "look": "Round strands noticeably thicker than spaghetti.",
+    "fact": "It is thicker than spaghetti, so it takes longer to cook and keeps more bite, standing up to robust, oily and peppery sauces.",
+    "pairings": [
+      "cacio e pepe",
+      "aglio e olio",
+      "carbonara"
+    ]
+  },
+  {
+    "id": "bigoli",
+    "name": "Bigoli",
+    "aliases": [],
+    "family": "strands",
+    "sub": "strands-thick",
+    "glyph": "strand-thick",
+    "region": "veneto",
+    "country": null,
+    "make": "egg",
+    "pron": "BEE-goh-lee",
+    "meaning": null,
+    "look": "Thick, long strands with a rough, porous surface.",
+    "fact": "A thick, solid strand from the Veneto, pressed through a hand-cranked press called a bigolaro, often with whole-wheat flour or duck eggs. Bigoli in salsa was the classic dish for meatless days.",
+    "pairings": [
+      "in salsa (onion and anchovy)",
+      "duck ragù"
+    ]
+  },
+  {
+    "id": "troccoli",
+    "name": "Troccoli",
+    "aliases": [],
+    "family": "strands",
+    "sub": "strands-thick",
+    "glyph": "strand-thick",
+    "region": "puglia",
+    "country": null,
+    "make": "semola-fresh",
+    "pron": "TROK-koh-lee",
+    "meaning": null,
+    "look": "Thick fresh strands with a squarish to oval section.",
+    "fact": "Typical of Foggia and nearby Basilicata. The strands are cut by rolling a grooved pin, the troccolaturo, over a thick sheet of dough.",
+    "pairings": [
+      "lamb ragù",
+      "tomato and cacioricotta",
+      "seafood"
+    ]
+  },
+  {
+    "id": "strangozzi",
+    "name": "Strangozzi",
+    "aliases": [
+      "stringozzi",
+      "strengozzi"
+    ],
+    "family": "strands",
+    "sub": "strands-thick",
+    "glyph": "strand-thick",
+    "region": "umbria",
+    "country": null,
+    "make": "flour-water",
+    "pron": "strahn-GOT-tsee",
+    "meaning": "shoelaces",
+    "look": "Thick, eggless strands with a rectangular section, hand-cut from a sheet.",
+    "fact": "The name recalls leather shoelaces. Legend says rebels in the Papal States used such laces to strangle priests, hence the link with strozzapreti.",
+    "pairings": [
+      "black truffle",
+      "alla spoletina (spicy tomato)"
+    ]
+  },
+  {
+    "id": "udon",
+    "name": "Udon",
+    "aliases": [],
+    "family": "strands",
+    "sub": "strands-thick",
+    "glyph": "strand-thick",
+    "region": "world",
+    "country": "Japan",
+    "make": "wheat-noodle",
+    "pron": "OO-don",
+    "meaning": null,
+    "look": "Thick, white, soft and chewy wheat noodles.",
+    "fact": "Made from just flour, salt and water. The stiff dough was traditionally kneaded underfoot; Sanuki udon from Kagawa is the most famous regional style.",
+    "pairings": [
+      "kake udon (dashi broth)",
+      "kitsune udon",
+      "yaki udon"
+    ]
+  },
+  {
+    "id": "hokkien-noodles",
+    "name": "Hokkien noodles",
+    "aliases": [
+      "Hokkien mee",
+      "yellow noodles"
+    ],
+    "family": "strands",
+    "sub": "strands-thick",
+    "glyph": "strand-thick",
+    "region": "world",
+    "country": "Malaysia",
+    "make": "wheat-noodle",
+    "pron": "HOK-yen NOO-dulz",
+    "meaning": null,
+    "look": "Thick, round, yellow wheat noodles, sold fresh and lightly oiled.",
+    "fact": "Introduced by migrants from Fujian (Hokkien) province in China. Alkaline water gives the yellow colour and a chew that stands up to fierce wok heat.",
+    "pairings": [
+      "Hokkien mee",
+      "mee goreng",
+      "curry laksa"
+    ]
+  },
+  {
+    "id": "banh-canh",
+    "name": "Bánh canh",
+    "aliases": [],
+    "family": "strands",
+    "sub": "strands-thick",
+    "glyph": "strand-thick",
+    "region": "world",
+    "country": "Vietnam",
+    "make": "rice-starch",
+    "pron": "bahn GAHN",
+    "meaning": "soup cake",
+    "look": "Thick, short-ish, slippery white noodles, similar in size to udon.",
+    "fact": "Made from tapioca flour, rice flour or a blend, which makes the noodles chewy and slightly translucent. Their starch helps thicken the broth.",
+    "pairings": [
+      "bánh canh cua (crab)",
+      "bánh canh giò heo (pork knuckle)"
+    ]
+  },
+  {
+    "id": "bucatini",
+    "name": "Bucatini",
+    "aliases": [
+      "foratini"
+    ],
+    "family": "strands",
+    "sub": "strands-hollow",
+    "glyph": "strand-hollow",
+    "region": "lazio",
+    "country": null,
+    "make": "dried",
+    "pron": "boo-kah-TEE-nee",
+    "meaning": "little pierced ones",
+    "look": "Thick spaghetti-like strands with a narrow hole down the centre.",
+    "fact": "The name comes from buco, hole. The channel lets water in so the thick strand cooks evenly, and it draws sauce inside as well as outside.",
+    "pairings": [
+      "amatriciana",
+      "gricia",
+      "cacio e pepe"
+    ]
+  },
+  {
+    "id": "perciatelli",
+    "name": "Perciatelli",
+    "aliases": [],
+    "family": "strands",
+    "sub": "strands-hollow",
+    "glyph": "strand-hollow",
+    "region": "campania",
+    "country": null,
+    "make": "dried",
+    "pron": "pehr-chah-TEL-lee",
+    "meaning": "little pierced ones",
+    "look": "Long hollow strands, typically a little thicker than bucatini.",
+    "fact": "The Neapolitan name for bucatini-style pasta, from perciare, to pierce. In southern Italy it is often treated as the rustic cousin of bucatini.",
+    "pairings": [
+      "ragù napoletano",
+      "pasta con le sarde"
+    ]
+  },
+  {
+    "id": "ziti-lunghi",
+    "name": "Ziti lunghi",
+    "aliases": [
+      "zite"
+    ],
+    "family": "strands",
+    "sub": "strands-hollow",
+    "glyph": "strand-hollow",
+    "region": "campania",
+    "country": null,
+    "make": "dried",
+    "pron": "ZEE-tee LOON-ghee",
+    "meaning": "long betrothed ones",
+    "look": "Long, smooth, hollow tubes about 25 cm long and wider than bucatini.",
+    "fact": "Zita means bride in southern dialects, and this was the pasta of wedding feasts. Traditionally it is snapped into pieces by hand before cooking.",
+    "pairings": [
+      "ragù napoletano",
+      "alla genovese",
+      "baked al forno"
+    ]
+  },
+  {
+    "id": "candele",
+    "name": "Candele",
+    "aliases": [
+      "candele lunghe"
+    ],
+    "family": "strands",
+    "sub": "strands-hollow",
+    "glyph": "strand-hollow",
+    "region": "campania",
+    "country": null,
+    "make": "dried",
+    "pron": "kahn-DEH-leh",
+    "meaning": "candles",
+    "look": "Very long, smooth, wide tubes, thicker than ziti.",
+    "fact": "Named for the long candles carried in religious processions. Like ziti, it is broken by hand into uneven lengths that catch thick Neapolitan sauces.",
+    "pairings": [
+      "alla genovese",
+      "ragù napoletano"
+    ]
+  },
+  {
+    "id": "fusilli-lunghi",
+    "name": "Fusilli lunghi",
+    "aliases": [
+      "fusilli napoletani"
+    ],
+    "family": "twists",
+    "sub": "twists-corkscrew",
+    "glyph": "helix",
+    "region": "campania",
+    "country": null,
+    "make": "dried",
+    "pron": "foo-ZEEL-lee LOON-ghee",
+    "meaning": "long little spindles",
+    "look": "Spaghetti-length solid strand wound into a springy coil, like an old telephone cord.",
+    "fact": "The shape descends from handmade fusilli, made by winding a strand of dough around a thin iron rod and sliding it off.",
+    "pairings": [
+      "ragù napoletano",
+      "tomato and ricotta"
+    ]
+  },
+  {
+    "id": "pici",
+    "name": "Pici",
+    "aliases": [
+      "pinci"
+    ],
+    "family": "strands",
+    "sub": "strands-handrolled",
+    "glyph": "strand-rope",
+    "region": "tuscany",
+    "country": null,
+    "make": "flour-water",
+    "pron": "PEE-chee",
+    "meaning": null,
+    "look": "Fat, uneven, hand-rolled strands like very thick spaghetti.",
+    "fact": "From the Siena area, each strand is rolled by hand from flour and water into an uneven rope. No two are identical, and that irregularity is considered the point.",
+    "pairings": [
+      "all'aglione (garlic tomato)",
+      "cacio e pepe",
+      "toasted breadcrumbs (briciole)"
+    ]
+  },
+  {
+    "id": "umbricelli",
+    "name": "Umbricelli",
+    "aliases": [
+      "umbrichelli",
+      "lombrichelli",
+      "ciriole"
+    ],
+    "family": "strands",
+    "sub": "strands-handrolled",
+    "glyph": "strand-rope",
+    "region": "umbria",
+    "country": null,
+    "make": "flour-water",
+    "pron": "oom-bree-CHEL-lee",
+    "meaning": "little earthworms",
+    "look": "Thick, irregular hand-rolled strands of flour and water.",
+    "fact": "Umbria's answer to Tuscan pici. The name comes from the dialect word for earthworm, a frank description of the hand-rolled shape.",
+    "pairings": [
+      "black truffle",
+      "spicy tomato sauce",
+      "goose ragù"
+    ]
+  },
+  {
+    "id": "maccheroni-alla-mugnaia",
+    "name": "Maccheroni alla mugnaia",
+    "aliases": [
+      "maccheroni alla molinara"
+    ],
+    "family": "strands",
+    "sub": "strands-handrolled",
+    "glyph": "strand-rope",
+    "region": "abruzzo",
+    "country": null,
+    "make": "flour-water",
+    "pron": "mahk-keh-ROH-nee ah-la moon-YAH-yah",
+    "meaning": "miller's wife's macaroni",
+    "look": "One very long, thick, uneven rope of pasta gathered into a skein.",
+    "fact": "A speciality of Elice in the province of Pescara. A ring of dough is worked by hand, stretched and doubled over and over, until it becomes a single continuous strand.",
+    "pairings": [
+      "mixed-meat ragù",
+      "garlic, oil and chili"
+    ]
+  },
+  {
+    "id": "lamian",
+    "name": "Lamian",
+    "aliases": [
+      "hand-pulled noodles",
+      "lā miàn"
+    ],
+    "family": "strands",
+    "sub": "strands-handrolled",
+    "glyph": "strand",
+    "region": "world",
+    "country": "China",
+    "make": "wheat-noodle",
+    "pron": "lah-MYEN",
+    "meaning": "pulled noodles",
+    "look": "Long, smooth wheat strands, pulled to any thickness from hair-thin to chopstick-thick.",
+    "fact": "The cook stretches and folds a rope of dough, doubling the number of strands with each pull. Lanzhou beef noodle soup is its best-known home.",
+    "pairings": [
+      "Lanzhou beef noodle soup",
+      "stir-fried with lamb"
+    ]
+  },
+  {
+    "id": "laghman",
+    "name": "Laghman",
+    "aliases": [
+      "lagman",
+      "läghmän"
+    ],
+    "family": "strands",
+    "sub": "strands-handrolled",
+    "glyph": "strand-rope",
+    "region": "world",
+    "country": "Uzbekistan",
+    "make": "wheat-noodle",
+    "pron": "lahg-MAHN",
+    "meaning": null,
+    "look": "Thick, chewy, hand-pulled wheat noodles.",
+    "fact": "A dish of the Uyghurs that spread across Central Asia; its name derives from Chinese lamian. The oiled dough is pulled into long strands by hand, then topped with a meat and vegetable stew.",
+    "pairings": [
+      "lamb, pepper and tomato stew",
+      "stir-fried (boso laghman)"
+    ]
+  },
+  {
+    "id": "linguine",
+    "name": "Linguine",
+    "aliases": [
+      "lingue di passero"
+    ],
+    "family": "ribbons",
+    "sub": "ribbons-narrow",
+    "glyph": "ribbon",
+    "region": "liguria",
+    "country": null,
+    "make": "dried",
+    "pron": "leen-GWEE-neh",
+    "meaning": "little tongues",
+    "look": "Long strands flattened into a narrow oval, about 3 mm wide.",
+    "fact": "Its name means little tongues. The flattened, lens-shaped section sits between round spaghetti and a true flat ribbon.",
+    "pairings": [
+      "pesto",
+      "alle vongole",
+      "allo scoglio"
+    ]
+  },
+  {
+    "id": "linguettine",
+    "name": "Linguettine",
+    "aliases": [
+      "linguine piccole",
+      "bavettine"
+    ],
+    "family": "ribbons",
+    "sub": "ribbons-narrow",
+    "glyph": "ribbon",
+    "region": "italy",
+    "country": null,
+    "make": "dried",
+    "pron": "leen-gwet-TEE-neh",
+    "meaning": "tiny little tongues",
+    "look": "A slimmer, more delicate version of linguine.",
+    "fact": "This slimmer linguine variant cooks quickly and is prized for lighter seafood sauces.",
+    "pairings": [
+      "clams",
+      "light seafood sauces",
+      "pesto"
+    ]
+  },
+  {
+    "id": "bavette",
+    "name": "Bavette",
+    "aliases": [],
+    "family": "ribbons",
+    "sub": "ribbons-narrow",
+    "glyph": "ribbon",
+    "region": "liguria",
+    "country": null,
+    "make": "dried",
+    "pron": "bah-VET-teh",
+    "meaning": null,
+    "look": "Narrow flattened strands with a slightly convex section, a little wider than linguine.",
+    "fact": "One of the old shapes of Genoa. Some pasta makers treat bavette and linguine as the same thing; others make bavette slightly wider and flatter.",
+    "pairings": [
+      "pesto",
+      "seafood sauces"
+    ]
+  },
+  {
+    "id": "trenette",
+    "name": "Trenette",
+    "aliases": [],
+    "family": "ribbons",
+    "sub": "ribbons-narrow",
+    "glyph": "ribbon",
+    "region": "liguria",
+    "country": null,
+    "make": "dried",
+    "pron": "treh-NET-teh",
+    "meaning": "little strings",
+    "look": "Narrow, fairly thick ribbons, similar to linguine.",
+    "fact": "In Liguria the classic pesto plate is trenette with potatoes and green beans boiled in the same pot and mixed in, not served as sides.",
+    "pairings": [
+      "pesto with potatoes and green beans"
+    ]
+  },
+  {
+    "id": "tagliolini",
+    "name": "Tagliolini",
+    "aliases": [
+      "taglierini"
+    ],
+    "family": "ribbons",
+    "sub": "ribbons-narrow",
+    "glyph": "ribbon-nest",
+    "region": "italy",
+    "country": null,
+    "make": "egg",
+    "pron": "tah-lyoh-LEE-nee",
+    "meaning": "little cuts",
+    "look": "Very narrow, thin egg ribbons, 2 to 3 mm wide.",
+    "fact": "Essentially a much finer cousin of tagliatelle, cut from the same egg sheet. It cooks in a minute or two and is often served in broth.",
+    "pairings": [
+      "butter and truffle",
+      "in brodo",
+      "seafood"
+    ]
+  },
+  {
+    "id": "tajarin",
+    "name": "Tajarin",
+    "aliases": [],
+    "family": "ribbons",
+    "sub": "ribbons-narrow",
+    "glyph": "ribbon-nest",
+    "region": "piedmont",
+    "country": null,
+    "make": "egg",
+    "pron": "tah-yah-REEN",
+    "meaning": "little cuts",
+    "look": "Very thin, narrow ribbons of deep yellow egg dough.",
+    "fact": "The Piedmontese tagliolini, made with an unusually yolk-rich dough; traditional recipes from the Langhe call for 30 or more yolks per kilo of flour.",
+    "pairings": [
+      "butter and white truffle",
+      "roast-meat sauce (sugo d'arrosto)"
+    ]
+  },
+  {
+    "id": "paglia-e-fieno",
+    "name": "Paglia e fieno",
+    "aliases": [],
+    "family": "ribbons",
+    "sub": "ribbons-narrow",
+    "glyph": "ribbon-nest",
+    "region": "italy",
+    "country": null,
+    "make": "egg",
+    "pron": "PAH-lyah eh FYEH-noh",
+    "meaning": "straw and hay",
+    "look": "A mix of yellow egg ribbons and green spinach ribbons, sold in nests.",
+    "fact": "The plain egg strands are the straw and the spinach-tinted ones the hay. The two are cooked and served together.",
+    "pairings": [
+      "cream, peas and prosciutto",
+      "mushrooms",
+      "ragù"
+    ]
+  },
+  {
+    "id": "fieno-di-canepina",
+    "name": "Fieno di Canepina",
+    "aliases": [
+      "maccaroni di Canepina"
+    ],
+    "family": "ribbons",
+    "sub": "ribbons-narrow",
+    "glyph": "ribbon-nest",
+    "region": "lazio",
+    "country": null,
+    "make": "egg",
+    "pron": "FYEH-noh dee kah-neh-PEE-nah",
+    "meaning": "hay of Canepina",
+    "look": "Extremely thin, narrow egg ribbons, as fine as angel hair.",
+    "fact": "A traditional product of Canepina, near Viterbo. The ribbons are cut so fine by hand that they are compared to hay.",
+    "pairings": [
+      "meat ragù with pecorino"
+    ]
+  },
+  {
+    "id": "pillus",
+    "name": "Pillus",
+    "aliases": [],
+    "family": "ribbons",
+    "sub": "ribbons-narrow",
+    "glyph": "ribbon",
+    "region": "sardinia",
+    "country": null,
+    "make": "egg",
+    "pron": "PEEL-loos",
+    "meaning": null,
+    "look": "Thin, narrow, fresh egg ribbons.",
+    "fact": "A Sardinian fresh pasta. In Busachi it is cooked in mutton broth with saffron and fresh sheep's cheese for the festive dish su succu.",
+    "pairings": [
+      "su succu (broth, saffron, cheese)",
+      "meat ragù"
+    ]
+  },
+  {
+    "id": "banh-pho",
+    "name": "Bánh phở",
+    "aliases": [
+      "rice sticks",
+      "phở noodles"
+    ],
+    "family": "ribbons",
+    "sub": "ribbons-narrow",
+    "glyph": "ribbon",
+    "region": "world",
+    "country": "Vietnam",
+    "make": "rice-starch",
+    "pron": "bahn FUH",
+    "meaning": null,
+    "look": "Flat, white, soft rice ribbons, a few millimetres wide.",
+    "fact": "A thin rice batter is steamed into sheets and then sliced into ribbons. Sold fresh in Vietnam, and dried abroad as rice sticks.",
+    "pairings": [
+      "phở bò (beef)",
+      "phở gà (chicken)",
+      "phở xào (stir-fried)"
+    ]
+  },
+  {
+    "id": "sen-lek",
+    "name": "Sen lek",
+    "aliases": [
+      "Chanthaburi noodles",
+      "pad thai noodles"
+    ],
+    "family": "ribbons",
+    "sub": "ribbons-narrow",
+    "glyph": "ribbon",
+    "region": "world",
+    "country": "Thailand",
+    "make": "rice-starch",
+    "pron": "sen LEK",
+    "meaning": "small strand",
+    "look": "Narrow, flat rice noodles about 3 mm wide.",
+    "fact": "Thai rice noodles are named by width: sen mi is hair-thin, sen lek narrow and sen yai wide. Sen lek is the one used for pad thai.",
+    "pairings": [
+      "pad thai",
+      "boat noodles",
+      "tom yum noodle soup"
+    ]
+  },
+  {
+    "id": "reshteh",
+    "name": "Reshteh",
+    "aliases": [
+      "reshte"
+    ],
+    "family": "ribbons",
+    "sub": "ribbons-narrow",
+    "glyph": "ribbon",
+    "region": "world",
+    "country": "Iran",
+    "make": "wheat-noodle",
+    "pron": "resh-TEH",
+    "meaning": "thread",
+    "look": "Thin, flat, narrow wheat noodles, pale or toasted brown.",
+    "fact": "Eaten around Nowruz, the Persian New Year, when the noodles are said to stand for the threads of life and taking hold of one's path for the year ahead.",
+    "pairings": [
+      "ash reshteh (herb and bean soup)",
+      "reshteh polo (with rice)"
+    ]
+  },
+  {
+    "id": "kal-guksu",
+    "name": "Kal-guksu",
+    "aliases": [
+      "kalguksu"
+    ],
+    "family": "ribbons",
+    "sub": "ribbons-narrow",
+    "glyph": "ribbon",
+    "region": "world",
+    "country": "South Korea",
+    "make": "wheat-noodle",
+    "pron": "KAHL-gook-soo",
+    "meaning": "knife noodles",
+    "look": "Soft, flat, hand-cut wheat noodles.",
+    "fact": "The dough is rolled thin, folded and sliced with a knife, not extruded or pulled. The noodles are boiled straight in the broth, which their starch thickens.",
+    "pairings": [
+      "anchovy and kelp broth",
+      "clam broth",
+      "chicken broth"
+    ]
+  },
+  {
+    "id": "tagliatelle",
+    "name": "Tagliatelle",
+    "aliases": [],
+    "family": "ribbons",
+    "sub": "ribbons-medium",
+    "glyph": "ribbon-nest",
+    "region": "emilia-romagna",
+    "country": null,
+    "make": "egg",
+    "pron": "tah-lyah-TEL-leh",
+    "meaning": "little cut ones",
+    "look": "Long, thin egg ribbons about 7 to 8 mm wide.",
+    "fact": "Bologna's Chamber of Commerce keeps a solid gold tagliatella, deposited in 1972, that fixes the ideal width at 8 mm once cooked.",
+    "pairings": [
+      "ragù alla bolognese",
+      "prosciutto and butter"
+    ]
+  },
+  {
+    "id": "fettuccine",
+    "name": "Fettuccine",
+    "aliases": [],
+    "family": "ribbons",
+    "sub": "ribbons-medium",
+    "glyph": "ribbon-nest",
+    "region": "lazio",
+    "country": null,
+    "make": "egg",
+    "pron": "fet-too-CHEE-neh",
+    "meaning": "little ribbons",
+    "look": "Long egg ribbons, about as wide as tagliatelle and usually a touch thicker.",
+    "fact": "The Roman counterpart of tagliatelle. Fettuccine Alfredo began in Rome in the early 1900s, when restaurateur Alfredo Di Lelio tossed them with just butter and Parmigiano.",
+    "pairings": [
+      "burro e parmigiano (Alfredo)",
+      "ragù",
+      "alla papalina"
+    ]
+  },
+  {
+    "id": "fettuccelle",
+    "name": "Fettuccelle",
+    "aliases": [],
+    "family": "ribbons",
+    "sub": "ribbons-medium",
+    "glyph": "ribbon",
+    "region": "italy",
+    "country": null,
+    "make": "dried",
+    "pron": "fet-too-CHEL-leh",
+    "meaning": "small ribbons",
+    "look": "Flat dried semolina ribbons, a little narrower than fettuccine.",
+    "fact": "A dried, eggless take on fettuccine made by southern pasta factories. It is firmer than the fresh egg ribbon and suits seafood and tomato sauces.",
+    "pairings": [
+      "seafood",
+      "tomato sauce",
+      "mushrooms"
+    ]
+  },
+  {
+    "id": "bandnudeln",
+    "name": "Bandnudeln",
+    "aliases": [],
+    "family": "ribbons",
+    "sub": "ribbons-medium",
+    "glyph": "ribbon",
+    "region": "world",
+    "country": "Germany",
+    "make": "wheat-noodle",
+    "pron": "BAHNT-noo-deln",
+    "meaning": "ribbon noodles",
+    "look": "Flat egg noodle ribbons, usually sold dried in loose nests.",
+    "fact": "Germany's everyday egg ribbon. It is usually served as a side dish to soak up gravy, not as a course of its own.",
+    "pairings": [
+      "goulash",
+      "creamy mushroom sauce",
+      "beef roulades"
+    ]
+  },
+  {
+    "id": "lokshen",
+    "name": "Lokshen",
+    "aliases": [
+      "lokshn"
+    ],
+    "family": "ribbons",
+    "sub": "ribbons-medium",
+    "glyph": "ribbon",
+    "region": "world",
+    "country": "Poland",
+    "make": "wheat-noodle",
+    "pron": "LOK-shen",
+    "meaning": "noodles",
+    "look": "Flat egg noodles, cut fine for soup or wide for baking.",
+    "fact": "The egg noodles of Ashkenazi Jewish cooking across Eastern Europe. Fine ones go into chicken soup, and wide ones are baked into kugel, sweet or savoury.",
+    "pairings": [
+      "chicken soup",
+      "lokshen kugel",
+      "with cottage cheese"
+    ]
+  },
+  {
+    "id": "metelt",
+    "name": "Metélt",
+    "aliases": [],
+    "family": "ribbons",
+    "sub": "ribbons-medium",
+    "glyph": "ribbon",
+    "region": "world",
+    "country": "Hungary",
+    "make": "wheat-noodle",
+    "pron": "MEH-tayt",
+    "meaning": "cut (noodles)",
+    "look": "Flat, hand-cut egg noodle ribbons.",
+    "fact": "Hungarian cut noodles are as likely to be sweet as savoury: tossed with ground poppy seeds and sugar (mákos metélt) or with walnuts (diós metélt).",
+    "pairings": [
+      "poppy seeds and sugar",
+      "walnuts and sugar"
+    ]
+  },
+  {
+    "id": "kesme",
+    "name": "Kesme",
+    "aliases": [],
+    "family": "ribbons",
+    "sub": "ribbons-medium",
+    "glyph": "ribbon",
+    "region": "world",
+    "country": "Kyrgyzstan",
+    "make": "wheat-noodle",
+    "pron": "kes-MEH",
+    "meaning": "cut",
+    "look": "Flat, hand-cut egg noodles.",
+    "fact": "The name is simply the Turkic word for \"cut\". Egg dough is rolled out, dried briefly, sliced into strips and cooked in a meat broth.",
+    "pairings": [
+      "mutton broth soup"
+    ]
+  },
+  {
+    "id": "mee-pok",
+    "name": "Mee pok",
+    "aliases": [],
+    "family": "ribbons",
+    "sub": "ribbons-medium",
+    "glyph": "ribbon",
+    "region": "world",
+    "country": "Singapore",
+    "make": "wheat-noodle",
+    "pron": "mee POK",
+    "meaning": null,
+    "look": "Flat, yellow egg noodles of medium width.",
+    "fact": "A noodle of Teochew origin. It is most often served \"dry\", meaning tossed with chili, vinegar and oil, with the soup on the side.",
+    "pairings": [
+      "bak chor mee (minced pork)",
+      "fishball noodles"
+    ]
+  },
+  {
+    "id": "pappardelle",
+    "name": "Pappardelle",
+    "aliases": [],
+    "family": "ribbons",
+    "sub": "ribbons-wide",
+    "glyph": "ribbon-wide",
+    "region": "tuscany",
+    "country": null,
+    "make": "egg",
+    "pron": "pah-par-DEL-leh",
+    "meaning": null,
+    "look": "Broad egg ribbons, 2 to 3 cm wide.",
+    "fact": "Its name comes from the Tuscan verb pappare, to gobble up. The broad surface is built for rich game ragù.",
+    "pairings": [
+      "wild boar ragù",
+      "hare ragù",
+      "duck ragù"
+    ]
+  },
+  {
+    "id": "lasagnette",
+    "name": "Lasagnette",
+    "aliases": [],
+    "family": "ribbons",
+    "sub": "ribbons-wide",
+    "glyph": "ribbon-wide",
+    "region": "italy",
+    "country": null,
+    "make": "dried",
+    "pron": "lah-zahn-YET-teh",
+    "meaning": "little lasagne",
+    "look": "Wide ribbons, narrower than lasagne, with straight or wavy edges.",
+    "fact": "A narrow lasagna meant to be tossed with sauce like a ribbon, not layered and baked.",
+    "pairings": [
+      "ragù",
+      "tomato and ricotta"
+    ]
+  },
+  {
+    "id": "picagge",
+    "name": "Picagge",
+    "aliases": [],
+    "family": "ribbons",
+    "sub": "ribbons-wide",
+    "glyph": "ribbon-wide",
+    "region": "liguria",
+    "country": null,
+    "make": "egg",
+    "pron": "pee-KAH-jeh",
+    "meaning": "ribbons",
+    "look": "Wide, thin fresh ribbons, about 1.5 to 2 cm across.",
+    "fact": "The name is Genoese dialect for cloth ribbons or tapes. Green picagge are coloured with borage or chard, and picagge matte include chestnut flour.",
+    "pairings": [
+      "pesto",
+      "tocco (Genoese meat sauce)",
+      "mushroom sauce"
+    ]
+  },
+  {
+    "id": "lagane",
+    "name": "Lagane",
+    "aliases": [
+      "laganelle",
+      "laine"
+    ],
+    "family": "ribbons",
+    "sub": "ribbons-wide",
+    "glyph": "ribbon-wide",
+    "region": "basilicata",
+    "country": null,
+    "make": "semola-fresh",
+    "pron": "LAH-gah-neh",
+    "meaning": null,
+    "look": "Wide, short, fairly thick ribbons of eggless semolina dough.",
+    "fact": "The name goes back to Latin laganum; the poet Horace wrote of going home to a bowl of leeks, chickpeas and lagana. Lagane with chickpeas is still eaten in Basilicata and Calabria.",
+    "pairings": [
+      "lagane e ceci (chickpeas)",
+      "beans"
+    ]
+  },
+  {
+    "id": "biangbiang",
+    "name": "Biangbiang noodles",
+    "aliases": [
+      "belt noodles",
+      "youpo chemian"
+    ],
+    "family": "ribbons",
+    "sub": "ribbons-wide",
+    "glyph": "ribbon-wide",
+    "region": "world",
+    "country": "China",
+    "make": "wheat-noodle",
+    "pron": "byahng-byahng",
+    "meaning": null,
+    "look": "Very wide, long, thick hand-pulled wheat ribbons, like a belt.",
+    "fact": "From Shaanxi. The name is said to echo the slap of dough on the counter as it is stretched, and it is written with a character of more than 50 strokes missing from standard dictionaries.",
+    "pairings": [
+      "hot oil, chili and garlic",
+      "cumin lamb",
+      "tomato and egg"
+    ]
+  },
+  {
+    "id": "ho-fun",
+    "name": "Ho fun",
+    "aliases": [
+      "shahe fen",
+      "hor fun",
+      "chow fun noodles",
+      "kway teow",
+      "sen yai"
+    ],
+    "family": "ribbons",
+    "sub": "ribbons-wide",
+    "glyph": "ribbon-wide",
+    "region": "world",
+    "country": "China",
+    "make": "rice-starch",
+    "pron": "haw FUN",
+    "meaning": "river noodles",
+    "look": "Wide, flat, slippery white rice ribbons, sold fresh.",
+    "fact": "Named after Shahe, now part of Guangzhou. Rice batter is steamed into thin sheets, oiled and cut; the same noodle became kway teow and sen yai in Southeast Asia.",
+    "pairings": [
+      "beef chow fun",
+      "char kway teow",
+      "pad see ew"
+    ]
+  },
+  {
+    "id": "kishimen",
+    "name": "Kishimen",
+    "aliases": [],
+    "family": "ribbons",
+    "sub": "ribbons-wide",
+    "glyph": "ribbon-wide",
+    "region": "world",
+    "country": "Japan",
+    "make": "wheat-noodle",
+    "pron": "KEE-shee-men",
+    "meaning": null,
+    "look": "Broad, thin, flat wheat noodles, like flattened udon.",
+    "fact": "The signature noodle of Nagoya. Being thinner than udon it cooks faster and has a smooth, slippery texture.",
+    "pairings": [
+      "soy-dashi broth with bonito flakes",
+      "chilled with dipping sauce"
+    ]
+  },
+  {
+    "id": "hoto",
+    "name": "Hōtō",
+    "aliases": [],
+    "family": "ribbons",
+    "sub": "ribbons-wide",
+    "glyph": "ribbon-wide",
+    "region": "world",
+    "country": "Japan",
+    "make": "wheat-noodle",
+    "pron": "HOH-toh",
+    "meaning": null,
+    "look": "Wide, flat, thick wheat noodles.",
+    "fact": "A speciality of Yamanashi. The noodles are simmered raw in a miso stew with pumpkin, without being boiled first, so their starch thickens the broth.",
+    "pairings": [
+      "miso stew with kabocha pumpkin"
+    ]
+  },
+  {
+    "id": "mi-quang",
+    "name": "Mì Quảng",
+    "aliases": [],
+    "family": "ribbons",
+    "sub": "ribbons-wide",
+    "glyph": "ribbon-wide",
+    "region": "world",
+    "country": "Vietnam",
+    "make": "rice-starch",
+    "pron": "mee KWAHNG",
+    "meaning": "Quảng noodles",
+    "look": "Wide, flat rice noodles, often tinted yellow with turmeric.",
+    "fact": "Named for Quảng Nam province in central Vietnam. It is served with only a shallow pool of concentrated broth, plus herbs, peanuts and a toasted rice cracker.",
+    "pairings": [
+      "pork and shrimp",
+      "chicken",
+      "toasted sesame rice cracker"
+    ]
+  },
+  {
+    "id": "kuanfen",
+    "name": "Kuanfen",
+    "aliases": [
+      "wide glass noodles",
+      "kuān fěn"
+    ],
+    "family": "ribbons",
+    "sub": "ribbons-wide",
+    "glyph": "ribbon-wide",
+    "region": "world",
+    "country": "China",
+    "make": "rice-starch",
+    "pron": "kwahn-FUN",
+    "meaning": "wide starch noodles",
+    "look": "Broad, translucent, very chewy starch ribbons.",
+    "fact": "Made mostly from sweet potato starch, these wide glass noodles soak up broth and are a hot pot favourite in Sichuan and Chongqing.",
+    "pairings": [
+      "hot pot",
+      "malatang",
+      "chili oil and vinegar"
+    ]
+  },
+  {
+    "id": "liangpi",
+    "name": "Liangpi",
+    "aliases": [],
+    "family": "ribbons",
+    "sub": "ribbons-wide",
+    "glyph": "ribbon-wide",
+    "region": "world",
+    "country": "China",
+    "make": "wheat-noodle",
+    "pron": "lyahng-PEE",
+    "meaning": "cold skin",
+    "look": "Wide, slippery, translucent ribbons served cold.",
+    "fact": "Wheat dough is rinsed in water to wash out the starch. The starchy water is left to settle, steamed into thin sheets and cut; the leftover gluten is served alongside.",
+    "pairings": [
+      "chili oil, vinegar and cucumber",
+      "sesame sauce"
+    ]
+  },
+  {
+    "id": "mafaldine",
+    "name": "Mafaldine",
+    "aliases": [
+      "mafalde",
+      "reginette",
+      "manfredine"
+    ],
+    "family": "ribbons",
+    "sub": "ribbons-ruffled",
+    "glyph": "ribbon-ruffled",
+    "region": "campania",
+    "country": null,
+    "make": "dried",
+    "pron": "mah-fal-DEE-neh",
+    "meaning": "little Mafaldas",
+    "look": "Long flat ribbons with ruffled edges on both sides.",
+    "fact": "Named in honour of Princess Mafalda of Savoy, born in 1902. The alias reginette means little queens. The flat centre and thinner frills cook to two different textures.",
+    "pairings": [
+      "ragù napoletano",
+      "ricotta and tomato",
+      "sausage ragù"
+    ]
+  },
+  {
+    "id": "tripoline",
+    "name": "Tripoline",
+    "aliases": [],
+    "family": "ribbons",
+    "sub": "ribbons-ruffled",
+    "glyph": "ribbon-ruffled",
+    "region": "campania",
+    "country": null,
+    "make": "dried",
+    "pron": "tree-poh-LEE-neh",
+    "meaning": "little Tripoli ones",
+    "look": "Long ribbons ruffled along one edge only.",
+    "fact": "Said to have been named to mark Italy's conquest of Tripoli, Libya, in 1911. The single frilled edge makes the ribbon curl as it cooks.",
+    "pairings": [
+      "ragù napoletano",
+      "tomato and basil"
+    ]
+  },
+  {
+    "id": "pizzoccheri",
+    "name": "Pizzoccheri",
+    "aliases": [],
+    "family": "ribbons",
+    "sub": "ribbons-rustic",
+    "glyph": "ribbon",
+    "region": "lombardy",
+    "country": null,
+    "make": "alt-grain",
+    "pron": "peet-SOK-keh-ree",
+    "meaning": null,
+    "look": "Short, flat, grey-brown ribbons about 1 cm wide and 7 cm long.",
+    "fact": "From Teglio in the Valtellina, made mostly of buckwheat flour with a little wheat. Traditionally boiled with cabbage and potato, then layered with Casera cheese and garlic butter.",
+    "pairings": [
+      "alla valtellinese (cabbage, potato, cheese)"
+    ]
+  },
+  {
+    "id": "scialatielli",
+    "name": "Scialatielli",
+    "aliases": [],
+    "family": "ribbons",
+    "sub": "ribbons-rustic",
+    "glyph": "ribbon",
+    "region": "campania",
+    "country": null,
+    "make": "flour-water",
+    "pron": "shah-lah-tee-EL-lee",
+    "meaning": null,
+    "look": "Short, thick, slightly irregular fresh ribbons.",
+    "fact": "One of the few pastas with a known inventor: Amalfi chef Enrico Cosentino, who won a culinary prize with it in 1978. The dough includes milk, basil and grated cheese.",
+    "pairings": [
+      "allo scoglio (seafood)",
+      "clams and cherry tomatoes"
+    ]
+  },
+  {
+    "id": "sagne-ncannulate",
+    "name": "Sagne 'ncannulate",
+    "aliases": [
+      "sagne torte"
+    ],
+    "family": "ribbons",
+    "sub": "ribbons-rustic",
+    "glyph": "twist",
+    "region": "puglia",
+    "country": null,
+    "make": "semola-fresh",
+    "pron": "SAH-nyeh n-kahn-noo-LAH-teh",
+    "meaning": "coiled lasagne strips",
+    "look": "Long semolina ribbons twisted into loose spirals.",
+    "fact": "From the Salento. Each strip is twisted by hand around itself and left to dry in a curl, so sauce collects in the folds.",
+    "pairings": [
+      "tomato and ricotta forte",
+      "tomato and cacioricotta"
+    ]
+  },
+  {
+    "id": "sagne-mpastrate",
+    "name": "Sagne",
+    "aliases": [
+      "sagne 'mpastrate",
+      "sagnette",
+      "sagne a pezze"
+    ],
+    "family": "ribbons",
+    "sub": "ribbons-rustic",
+    "glyph": "ribbon",
+    "region": "abruzzo",
+    "country": null,
+    "make": "flour-water",
+    "pron": "SAH-nyeh",
+    "meaning": "lasagne (dialect)",
+    "look": "Short, uneven, hand-cut strips of eggless dough.",
+    "fact": "Rough-cut flour-and-water strips from Abruzzo, Molise and southern Lazio, classically simmered with beans. The uneven edges catch thick, brothy sauces in ways a clean-cut pasta cannot.",
+    "pairings": [
+      "sagne e fagioli (beans)",
+      "sagne e ceci (chickpeas)"
+    ]
+  },
+  {
+    "id": "tria",
+    "name": "Tria",
+    "aliases": [],
+    "family": "ribbons",
+    "sub": "ribbons-rustic",
+    "glyph": "ribbon",
+    "region": "puglia",
+    "country": null,
+    "make": "semola-fresh",
+    "pron": "TREE-ah",
+    "meaning": null,
+    "look": "Short, irregular, eggless semolina ribbons.",
+    "fact": "The name comes from Arabic itriya, a medieval word for dried pasta strands. In Salento's ciceri e tria, part of the pasta is fried crisp and stirred in with the boiled ribbons.",
+    "pairings": [
+      "ciceri e tria (chickpeas)"
+    ]
+  },
+  {
+    "id": "dao-xiao-mian",
+    "name": "Dao xiao mian",
+    "aliases": [
+      "knife-cut noodles",
+      "knife-shaved noodles"
+    ],
+    "family": "ribbons",
+    "sub": "ribbons-rustic",
+    "glyph": "ribbon",
+    "region": "world",
+    "country": "China",
+    "make": "wheat-noodle",
+    "pron": "dow shyow MYEN",
+    "meaning": "knife-shaved noodles",
+    "look": "Thick, uneven ribbons with a plump centre and thin, frilly edges.",
+    "fact": "A Shanxi speciality. The cook holds a block of firm dough and shaves strips with a curved blade so that they fly directly into the boiling pot.",
+    "pairings": [
+      "braised beef broth",
+      "tomato and egg",
+      "stir-fried"
+    ]
+  },
+  {
+    "id": "eriste",
+    "name": "Erişte",
+    "aliases": [],
+    "family": "ribbons",
+    "sub": "ribbons-rustic",
+    "glyph": "ribbon",
+    "region": "world",
+    "country": "Turkey",
+    "make": "wheat-noodle",
+    "pron": "eh-REESH-teh",
+    "meaning": "thread",
+    "look": "Short, flat strips of egg noodle.",
+    "fact": "The name comes from Persian reshteh. In Anatolian villages it is made in big batches at the end of summer, then dried and stored for winter.",
+    "pairings": [
+      "butter and walnuts",
+      "butter and cheese",
+      "green lentil soup"
+    ]
+  }
+]

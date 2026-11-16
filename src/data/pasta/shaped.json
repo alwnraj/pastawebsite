@@ -1,0 +1,1703 @@
+[
+  {
+    "id": "conchiglie",
+    "name": "Conchiglie",
+    "aliases": [
+      "conchiglie rigate",
+      "shells",
+      "arselle"
+    ],
+    "family": "shells",
+    "sub": "shells-conch",
+    "glyph": "shell",
+    "region": "italy",
+    "country": null,
+    "make": "dried",
+    "pron": "kon-KEEL-yeh",
+    "meaning": "seashells",
+    "look": "Medium conch-shaped shell, usually ridged outside, with a deep open cavity.",
+    "fact": "The hollow works like a scoop: peas, bits of sausage and thick sauce get trapped inside, so each shell arrives pre-loaded.",
+    "pairings": [
+      "tomato and ricotta",
+      "sausage ragù",
+      "pasta salad"
+    ]
+  },
+  {
+    "id": "lumache",
+    "name": "Lumache",
+    "aliases": [
+      "lumachelle"
+    ],
+    "family": "shells",
+    "sub": "shells-conch",
+    "glyph": "shell",
+    "region": "italy",
+    "country": null,
+    "make": "dried",
+    "pron": "loo-MAH-keh",
+    "meaning": "snails",
+    "look": "Short, fat curved tube pinched almost shut at one end, like a snail shell.",
+    "fact": "One end is squeezed nearly closed, so sauce that flows in through the wide mouth has nowhere to go.",
+    "pairings": [
+      "chunky vegetable ragù",
+      "sausage and cream",
+      "baked al forno"
+    ]
+  },
+  {
+    "id": "lumaconi",
+    "name": "Lumaconi",
+    "aliases": [
+      "lumache giganti"
+    ],
+    "family": "shells",
+    "sub": "shells-conch",
+    "glyph": "shell",
+    "region": "italy",
+    "country": null,
+    "make": "dried",
+    "pron": "loo-mah-KOH-nee",
+    "meaning": "big snails",
+    "look": "Giant ridged snail shell with one wide opening, several centimetres across.",
+    "fact": "Big enough to fill one at a time with a spoon or piping bag, then bake standing in sauce like a tray of little cups.",
+    "pairings": [
+      "ricotta and spinach filling",
+      "baked with ragù and béchamel"
+    ]
+  },
+  {
+    "id": "pipe-rigate",
+    "name": "Pipe rigate",
+    "aliases": [
+      "pipe"
+    ],
+    "family": "shells",
+    "sub": "shells-conch",
+    "glyph": "shell",
+    "region": "italy",
+    "country": null,
+    "make": "dried",
+    "pron": "PEE-peh ree-GAH-teh",
+    "meaning": "ridged pipes",
+    "look": "Ridged, bulging elbow with one wide open end and one flattened, nearly closed end.",
+    "fact": "Named for the bowl of a smoking pipe. The flattened end acts as a stopper, turning each piece into a small sauce reservoir.",
+    "pairings": [
+      "cheese sauce",
+      "tomato and basil",
+      "sausage ragù"
+    ]
+  },
+  {
+    "id": "pipette-rigate",
+    "name": "Pipette rigate",
+    "aliases": [
+      "pipette"
+    ],
+    "family": "shells",
+    "sub": "shells-conch",
+    "glyph": "shell",
+    "region": "italy",
+    "country": null,
+    "make": "dried",
+    "pron": "pee-PET-teh ree-GAH-teh",
+    "meaning": "little ridged pipes",
+    "look": "A small pipe rigate: a ridged curl about a centimetre long, closed at one end.",
+    "fact": "The scaled-down pipe is a favourite for thick soups and for children, because every piece fits on a spoon with its filling of broth.",
+    "pairings": [
+      "pasta e fagioli",
+      "minestrone",
+      "tomato and cheese"
+    ]
+  },
+  {
+    "id": "chiocciole",
+    "name": "Chiocciole",
+    "aliases": [],
+    "family": "shells",
+    "sub": "shells-conch",
+    "glyph": "shell",
+    "region": "italy",
+    "country": null,
+    "make": "dried",
+    "pron": "KYOH-choh-leh",
+    "meaning": "snails",
+    "look": "Ridged, tightly curled short tube shaped like a garden-snail shell, open at both ends.",
+    "fact": "Chiocciola is the Italian word for a land snail, and also what Italians call the @ sign.",
+    "pairings": [
+      "meat ragù",
+      "pasta salad",
+      "cheese sauce"
+    ]
+  },
+  {
+    "id": "abissine",
+    "name": "Abissine",
+    "aliases": [],
+    "family": "shells",
+    "sub": "shells-conch",
+    "glyph": "shell",
+    "region": "italy",
+    "country": null,
+    "make": "dried",
+    "pron": "ah-bees-SEE-neh",
+    "meaning": "Abyssinians",
+    "look": "Small ridged shell with a rolled-in lip, a little like a tiny cowrie.",
+    "fact": "One of several shapes named during Italy's colonial campaigns in East and North Africa in the early twentieth century; Abyssinia was the old name for Ethiopia.",
+    "pairings": [
+      "vegetable soups",
+      "light tomato sauce"
+    ]
+  },
+  {
+    "id": "tofe",
+    "name": "Tofe",
+    "aliases": [
+      "tofettine"
+    ],
+    "family": "shells",
+    "sub": "shells-conch",
+    "glyph": "shell",
+    "region": "italy",
+    "country": null,
+    "make": "dried",
+    "pron": "TOH-feh",
+    "meaning": null,
+    "look": "Plump, ridged shell curled nearly closed, rounder and deeper than conchiglie.",
+    "fact": "Its deep, almost closed pocket holds more sauce than an ordinary shell, which is why it is favoured for chunky ragù and oven bakes.",
+    "pairings": [
+      "meat ragù",
+      "baked al forno"
+    ]
+  },
+  {
+    "id": "castellane",
+    "name": "Castellane",
+    "aliases": [],
+    "family": "shells",
+    "sub": "shells-conch",
+    "glyph": "shell",
+    "region": "italy",
+    "country": null,
+    "make": "dried",
+    "pron": "kah-stel-LAH-neh",
+    "meaning": "castle dwellers",
+    "look": "Ridged shell rolled lengthwise into a long, narrow scroll with a slit down one side.",
+    "fact": "Introduced by Barilla in 1987. The company reportedly first called them paguri (hermit crabs) before settling on a name that evokes the long skirts of castle ladies.",
+    "pairings": [
+      "sausage and mushroom",
+      "tomato and cream",
+      "pasta salad"
+    ]
+  },
+  {
+    "id": "malloreddus",
+    "name": "Malloreddus",
+    "aliases": [
+      "gnocchetti sardi",
+      "maccarones cravaos",
+      "ciciones"
+    ],
+    "family": "shells",
+    "sub": "shells-dragged",
+    "glyph": "cavatello",
+    "region": "sardinia",
+    "country": null,
+    "make": "semola-fresh",
+    "pron": "mahl-loh-RED-doos",
+    "meaning": "little calves",
+    "look": "Small, plump ridged shell about 2 cm long, curled over on itself.",
+    "fact": "Known as gnocchetti sardi, these striped Sardinian shells were traditionally rolled over wicker baskets and often tinted yellow with saffron.",
+    "pairings": [
+      "alla campidanese (sausage and tomato)",
+      "pecorino sardo"
+    ]
+  },
+  {
+    "id": "cavatelli",
+    "name": "Cavatelli",
+    "aliases": [
+      "cavatieddi",
+      "cavateddi",
+      "cazzarille",
+      "gnocculi"
+    ],
+    "family": "shells",
+    "sub": "shells-dragged",
+    "glyph": "cavatello",
+    "region": "molise",
+    "country": null,
+    "make": "semola-fresh",
+    "pron": "kah-vah-TEL-lee",
+    "meaning": "little hollows",
+    "look": "Small elongated curl of dough with a hollow down the middle, like a tiny hot-dog bun.",
+    "fact": "Made by pressing fingertips into a small piece of dough and dragging it into a curl, one of the oldest pasta-making gestures and little changed since the Middle Ages.",
+    "pairings": [
+      "broccoli rabe",
+      "sausage ragù",
+      "tomato and ricotta salata"
+    ]
+  },
+  {
+    "id": "capunti",
+    "name": "Capunti",
+    "aliases": [],
+    "family": "shells",
+    "sub": "shells-dragged",
+    "glyph": "cavatello",
+    "region": "puglia",
+    "country": null,
+    "make": "semola-fresh",
+    "pron": "kah-POON-tee",
+    "meaning": null,
+    "look": "Open, elongated oval about 3 to 5 cm long with finger dents inside, like an empty pea pod.",
+    "fact": "Each one is dragged across the board with three or four fingertips at once, leaving a row of dimples that catch sauce.",
+    "pairings": [
+      "tomato and cacioricotta",
+      "seafood ragù",
+      "broccoli rabe"
+    ]
+  },
+  {
+    "id": "strascinati",
+    "name": "Strascinati",
+    "aliases": [
+      "strascinate"
+    ],
+    "family": "shells",
+    "sub": "shells-dragged",
+    "glyph": "cavatello",
+    "region": "basilicata",
+    "country": null,
+    "make": "semola-fresh",
+    "pron": "strah-shee-NAH-tee",
+    "meaning": "dragged",
+    "look": "Flat, slightly curled oval a few centimetres long, rough on one side and smooth on the other.",
+    "fact": "The name describes the method: a piece of dough is dragged across a wooden board with the fingers or a blade, so the board's grain roughens one face.",
+    "pairings": [
+      "peperoni cruschi and breadcrumbs",
+      "cime di rapa",
+      "sausage ragù"
+    ]
+  },
+  {
+    "id": "cicatelli",
+    "name": "Cicatelli",
+    "aliases": [
+      "cecatelli",
+      "cecaluccoli"
+    ],
+    "family": "shells",
+    "sub": "shells-dragged",
+    "glyph": "cavatello",
+    "region": "puglia",
+    "country": null,
+    "make": "semola-fresh",
+    "pron": "chee-kah-TEL-lee",
+    "meaning": null,
+    "look": "Longish cavatelli-type curl hollowed with several fingers, the edges rolled inward.",
+    "fact": "Typical of the Daunia hills of northern Puglia and neighbouring Irpinia, where they are also made with grano arso, flour from toasted wheat.",
+    "pairings": [
+      "rocket and tomato",
+      "sausage ragù"
+    ]
+  },
+  {
+    "id": "raschiatelli",
+    "name": "Raschiatelli",
+    "aliases": [
+      "rascatielli",
+      "rasckatieddi"
+    ],
+    "family": "shells",
+    "sub": "shells-dragged",
+    "glyph": "cavatello",
+    "region": "basilicata",
+    "country": null,
+    "make": "semola-fresh",
+    "pron": "rah-skyah-TEL-lee",
+    "meaning": "little scraped ones",
+    "look": "Long cavatelli, hollowed along their length with two to four fingers.",
+    "fact": "The dough is 'scraped' along the board with the fingertips. In Basilicata and northern Calabria they are counted by how many fingers made them.",
+    "pairings": [
+      "peperoni cruschi",
+      "pork ragù",
+      "broccoli rabe"
+    ]
+  },
+  {
+    "id": "cortecce",
+    "name": "Cortecce",
+    "aliases": [],
+    "family": "shells",
+    "sub": "shells-dragged",
+    "glyph": "cavatello",
+    "region": "campania",
+    "country": null,
+    "make": "semola-fresh",
+    "pron": "kor-TEH-cheh",
+    "meaning": "tree bark",
+    "look": "Elongated, rough-surfaced curl about 5 cm long with a furrowed hollow.",
+    "fact": "A Campanian relative of cavatelli, dragged with three or four fingers so the piece curls like a strip of bark peeled from a branch.",
+    "pairings": [
+      "sausage and friarielli",
+      "mushroom sauce",
+      "tomato and provola"
+    ]
+  },
+  {
+    "id": "mischiglio",
+    "name": "Mischiglio",
+    "aliases": [
+      "miskiglio"
+    ],
+    "family": "shells",
+    "sub": "shells-dragged",
+    "glyph": "cavatello",
+    "region": "basilicata",
+    "country": null,
+    "make": "alt-grain",
+    "pron": "mee-SKEE-lyoh",
+    "meaning": "mixture",
+    "look": "Dark, rustic cavatelli-like curls dragged by hand.",
+    "fact": "A peasant pasta from the Pollino area of Basilicata, made from a mix of flours such as chickpea, fava bean, barley and durum wheat when wheat alone was too costly.",
+    "pairings": [
+      "tomato and cacioricotta",
+      "peperoni cruschi"
+    ]
+  },
+  {
+    "id": "foglie-dulivo",
+    "name": "Foglie d'ulivo",
+    "aliases": [
+      "foglie di ulivo"
+    ],
+    "family": "shells",
+    "sub": "shells-dragged",
+    "glyph": "leaf",
+    "region": "puglia",
+    "country": null,
+    "make": "semola-fresh",
+    "pron": "FOH-lyeh doo-LEE-voh",
+    "meaning": "olive leaves",
+    "look": "Slim pointed leaf shape with a central crease, often tinted green with spinach.",
+    "fact": "A Puglian shape that pays tribute to the region's olive groves; each leaf is dragged with a knife tip like a stretched orecchietta.",
+    "pairings": [
+      "tomato and olives",
+      "cime di rapa",
+      "burrata and cherry tomato"
+    ]
+  },
+  {
+    "id": "parmatieddi",
+    "name": "Parmatieddi",
+    "aliases": [
+      "parmarieddi"
+    ],
+    "family": "shells",
+    "sub": "shells-dragged",
+    "glyph": "leaf",
+    "region": "campania",
+    "country": null,
+    "make": "semola-fresh",
+    "pron": "par-mah-TYED-dee",
+    "meaning": "little palms",
+    "look": "Large, flat cavatelli hollowed with four fingers into a long leaf-like shape.",
+    "fact": "The Palm Sunday pasta of Teggiano in the Vallo di Diano: the shape recalls the palm or olive leaves blessed in church that morning.",
+    "pairings": [
+      "meat ragù and pecorino"
+    ]
+  },
+  {
+    "id": "cruset",
+    "name": "Cruset",
+    "aliases": [
+      "crouzet",
+      "crosetti"
+    ],
+    "family": "shells",
+    "sub": "shells-dragged",
+    "glyph": "ear",
+    "region": "piedmont",
+    "country": null,
+    "make": "flour-water",
+    "pron": "kroo-ZET",
+    "meaning": null,
+    "look": "Small hollowed disc of dough pressed with the thumb, like a rough orecchietta.",
+    "fact": "A mountain pasta of the Occitan-speaking Stura valley near Cuneo, proof that the dragged 'little ear' gesture is not only southern.",
+    "pairings": [
+      "leek and cream sauce",
+      "butter and toma cheese"
+    ]
+  },
+  {
+    "id": "skioufichta",
+    "name": "Skioufichta",
+    "aliases": [
+      "skioufihta"
+    ],
+    "family": "shells",
+    "sub": "shells-dragged",
+    "glyph": "cavatello",
+    "region": "world",
+    "country": "Greece",
+    "make": "flour-water",
+    "pron": "skyoo-feekh-TAH",
+    "meaning": null,
+    "look": "Short, hand-rolled curls of dough a few centimetres long with a groove down the middle.",
+    "fact": "A traditional Cretan pasta shaped by rolling small pieces of dough under the fingers, usually finished simply with hot oil or butter and grated cheese.",
+    "pairings": [
+      "grated anthotyro cheese",
+      "staka butter"
+    ]
+  },
+  {
+    "id": "makarounes",
+    "name": "Makarounes",
+    "aliases": [],
+    "family": "shells",
+    "sub": "shells-dragged",
+    "glyph": "cavatello",
+    "region": "world",
+    "country": "Greece",
+    "make": "flour-water",
+    "pron": "mah-kah-ROO-nes",
+    "meaning": null,
+    "look": "Small finger-pressed curls of flour-and-water dough, close cousins of cavatelli.",
+    "fact": "The signature dish of the island of Karpathos, where the hand-rolled curls are topped with slowly browned onions and a local sharp cheese.",
+    "pairings": [
+      "caramelised onions and cheese"
+    ]
+  },
+  {
+    "id": "orecchiette",
+    "name": "Orecchiette",
+    "aliases": [
+      "recchietelle",
+      "chiancarelle",
+      "strascinate"
+    ],
+    "family": "shells",
+    "sub": "shells-ears",
+    "glyph": "ear",
+    "region": "puglia",
+    "country": null,
+    "make": "semola-fresh",
+    "pron": "oh-rek-KYET-teh",
+    "meaning": "little ears",
+    "look": "Small domed disc about 2 cm across, thin in the centre with a thicker rim and a rough outer surface.",
+    "fact": "In old Bari, women still sit outside their homes dragging small rounds of dough across wooden boards with a blunt knife, then flipping each one over the thumb.",
+    "pairings": [
+      "cime di rapa",
+      "tomato and ricotta forte",
+      "braciole ragù"
+    ]
+  },
+  {
+    "id": "cencioni",
+    "name": "Cencioni",
+    "aliases": [],
+    "family": "shells",
+    "sub": "shells-ears",
+    "glyph": "ear",
+    "region": "italy",
+    "country": null,
+    "make": "semola-fresh",
+    "pron": "chen-CHOH-nee",
+    "meaning": "big rags",
+    "look": "Oval petal larger and flatter than orecchiette, slightly curved with one rough side.",
+    "fact": "Named from cencio, a rag. The rough, curved petals are dragged like oversized orecchiette; in the Marche the same name is also used for a rustic noodle made with fava-bean flour.",
+    "pairings": [
+      "sausage ragù",
+      "broccoli and anchovy",
+      "chunky vegetable sauce"
+    ]
+  },
+  {
+    "id": "mao-er-duo",
+    "name": "Mao er duo",
+    "aliases": [
+      "cat's ear noodles",
+      "猫耳朵"
+    ],
+    "family": "shells",
+    "sub": "shells-ears",
+    "glyph": "ear",
+    "region": "world",
+    "country": "China",
+    "make": "wheat-noodle",
+    "pron": "mow ar DWOH",
+    "meaning": "cat's ears",
+    "look": "Thumbnail-sized curled cups of dough, strikingly similar to orecchiette or cavatelli.",
+    "fact": "A specialty of Shanxi province, also loved in Hangzhou: small cubes of dough are pressed and rolled under the thumb so they curl into a cat's-ear shape.",
+    "pairings": [
+      "tomato and egg sauce",
+      "stir-fried with pork and vegetables",
+      "in broth"
+    ]
+  },
+  {
+    "id": "farfalle",
+    "name": "Farfalle",
+    "aliases": [
+      "bow ties",
+      "fiocchetti",
+      "nastrini"
+    ],
+    "family": "fancy",
+    "sub": "fancy-bows",
+    "glyph": "bowtie",
+    "region": "italy",
+    "country": null,
+    "make": "dried",
+    "pron": "far-FAHL-leh",
+    "meaning": "butterflies",
+    "look": "Small rectangle with zigzag ends, pinched in the middle into a bow.",
+    "fact": "Its name means butterflies, though many diners insist on bow ties. The pinched centre stays firmer than the thin wings.",
+    "pairings": [
+      "salmon and cream",
+      "pesto",
+      "pasta salad"
+    ]
+  },
+  {
+    "id": "farfalloni",
+    "name": "Farfalloni",
+    "aliases": [],
+    "family": "fancy",
+    "sub": "fancy-bows",
+    "glyph": "bowtie",
+    "region": "italy",
+    "country": null,
+    "make": "dried",
+    "pron": "far-fahl-LOH-nee",
+    "meaning": "big butterflies",
+    "look": "An oversized farfalla, with broad ruffled wings and a thick pinched centre.",
+    "fact": "The larger wings make the contrast between soft edges and chewy centre even stronger than in standard farfalle.",
+    "pairings": [
+      "chunky tomato sauce",
+      "vegetable ragù"
+    ]
+  },
+  {
+    "id": "farfalle-tonde",
+    "name": "Farfalle tonde",
+    "aliases": [],
+    "family": "fancy",
+    "sub": "fancy-bows",
+    "glyph": "bowtie",
+    "region": "italy",
+    "country": null,
+    "make": "dried",
+    "pron": "far-FAHL-leh TON-deh",
+    "meaning": "round butterflies",
+    "look": "Bow tie with rounded, smooth-edged wings instead of zigzag-cut ones.",
+    "fact": "Cut from an oval rather than a rectangle, so the wings come out rounded like a real butterfly's instead of pinked.",
+    "pairings": [
+      "light cream sauces",
+      "peas and ham"
+    ]
+  },
+  {
+    "id": "strichetti",
+    "name": "Strichetti",
+    "aliases": [
+      "stricchetti"
+    ],
+    "family": "fancy",
+    "sub": "fancy-bows",
+    "glyph": "bowtie",
+    "region": "emilia-romagna",
+    "country": null,
+    "make": "egg",
+    "pron": "stree-KET-tee",
+    "meaning": "little pinches",
+    "look": "Hand-pinched bow of fresh egg pasta, softer and less regular than factory farfalle.",
+    "fact": "The home-made ancestor of farfalle in Emilia: small rectangles of leftover egg sfoglia pinched in the middle, traditionally a way to use up scraps from making tortellini.",
+    "pairings": [
+      "peas and prosciutto",
+      "sausage ragù",
+      "in broth"
+    ]
+  },
+  {
+    "id": "sorprese",
+    "name": "Sorprese",
+    "aliases": [],
+    "family": "fancy",
+    "sub": "fancy-bows",
+    "glyph": "hat",
+    "region": "italy",
+    "country": null,
+    "make": "dried",
+    "pron": "sor-PREH-zeh",
+    "meaning": "surprises",
+    "look": "Small square folded corner to corner and pinched, like an empty tortellino.",
+    "fact": "The 'surprise' is that there is no filling: the folded pocket is hollow, so it fills itself with sauce or broth instead.",
+    "pairings": [
+      "tomato sauce",
+      "in broth",
+      "peas and cream"
+    ]
+  },
+  {
+    "id": "rotelle",
+    "name": "Rotelle",
+    "aliases": [
+      "ruote",
+      "wagon wheels",
+      "rotelline"
+    ],
+    "family": "fancy",
+    "sub": "fancy-wheels-flowers",
+    "glyph": "wheel",
+    "region": "italy",
+    "country": null,
+    "make": "dried",
+    "pron": "roh-TEL-leh",
+    "meaning": "little wheels",
+    "look": "Small spoked wheel with a ridged rim and a hub in the centre.",
+    "fact": "A child of the machine age: spoked wheels can only be made with an industrial extrusion die. The gaps between the spokes trap sauce and small vegetables.",
+    "pairings": [
+      "tomato sauce",
+      "pasta salad",
+      "cheese sauce"
+    ]
+  },
+  {
+    "id": "fiori",
+    "name": "Fiori",
+    "aliases": [],
+    "family": "fancy",
+    "sub": "fancy-wheels-flowers",
+    "glyph": "wheel",
+    "region": "italy",
+    "country": null,
+    "make": "dried",
+    "pron": "FYOH-ree",
+    "meaning": "flowers",
+    "look": "Short extruded piece with a hub and curved petals, like a six-petalled flower or pinwheel.",
+    "fact": "Essentially a wheel without its rim: the open petals give the sauce even more edges to cling to.",
+    "pairings": [
+      "pasta salad",
+      "light tomato sauce"
+    ]
+  },
+  {
+    "id": "quadrefiore",
+    "name": "Quadrefiore",
+    "aliases": [],
+    "family": "fancy",
+    "sub": "fancy-wheels-flowers",
+    "glyph": "radiator",
+    "region": "italy",
+    "country": null,
+    "make": "dried",
+    "pron": "kwah-dreh-FYOH-reh",
+    "meaning": "square flower",
+    "look": "Short squarish piece with rows of ruffled fins, flower-like when seen from the end.",
+    "fact": "A rare artisan shape extruded slowly through bronze dies; the stacked frills make it one of the most sauce-retentive short pastas.",
+    "pairings": [
+      "meat ragù",
+      "chunky vegetable sauce"
+    ]
+  },
+  {
+    "id": "racchette",
+    "name": "Racchette",
+    "aliases": [],
+    "family": "fancy",
+    "sub": "fancy-wheels-flowers",
+    "glyph": "wheel",
+    "region": "italy",
+    "country": null,
+    "make": "dried",
+    "pron": "rahk-KET-teh",
+    "meaning": "rackets",
+    "look": "Small oval frame with a criss-cross lattice and a short handle, like a tennis racket.",
+    "fact": "The open lattice does the job of a wheel's spokes, catching peas, diced vegetables and dressing, which makes it a pasta-salad favourite.",
+    "pairings": [
+      "pasta salad",
+      "tomato and vegetables"
+    ]
+  },
+  {
+    "id": "dischi-volanti",
+    "name": "Dischi volanti",
+    "aliases": [],
+    "family": "fancy",
+    "sub": "fancy-wheels-flowers",
+    "glyph": "coin",
+    "region": "italy",
+    "country": null,
+    "make": "dried",
+    "pron": "DEE-skee voh-LAHN-tee",
+    "meaning": "flying saucers",
+    "look": "Small round disc with a raised rim and a dimpled centre.",
+    "fact": "The name arrived with the flying-saucer craze of the mid-twentieth century; the dished centre holds a small pool of sauce.",
+    "pairings": [
+      "tomato and basil",
+      "pasta salad"
+    ]
+  },
+  {
+    "id": "radiatori",
+    "name": "Radiatori",
+    "aliases": [
+      "armoniche"
+    ],
+    "family": "fancy",
+    "sub": "fancy-ruffles",
+    "glyph": "radiator",
+    "region": "italy",
+    "country": null,
+    "make": "dried",
+    "pron": "rah-dee-ah-TOH-ree",
+    "meaning": "radiators",
+    "look": "Short, squat piece ringed with parallel ruffled fins around a curved core.",
+    "fact": "It was inspired by industrial radiator fins in the twentieth century, and the fins do the same job: maximum surface area, here for holding sauce.",
+    "pairings": [
+      "meat ragù",
+      "chunky tomato sauce",
+      "pasta salad"
+    ]
+  },
+  {
+    "id": "creste-di-gallo",
+    "name": "Creste di gallo",
+    "aliases": [
+      "galletti",
+      "creste"
+    ],
+    "family": "fancy",
+    "sub": "fancy-ruffles",
+    "glyph": "elbow",
+    "region": "italy",
+    "country": null,
+    "make": "dried",
+    "pron": "KREH-steh dee GAHL-loh",
+    "meaning": "cockscombs",
+    "look": "Curved tube like an elbow with a ruffled crest running along its outer edge.",
+    "fact": "A hybrid design: the tube holds sauce inside while the frilled comb on its back grips sauce outside.",
+    "pairings": [
+      "sausage ragù",
+      "tomato and cream",
+      "cheese sauce"
+    ]
+  },
+  {
+    "id": "campanelle",
+    "name": "Campanelle",
+    "aliases": [
+      "gigli"
+    ],
+    "family": "fancy",
+    "sub": "fancy-ruffles",
+    "glyph": "bell",
+    "region": "italy",
+    "country": null,
+    "make": "dried",
+    "pron": "kahm-pah-NEL-leh",
+    "meaning": "little bells",
+    "look": "Cone of rolled pasta with a ruffled, flared edge, like a bellflower.",
+    "fact": "Also sold as gigli, lilies, the flower on Florence's coat of arms. The hollow cone and frilled lip hold thick sauces well.",
+    "pairings": [
+      "sausage and cream",
+      "mushroom sauce",
+      "meat ragù"
+    ]
+  },
+  {
+    "id": "mafalde-corte",
+    "name": "Mafalde corte",
+    "aliases": [
+      "mafaldine corte"
+    ],
+    "family": "fancy",
+    "sub": "fancy-ruffles",
+    "glyph": "ribbon-ruffled",
+    "region": "italy",
+    "country": null,
+    "make": "dried",
+    "pron": "mah-FAHL-deh KOR-teh",
+    "meaning": "short Mafaldas",
+    "look": "Short lengths of flat ribbon with ruffled edges on both sides.",
+    "fact": "A bite-length cut of the long ribbon named for Princess Mafalda of Savoy; flat centre and frilly edges cook to two different textures.",
+    "pairings": [
+      "ricotta and tomato",
+      "sausage ragù",
+      "bean soups"
+    ]
+  },
+  {
+    "id": "sagnarelli",
+    "name": "Sagnarelli",
+    "aliases": [],
+    "family": "fancy",
+    "sub": "fancy-ruffles",
+    "glyph": "ribbon-ruffled",
+    "region": "italy",
+    "country": null,
+    "make": "egg",
+    "pron": "sah-nyah-REL-lee",
+    "meaning": null,
+    "look": "Short, flat rectangular ribbons with zigzag fluted edges.",
+    "fact": "Cut from a sheet with a fluted pastry wheel on all four sides, so every piece has a pinked border that holds on to sauce.",
+    "pairings": [
+      "meat ragù",
+      "mushroom sauce"
+    ]
+  },
+  {
+    "id": "trottole",
+    "name": "Trottole",
+    "aliases": [],
+    "family": "fancy",
+    "sub": "fancy-ruffles",
+    "glyph": "corkscrew",
+    "region": "italy",
+    "country": null,
+    "make": "dried",
+    "pron": "TROT-toh-leh",
+    "meaning": "spinning tops",
+    "look": "A ribbon coiled into rings around a central stalk, like a child's spinning top.",
+    "fact": "The curled ribbon forms a spiral channel that scoops up sauce, similar in effect to fusilli but more compact.",
+    "pairings": [
+      "pesto",
+      "tomato and ricotta",
+      "pasta salad"
+    ]
+  },
+  {
+    "id": "vesuvio",
+    "name": "Vesuvio",
+    "aliases": [],
+    "family": "fancy",
+    "sub": "fancy-ruffles",
+    "glyph": "bell",
+    "region": "campania",
+    "country": null,
+    "make": "dried",
+    "pron": "veh-ZOO-vyoh",
+    "meaning": "Mount Vesuvius",
+    "look": "Short coil of pasta wound into a lopsided cone, like a small volcano.",
+    "fact": "A speciality of the pasta makers of Gragnano, near Naples, named for the volcano that dominates the bay.",
+    "pairings": [
+      "Neapolitan ragù",
+      "sausage and provola",
+      "seafood sauce"
+    ]
+  },
+  {
+    "id": "torchio",
+    "name": "Torchio",
+    "aliases": [
+      "maccheroni al torchio"
+    ],
+    "family": "fancy",
+    "sub": "fancy-ruffles",
+    "glyph": "bell",
+    "region": "italy",
+    "country": null,
+    "make": "dried",
+    "pron": "TOR-kyoh",
+    "meaning": null,
+    "look": "Flared, rolled cone open along one side, shaped like a torch.",
+    "fact": "The wide flared mouth scoops up chunky sauces, working much like campanelle without the frilled edge.",
+    "pairings": [
+      "meat ragù",
+      "vegetable sauces"
+    ]
+  },
+  {
+    "id": "lanterne",
+    "name": "Lanterne",
+    "aliases": [],
+    "family": "fancy",
+    "sub": "fancy-ruffles",
+    "glyph": "radiator",
+    "region": "italy",
+    "country": null,
+    "make": "dried",
+    "pron": "lahn-TEHR-neh",
+    "meaning": "lanterns",
+    "look": "Curved, deeply ridged piece of pasta arched like the ribbed shade of an old oil lantern.",
+    "fact": "The deep ribs behave like the fins of radiatori, giving thick sauces plenty of grooves to settle in.",
+    "pairings": [
+      "meat ragù",
+      "cheese sauce"
+    ]
+  },
+  {
+    "id": "cappellacci-dei-briganti",
+    "name": "Cappellacci dei briganti",
+    "aliases": [],
+    "family": "fancy",
+    "sub": "fancy-ruffles",
+    "glyph": "hat",
+    "region": "italy",
+    "country": null,
+    "make": "dried",
+    "pron": "kahp-pel-LAH-chee day bree-GAHN-tee",
+    "meaning": "brigands' hats",
+    "look": "Small cone with a turned-up brim, like a pointed hat.",
+    "fact": "Associated with Molise and southern Lazio, the shape imitates the conical hats worn by the brigands who roamed the southern Apennines in the nineteenth century.",
+    "pairings": [
+      "lamb ragù",
+      "tomato and pecorino"
+    ]
+  },
+  {
+    "id": "marille",
+    "name": "Marille",
+    "aliases": [],
+    "family": "fancy",
+    "sub": "fancy-ruffles",
+    "glyph": "tube-ridged",
+    "region": "campania",
+    "country": null,
+    "make": "dried",
+    "pron": "mah-REEL-leh",
+    "meaning": null,
+    "look": "Two parallel tubes joined side by side with a curling wing, ridged on the inside.",
+    "fact": "Designed in 1983 for the Neapolitan maker Voiello by car designer Giorgetto Giugiaro. It won more press than sales and was soon discontinued.",
+    "pairings": [
+      "tomato sauce"
+    ]
+  },
+  {
+    "id": "cascatelli",
+    "name": "Cascatelli",
+    "aliases": [],
+    "family": "fancy",
+    "sub": "fancy-ruffles",
+    "glyph": "ribbon-ruffled",
+    "region": "world",
+    "country": "United States",
+    "make": "dried",
+    "pron": "kahs-kah-TEL-lee",
+    "meaning": "little waterfalls",
+    "look": "Short curved strip with two parallel ruffles standing up along one side, forming a trough.",
+    "fact": "Launched in 2021 by podcaster Dan Pashman with the maker Sfoglini, after three years spent chasing a shape that holds sauce, stays on the fork and is satisfying to bite.",
+    "pairings": [
+      "meat ragù",
+      "pesto",
+      "cheese sauce"
+    ]
+  },
+  {
+    "id": "spighe",
+    "name": "Spighe",
+    "aliases": [],
+    "family": "fancy",
+    "sub": "fancy-ruffles",
+    "glyph": "leaf",
+    "region": "molise",
+    "country": null,
+    "make": "dried",
+    "pron": "SPEE-geh",
+    "meaning": "ears of wheat",
+    "look": "Short piece patterned like a plaited ear of wheat, with a hollow along its length.",
+    "fact": "A modern shape introduced by the Molise maker La Molisana in the 2010s as a tribute to the durum wheat the pasta is made from.",
+    "pairings": [
+      "tomato sauce",
+      "vegetable ragù"
+    ]
+  },
+  {
+    "id": "andarinos",
+    "name": "Andarinos",
+    "aliases": [
+      "andarinos de Usini"
+    ],
+    "family": "fancy",
+    "sub": "fancy-ruffles",
+    "glyph": "corkscrew",
+    "region": "sardinia",
+    "country": null,
+    "make": "semola-fresh",
+    "pron": "ahn-dah-REE-nohs",
+    "meaning": null,
+    "look": "Small ridged spiral about 3 cm long, like a tiny hand-made fusillo with grooves.",
+    "fact": "Made only in the village of Usini near Sassari: each piece is rolled by hand over a ridged board so it twists and takes on stripes at the same time.",
+    "pairings": [
+      "lamb or mixed meat ragù",
+      "pecorino sardo"
+    ]
+  },
+  {
+    "id": "corzetti",
+    "name": "Corzetti",
+    "aliases": [
+      "croxetti",
+      "curzetti",
+      "corzetti stampati"
+    ],
+    "family": "fancy",
+    "sub": "fancy-stamped",
+    "glyph": "coin",
+    "region": "liguria",
+    "country": null,
+    "make": "egg",
+    "pron": "kor-ZET-tee",
+    "meaning": null,
+    "look": "Thin disc about 5 cm across, embossed with a different pattern on each face.",
+    "fact": "These coin-like rounds from Liguria are pressed with carved wooden stamps, and older molds often carried aristocratic family crests or symbolic patterns.",
+    "pairings": [
+      "walnut sauce",
+      "pesto",
+      "pine nut and marjoram sauce"
+    ]
+  },
+  {
+    "id": "corzetti-della-valpolcevera",
+    "name": "Corzetti della Valpolcevera",
+    "aliases": [
+      "corzetti avvantaggiati",
+      "corzetti tiæ"
+    ],
+    "family": "fancy",
+    "sub": "fancy-stamped",
+    "glyph": "bowtie",
+    "region": "liguria",
+    "country": null,
+    "make": "flour-water",
+    "pron": "kor-ZET-tee DEL-lah vahl-POL-cheh-veh-rah",
+    "meaning": null,
+    "look": "Small figure-of-eight piece, pinched at both ends with the fingertips.",
+    "fact": "The other Ligurian corzetti, from the Polcevera valley behind Genoa: no stamp is used, just a pull and a press of two fingers that leaves a little '8'.",
+    "pairings": [
+      "meat sauce (tocco)",
+      "mushroom sauce",
+      "pesto"
+    ]
+  },
+  {
+    "id": "lorighittas",
+    "name": "Lorighittas",
+    "aliases": [],
+    "family": "fancy",
+    "sub": "fancy-braided",
+    "glyph": "braid-ring",
+    "region": "sardinia",
+    "country": null,
+    "make": "semola-fresh",
+    "pron": "loh-ree-GHEE-tahs",
+    "meaning": "little rings",
+    "look": "Thin strand looped twice and twisted into a small braided ring.",
+    "fact": "From the Sardinian village of Morgongiori: a fine strand is wound twice around the fingers and twisted into a ring. Traditionally made for All Saints' Day, each takes about a minute by hand.",
+    "pairings": [
+      "chicken and tomato ragù",
+      "sausage sauce"
+    ]
+  },
+  {
+    "id": "filindeu",
+    "name": "Su filindeu",
+    "aliases": [
+      "filindeu"
+    ],
+    "family": "fancy",
+    "sub": "fancy-braided",
+    "glyph": "strand-nest",
+    "region": "sardinia",
+    "country": null,
+    "make": "semola-fresh",
+    "pron": "fee-leen-DEH-oo",
+    "meaning": "threads of God",
+    "look": "Gauze-like sheet of hair-thin threads laid crosswise in three layers and dried.",
+    "fact": "One of the rarest pastas in Italy, it is pulled and folded into 256 fine threads, dried as a woven sheet, then broken into broth for a Sardinian pilgrimage feast.",
+    "pairings": [
+      "mutton broth with fresh pecorino"
+    ]
+  },
+  {
+    "id": "lasagne",
+    "name": "Lasagne",
+    "aliases": [
+      "lasagna",
+      "lasagne all'uovo"
+    ],
+    "family": "sheets",
+    "sub": "sheets-layered",
+    "glyph": "sheet",
+    "region": "italy",
+    "country": null,
+    "make": "egg",
+    "pron": "lah-ZAHN-yeh",
+    "meaning": null,
+    "look": "Wide, flat rectangular sheet of pasta, rolled thin.",
+    "fact": "The plural name is traditional even when people mean one sheet. Sheet pasta is among the oldest forms: the word goes back to the Latin laganum.",
+    "pairings": [
+      "ragù and béchamel",
+      "pesto",
+      "ricotta and tomato"
+    ]
+  },
+  {
+    "id": "lasagne-verdi",
+    "name": "Lasagne verdi",
+    "aliases": [
+      "lasagne verdi alla bolognese"
+    ],
+    "family": "sheets",
+    "sub": "sheets-layered",
+    "glyph": "sheet",
+    "region": "emilia-romagna",
+    "country": null,
+    "make": "egg",
+    "pron": "lah-ZAHN-yeh VEHR-dee",
+    "meaning": "green lasagne",
+    "look": "Flat egg-pasta sheet coloured deep green with spinach.",
+    "fact": "In Bologna the classic baked lasagne is made with green sheets: spinach is worked into the egg dough, then layered with ragù, béchamel and Parmigiano.",
+    "pairings": [
+      "ragù bolognese and béchamel"
+    ]
+  },
+  {
+    "id": "lasagne-ricce",
+    "name": "Lasagne ricce",
+    "aliases": [
+      "lasagna riccia",
+      "lasagna noodles"
+    ],
+    "family": "sheets",
+    "sub": "sheets-layered",
+    "glyph": "sheet-ruffled",
+    "region": "campania",
+    "country": null,
+    "make": "dried",
+    "pron": "lah-ZAHN-yeh REE-cheh",
+    "meaning": "curly lasagne",
+    "look": "Long dried semolina sheet with wavy, ruffled edges.",
+    "fact": "The dried, frilly-edged sheet of Naples' Carnival lasagna, layered with ragù, ricotta and tiny meatballs. It is also the model for the American 'lasagna noodle'.",
+    "pairings": [
+      "Neapolitan Carnival lasagna",
+      "ricotta and ragù"
+    ]
+  },
+  {
+    "id": "vincisgrassi",
+    "name": "Vincisgrassi",
+    "aliases": [
+      "princisgras"
+    ],
+    "family": "sheets",
+    "sub": "sheets-layered",
+    "glyph": "sheet",
+    "region": "marche",
+    "country": null,
+    "make": "egg",
+    "pron": "veen-chees-GRAHS-see",
+    "meaning": null,
+    "look": "Thin egg-pasta sheet, in some recipes enriched with butter and a splash of vin cotto or Marsala.",
+    "fact": "Legend says it was named for an Austrian general, Windisch-Graetz, at Ancona in 1799, but a similar 'princisgras' already appears in a Macerata cookbook of 1779.",
+    "pairings": [
+      "giblet and meat ragù with béchamel"
+    ]
+  },
+  {
+    "id": "sagne-chine",
+    "name": "Sagne chine",
+    "aliases": [
+      "lasagne chine"
+    ],
+    "family": "sheets",
+    "sub": "sheets-layered",
+    "glyph": "sheet",
+    "region": "calabria",
+    "country": null,
+    "make": "semola-fresh",
+    "pron": "SAH-nyeh KEE-neh",
+    "meaning": "filled lasagne",
+    "look": "Rustic sheet of semolina pasta for layering.",
+    "fact": "Calabria's feast-day lasagna: 'chine' means filled, and the layers are packed with tiny meatballs, hard-boiled eggs, cheese and often peas or mushrooms.",
+    "pairings": [
+      "meatballs, eggs and caciocavallo"
+    ]
+  },
+  {
+    "id": "maltagliati",
+    "name": "Maltagliati",
+    "aliases": [
+      "malmaritati",
+      "maltajé"
+    ],
+    "family": "sheets",
+    "sub": "sheets-scraps",
+    "glyph": "scrap",
+    "region": "emilia-romagna",
+    "country": null,
+    "make": "egg",
+    "pron": "mahl-tah-LYAH-tee",
+    "meaning": "badly cut",
+    "look": "Irregular flat triangles and lozenges of thin egg pasta.",
+    "fact": "The name means 'badly cut': they began as the uneven offcuts left when trimming a rolled sheet for tagliatelle, and imperfection is still the entire aesthetic.",
+    "pairings": [
+      "pasta e fagioli",
+      "sausage ragù",
+      "chickpea soup"
+    ]
+  },
+  {
+    "id": "stracci",
+    "name": "Stracci",
+    "aliases": [
+      "straccetti"
+    ],
+    "family": "sheets",
+    "sub": "sheets-scraps",
+    "glyph": "scrap",
+    "region": "italy",
+    "country": null,
+    "make": "egg",
+    "pron": "STRAH-chee",
+    "meaning": "rags",
+    "look": "Large, irregular torn or roughly cut pieces of thin pasta sheet.",
+    "fact": "A name used across central Italy for sheets cut or torn into ragged pieces, the quickest shape a cook can make from a rolled sfoglia.",
+    "pairings": [
+      "meat ragù",
+      "mushroom sauce",
+      "pesto"
+    ]
+  },
+  {
+    "id": "strapponi",
+    "name": "Strapponi",
+    "aliases": [],
+    "family": "sheets",
+    "sub": "sheets-scraps",
+    "glyph": "scrap",
+    "region": "tuscany",
+    "country": null,
+    "make": "egg",
+    "pron": "strahp-POH-nee",
+    "meaning": "torn ones",
+    "look": "Rough pieces ripped by hand from a rolled sheet, with ragged edges.",
+    "fact": "No knife is involved: in Tuscany the cook tears pieces straight off the sheet and drops them into the pot, and the name comes from strappare, to rip.",
+    "pairings": [
+      "porcini sauce",
+      "wild boar ragù"
+    ]
+  },
+  {
+    "id": "mandilli-de-saea",
+    "name": "Mandilli de sæa",
+    "aliases": [
+      "fazzoletti di seta",
+      "fazzoletti",
+      "mandilli"
+    ],
+    "family": "sheets",
+    "sub": "sheets-scraps",
+    "glyph": "sheet",
+    "region": "liguria",
+    "country": null,
+    "make": "egg",
+    "pron": "mahn-DEEL-lee deh SEH-ah",
+    "meaning": "silk handkerchiefs",
+    "look": "Very large, almost translucent squares of pasta, served loosely folded.",
+    "fact": "The Genoese name means silk handkerchiefs, and the sheets are rolled so thin that they drape and fold on the plate like cloth.",
+    "pairings": [
+      "pesto genovese",
+      "meat sauce (tocco)"
+    ]
+  },
+  {
+    "id": "testaroli",
+    "name": "Testaroli",
+    "aliases": [],
+    "family": "sheets",
+    "sub": "sheets-scraps",
+    "glyph": "scrap",
+    "region": "tuscany",
+    "country": null,
+    "make": "flour-water",
+    "pron": "teh-stah-ROH-lee",
+    "meaning": null,
+    "look": "Spongy, pancake-like disc cut into diamonds about 5 cm across.",
+    "fact": "From the Lunigiana: a thin batter is cooked on a hot terracotta or iron testo, cut into diamonds, then briefly soaked in hot water. Often described as one of Italy's oldest pastas.",
+    "pairings": [
+      "pesto",
+      "olive oil and pecorino"
+    ]
+  },
+  {
+    "id": "lasagne-bastarde",
+    "name": "Lasagne bastarde",
+    "aliases": [
+      "lasagne matte"
+    ],
+    "family": "sheets",
+    "sub": "sheets-scraps",
+    "glyph": "scrap",
+    "region": "tuscany",
+    "country": null,
+    "make": "alt-grain",
+    "pron": "lah-ZAHN-yeh bah-STAR-deh",
+    "meaning": "bastard lasagne",
+    "look": "Brownish, thick-cut squares or lozenges of pasta sheet.",
+    "fact": "'Bastard' because the dough of the Lunigiana hills mixes wheat flour with chestnut flour, which gives a faintly sweet taste and a darker colour.",
+    "pairings": [
+      "olive oil and pecorino",
+      "pesto",
+      "leek sauce"
+    ]
+  },
+  {
+    "id": "tacconi",
+    "name": "Tacconi",
+    "aliases": [],
+    "family": "sheets",
+    "sub": "sheets-scraps",
+    "glyph": "scrap",
+    "region": "marche",
+    "country": null,
+    "make": "alt-grain",
+    "pron": "tahk-KOH-nee",
+    "meaning": "patches",
+    "look": "Thick, roughly cut squares or short wide strips of sheet.",
+    "fact": "In the Marche tacconi are traditionally made with a share of fava-bean flour, a habit from times when wheat had to be stretched with ground legumes.",
+    "pairings": [
+      "tomato and pancetta",
+      "bean soups"
+    ]
+  },
+  {
+    "id": "taccozze",
+    "name": "Taccozze",
+    "aliases": [
+      "tacconelle",
+      "taccunelle"
+    ],
+    "family": "sheets",
+    "sub": "sheets-scraps",
+    "glyph": "scrap",
+    "region": "molise",
+    "country": null,
+    "make": "flour-water",
+    "pron": "tahk-KOT-tseh",
+    "meaning": null,
+    "look": "Rustic diamonds or squares of thick flour-and-water sheet.",
+    "fact": "An everyday pasta of Molise and neighbouring Abruzzo, cut into rough rhombuses and usually cooked together with beans or other legumes.",
+    "pairings": [
+      "beans",
+      "tomato and basil",
+      "pork ragù"
+    ]
+  },
+  {
+    "id": "blecs",
+    "name": "Blecs",
+    "aliases": [
+      "biechi"
+    ],
+    "family": "sheets",
+    "sub": "sheets-scraps",
+    "glyph": "scrap",
+    "region": "friuli-venezia-giulia",
+    "country": null,
+    "make": "alt-grain",
+    "pron": "BLEKS",
+    "meaning": "patches",
+    "look": "Rough triangles or squares of dark buckwheat-flecked pasta.",
+    "fact": "A Friulian mountain pasta made with buckwheat and wheat flour; the name is the local word for a patch of cloth.",
+    "pairings": [
+      "browned butter and cornmeal",
+      "smoked ricotta",
+      "game ragù"
+    ]
+  },
+  {
+    "id": "foiade",
+    "name": "Foiade",
+    "aliases": [],
+    "family": "sheets",
+    "sub": "sheets-scraps",
+    "glyph": "scrap",
+    "region": "lombardy",
+    "country": null,
+    "make": "egg",
+    "pron": "foh-YAH-deh",
+    "meaning": null,
+    "look": "Broad, irregular lozenges or rectangles of fresh egg pasta.",
+    "fact": "The rustic sheet pasta of the valleys around Bergamo, cut wide and uneven, and sometimes made with a little cornmeal in the dough.",
+    "pairings": [
+      "porcini mushrooms",
+      "sausage ragù"
+    ]
+  },
+  {
+    "id": "cresc-tajat",
+    "name": "Cresc' tajat",
+    "aliases": [
+      "cresc tajat"
+    ],
+    "family": "sheets",
+    "sub": "sheets-scraps",
+    "glyph": "scrap",
+    "region": "marche",
+    "country": null,
+    "make": "alt-grain",
+    "pron": "kresh tah-YAHT",
+    "meaning": "cut flatbread",
+    "look": "Rough, yellowish lozenges of thick sheet.",
+    "fact": "A thrifty pasta from the northern Marche: leftover polenta is kneaded with wheat flour, rolled out and cut into diamonds.",
+    "pairings": [
+      "beans",
+      "sausage and tomato",
+      "wild herbs and lardo"
+    ]
+  },
+  {
+    "id": "pantacce",
+    "name": "Pantacce",
+    "aliases": [],
+    "family": "sheets",
+    "sub": "sheets-scraps",
+    "glyph": "scrap",
+    "region": "italy",
+    "country": null,
+    "make": "dried",
+    "pron": "pahn-TAH-cheh",
+    "meaning": null,
+    "look": "Small dried lozenges with one or two ruffled edges, like chopped-up mafalde.",
+    "fact": "Cut on the diagonal from frilly-edged ribbons, they recall the old habit of using up broken lasagne in soups.",
+    "pairings": [
+      "pasta e fagioli",
+      "minestrone",
+      "chickpea soup"
+    ]
+  },
+  {
+    "id": "lazanki",
+    "name": "Łazanki",
+    "aliases": [
+      "lazanki",
+      "łazanki z kapustą"
+    ],
+    "family": "sheets",
+    "sub": "sheets-scraps",
+    "glyph": "scrap",
+    "region": "world",
+    "country": "Poland",
+    "make": "wheat-noodle",
+    "pron": "wah-ZAHN-kee",
+    "meaning": null,
+    "look": "Small squares or diamonds of rolled noodle dough, a couple of centimetres across.",
+    "fact": "The name descends from lasagne; tradition credits the Italian-born queen Bona Sforza with bringing the idea to Poland in the 1500s. Also eaten in Belarus and Lithuania.",
+    "pairings": [
+      "cabbage and bacon",
+      "sauerkraut and mushrooms"
+    ]
+  },
+  {
+    "id": "fleckerl",
+    "name": "Fleckerl",
+    "aliases": [
+      "flíčky",
+      "krpice"
+    ],
+    "family": "sheets",
+    "sub": "sheets-scraps",
+    "glyph": "scrap",
+    "region": "world",
+    "country": "Austria",
+    "make": "wheat-noodle",
+    "pron": "FLEK-erl",
+    "meaning": "little patches",
+    "look": "Small flat squares of egg noodle about a centimetre across.",
+    "fact": "A staple of old Habsburg kitchens: baked with ham as Schinkenfleckerl in Vienna, tossed with caramelised cabbage as Krautfleckerl, and known as flíčky to Czechs.",
+    "pairings": [
+      "Schinkenfleckerl (ham bake)",
+      "Krautfleckerl (cabbage)"
+    ]
+  },
+  {
+    "id": "csusza",
+    "name": "Csusza",
+    "aliases": [
+      "túrós csusza"
+    ],
+    "family": "sheets",
+    "sub": "sheets-scraps",
+    "glyph": "scrap",
+    "region": "world",
+    "country": "Hungary",
+    "make": "wheat-noodle",
+    "pron": "CHOO-saw",
+    "meaning": null,
+    "look": "Irregular torn pieces of thin egg noodle sheet, roughly 3 to 4 cm across.",
+    "fact": "Traditionally torn by hand rather than cut. Its famous dish, túrós csusza, tops the hot noodles with curd cheese, sour cream and crisp bacon.",
+    "pairings": [
+      "curd cheese, sour cream and bacon"
+    ]
+  },
+  {
+    "id": "mlinci",
+    "name": "Mlinci",
+    "aliases": [],
+    "family": "sheets",
+    "sub": "sheets-scraps",
+    "glyph": "scrap",
+    "region": "world",
+    "country": "Croatia",
+    "make": "flour-water",
+    "pron": "MLEEN-tsee",
+    "meaning": null,
+    "look": "Brittle, blistered sheets of baked dough, broken into pieces and softened in hot liquid.",
+    "fact": "The thin dough is first baked dry, then broken up and soaked in hot water or roasting juices, so it sits between flatbread and pasta. Also made in Slovenia.",
+    "pairings": [
+      "roast turkey",
+      "roast duck drippings"
+    ]
+  },
+  {
+    "id": "andrajos",
+    "name": "Andrajos",
+    "aliases": [],
+    "family": "sheets",
+    "sub": "sheets-scraps",
+    "glyph": "scrap",
+    "region": "world",
+    "country": "Spain",
+    "make": "flour-water",
+    "pron": "ahn-DRAH-hos",
+    "meaning": "rags",
+    "look": "Torn, irregular scraps of thin flour-and-water dough, cooked in stew.",
+    "fact": "A shepherds' dish from Jaén and neighbouring parts of south-eastern Spain: thin rounds of dough are torn into 'rags' straight into a stew of rabbit, hare or salt cod.",
+    "pairings": [
+      "rabbit or hare stew",
+      "salt cod stew"
+    ]
+  },
+  {
+    "id": "pot-pie-noodles",
+    "name": "Pot pie noodles",
+    "aliases": [
+      "bott boi",
+      "pot pie squares"
+    ],
+    "family": "sheets",
+    "sub": "sheets-scraps",
+    "glyph": "scrap",
+    "region": "world",
+    "country": "United States",
+    "make": "wheat-noodle",
+    "pron": "POT pye",
+    "meaning": null,
+    "look": "Thick, soft squares of rolled egg noodle dough about 5 cm across.",
+    "fact": "In Pennsylvania Dutch country 'pot pie' has no crust: it is a stew of chicken or ham in which large square noodles are simmered until slippery.",
+    "pairings": [
+      "chicken pot pie stew",
+      "ham and potato"
+    ]
+  },
+  {
+    "id": "mian-pian",
+    "name": "Mian pian",
+    "aliases": [
+      "mianpian",
+      "ga mian pian",
+      "面片"
+    ],
+    "family": "sheets",
+    "sub": "sheets-scraps",
+    "glyph": "scrap",
+    "region": "world",
+    "country": "China",
+    "make": "wheat-noodle",
+    "pron": "myen PYEN",
+    "meaning": "dough slices",
+    "look": "Thumb-sized flat squares or flakes of wheat dough, pinched off by hand.",
+    "fact": "A north-western Chinese staple, especially in Qinghai, Gansu and Xinjiang: a strip of dough is stretched flat and pieces are pinched off straight into the boiling pot.",
+    "pairings": [
+      "lamb and tomato soup",
+      "stir-fried with peppers and mutton"
+    ]
+  },
+  {
+    "id": "thenthuk",
+    "name": "Thenthuk",
+    "aliases": [
+      "thentuk"
+    ],
+    "family": "sheets",
+    "sub": "sheets-scraps",
+    "glyph": "scrap",
+    "region": "world",
+    "country": "China",
+    "make": "wheat-noodle",
+    "pron": "TEN-took",
+    "meaning": "pulled noodles",
+    "look": "Flat, irregular bite-sized pieces of dough pulled off a strip by hand.",
+    "fact": "A Tibetan cold-weather soup noodle, also common in Nepal and northern India: 'then' means pull and 'thuk' noodle, describing how each piece is torn into the broth.",
+    "pairings": [
+      "yak, mutton or vegetable broth"
+    ]
+  },
+  {
+    "id": "sujebi",
+    "name": "Sujebi",
+    "aliases": [
+      "sujebi-guk"
+    ],
+    "family": "sheets",
+    "sub": "sheets-scraps",
+    "glyph": "scrap",
+    "region": "world",
+    "country": "South Korea",
+    "make": "wheat-noodle",
+    "pron": "soo-JEH-bee",
+    "meaning": null,
+    "look": "Thin, ragged flakes of dough torn by hand, slippery and chewy when cooked.",
+    "fact": "Korea's hand-torn noodle soup: a soft dough is stretched thin and ripped piece by piece into anchovy broth. It is classic rainy-day comfort food.",
+    "pairings": [
+      "anchovy broth with potato and courgette",
+      "kimchi broth"
+    ]
+  },
+  {
+    "id": "hittsumi",
+    "name": "Hittsumi",
+    "aliases": [
+      "hittsumi-jiru",
+      "tottenage"
+    ],
+    "family": "sheets",
+    "sub": "sheets-scraps",
+    "glyph": "scrap",
+    "region": "world",
+    "country": "Japan",
+    "make": "wheat-noodle",
+    "pron": "HEET-tsoo-mee",
+    "meaning": "torn off",
+    "look": "Thin, uneven flat pieces of wheat dough pulled off by hand.",
+    "fact": "A farmhouse dish of Iwate in northern Japan: the name comes from a dialect verb for pulling and tearing, which is how the dough reaches the pot.",
+    "pairings": [
+      "soy-flavoured chicken and vegetable broth"
+    ]
+  },
+  {
+    "id": "kway-chap",
+    "name": "Kway chap",
+    "aliases": [
+      "kuay chap",
+      "guo zhi",
+      "粿汁"
+    ],
+    "family": "sheets",
+    "sub": "sheets-scraps",
+    "glyph": "scrap",
+    "region": "world",
+    "country": "China",
+    "make": "rice-starch",
+    "pron": "KWAY chahp",
+    "meaning": null,
+    "look": "Broad, thin squares or triangles of rice sheet that curl into loose rolls when cooked.",
+    "fact": "A Teochew dish from southern China, now a hawker staple in Singapore, Malaysia and Thailand: silky rice sheets served in a dark, spiced soy broth with braised pork.",
+    "pairings": [
+      "soy-braised pork and offal broth"
+    ]
+  }
+]

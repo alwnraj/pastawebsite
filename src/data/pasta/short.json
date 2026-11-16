@@ -1,0 +1,1205 @@
+[
+  {
+    "id": "penne",
+    "name": "Penne",
+    "aliases": [
+      "penne lisce",
+      "mostaccioli"
+    ],
+    "family": "tubes",
+    "sub": "tubes-diagonal",
+    "glyph": "penne",
+    "region": "italy",
+    "country": null,
+    "make": "dried",
+    "pron": "PEN-neh",
+    "meaning": "quills / pens",
+    "look": "Short smooth tube with both ends cut on the diagonal, like a quill nib.",
+    "fact": "Named after the quill pen. In 1865 Giovanni Battista Capurro, near Genoa, patented a machine that cut the diagonal ends without crushing the tube.",
+    "pairings": [
+      "arrabbiata",
+      "tomato and basil",
+      "baked al forno"
+    ]
+  },
+  {
+    "id": "penne-rigate",
+    "name": "Penne rigate",
+    "aliases": [],
+    "family": "tubes",
+    "sub": "tubes-diagonal",
+    "glyph": "penne-ridged",
+    "region": "italy",
+    "country": null,
+    "make": "dried",
+    "pron": "PEN-neh ree-GAH-teh",
+    "meaning": "ridged quills",
+    "look": "Short tube cut on the diagonal, with fine ridges running along the outside.",
+    "fact": "Rigate simply means ridged: the grooves give tomato sauce more grip, which is why this version far outsells smooth penne.",
+    "pairings": [
+      "arrabbiata",
+      "vodka sauce",
+      "norma"
+    ]
+  },
+  {
+    "id": "pennette",
+    "name": "Pennette",
+    "aliases": [
+      "pennette rigate"
+    ],
+    "family": "tubes",
+    "sub": "tubes-diagonal",
+    "glyph": "penne-ridged",
+    "region": "italy",
+    "country": null,
+    "make": "dried",
+    "pron": "pen-NET-teh",
+    "meaning": "little quills",
+    "look": "A slimmer, shorter penne, usually ridged.",
+    "fact": "The smaller penne you see in quick weeknight sauces and bakes; its thin walls cook a couple of minutes faster than full-size penne.",
+    "pairings": [
+      "vodka sauce",
+      "tomato and tuna",
+      "pasta salad"
+    ]
+  },
+  {
+    "id": "mezze-penne",
+    "name": "Mezze penne",
+    "aliases": [
+      "mezze penne rigate"
+    ],
+    "family": "tubes",
+    "sub": "tubes-diagonal",
+    "glyph": "penne-ridged",
+    "region": "italy",
+    "country": null,
+    "make": "dried",
+    "pron": "MED-zeh PEN-neh",
+    "meaning": "half quills",
+    "look": "Penne of normal width but roughly half the length, smooth or ridged.",
+    "fact": "Cutting penne short makes pieces about the size of a chickpea or a diced vegetable, so they mix evenly into chunky sauces and thick soups.",
+    "pairings": [
+      "sausage and peas",
+      "vegetable sauces",
+      "pasta e fagioli"
+    ]
+  },
+  {
+    "id": "pennoni",
+    "name": "Pennoni",
+    "aliases": [
+      "pennoni rigati"
+    ],
+    "family": "tubes",
+    "sub": "tubes-diagonal",
+    "glyph": "penne",
+    "region": "italy",
+    "country": null,
+    "make": "dried",
+    "pron": "pen-NOH-nee",
+    "meaning": "big quills",
+    "look": "Oversized penne: a wide, long diagonal-cut tube, smooth or ridged.",
+    "fact": "The augmentative of penne. The wide bore lets chunky ragù get inside, and the tubes are sturdy enough to bake.",
+    "pairings": [
+      "meat ragù",
+      "sausage ragù",
+      "baked al forno"
+    ]
+  },
+  {
+    "id": "penne-a-candela",
+    "name": "Penne a candela",
+    "aliases": [
+      "penne candela"
+    ],
+    "family": "tubes",
+    "sub": "tubes-diagonal",
+    "glyph": "penne",
+    "region": "campania",
+    "country": null,
+    "make": "dried",
+    "pron": "PEN-neh ah kahn-DEH-lah",
+    "meaning": "candle quills",
+    "look": "Long, slender smooth tube with quill-cut ends, longer than ordinary penne.",
+    "fact": "A quill-cut relative of Naples' long smooth \"candle\" tubes; the length and smooth wall suit slow-cooked Neapolitan sauces.",
+    "pairings": [
+      "genovese",
+      "ragù napoletano"
+    ]
+  },
+  {
+    "id": "trenne",
+    "name": "Trenne",
+    "aliases": [
+      "trennette"
+    ],
+    "family": "tubes",
+    "sub": "tubes-diagonal",
+    "glyph": "penne",
+    "region": "italy",
+    "country": null,
+    "make": "dried",
+    "pron": "TREN-neh",
+    "meaning": null,
+    "look": "Penne-like diagonal-cut tube with a triangular rather than round cross-section.",
+    "fact": "Three flat faces and sharp corners give trenne a firmer bite than round penne; the smaller size is sold as trennette.",
+    "pairings": [
+      "tomato sauce",
+      "meat ragù",
+      "vegetable sauces"
+    ]
+  },
+  {
+    "id": "garganelli",
+    "name": "Garganelli",
+    "aliases": [],
+    "family": "tubes",
+    "sub": "tubes-diagonal",
+    "glyph": "penne-ridged",
+    "region": "emilia-romagna",
+    "country": null,
+    "make": "egg",
+    "pron": "gar-gah-NEL-lee",
+    "meaning": "little gullets",
+    "look": "Small egg-pasta square rolled corner to corner into a ridged quill with a visible overlapping seam.",
+    "fact": "Made by rolling squares of egg dough around a stick over a ridged comb (pettine). Legend says a Romagna cook invented them when the tortellini filling went missing.",
+    "pairings": [
+      "ragù",
+      "prosciutto and peas",
+      "sausage and cream"
+    ]
+  },
+  {
+    "id": "macarrones",
+    "name": "Macarrones",
+    "aliases": [
+      "plumas"
+    ],
+    "family": "tubes",
+    "sub": "tubes-diagonal",
+    "glyph": "penne-ridged",
+    "region": "world",
+    "country": "Spain",
+    "make": "dried",
+    "pron": "mah-kah-RROH-nehs",
+    "meaning": "macaroni",
+    "look": "Short ridged tube with diagonal ends, essentially Spanish penne.",
+    "fact": "In Spain \"macarrones\" means short quill-cut tubes, and macarrones con chorizo y tomate is a staple of home cooking.",
+    "pairings": [
+      "chorizo and tomato",
+      "tomato and cheese gratin"
+    ]
+  },
+  {
+    "id": "maccheroni",
+    "name": "Maccheroni",
+    "aliases": [],
+    "family": "tubes",
+    "sub": "tubes-smooth",
+    "glyph": "tube",
+    "region": "italy",
+    "country": null,
+    "make": "dried",
+    "pron": "mahk-keh-ROH-nee",
+    "meaning": null,
+    "look": "Plain short straight tube of medium width, usually smooth.",
+    "fact": "For centuries, especially in the south, \"maccheroni\" meant dried pasta in general; only later did it settle on short tubes. The word's origin is still disputed.",
+    "pairings": [
+      "tomato sauce",
+      "ragù",
+      "baked al forno"
+    ]
+  },
+  {
+    "id": "maccheroncini",
+    "name": "Maccheroncini",
+    "aliases": [],
+    "family": "tubes",
+    "sub": "tubes-smooth",
+    "glyph": "tube",
+    "region": "italy",
+    "country": null,
+    "make": "dried",
+    "pron": "mahk-keh-ron-CHEE-nee",
+    "meaning": "little maccheroni",
+    "look": "Slim short straight tube, narrower than maccheroni.",
+    "fact": "In most of Italy the word means slim short tubes, but in Campofilone in the Marche \"maccheroncini\" are hair-fine egg strands, a completely different pasta.",
+    "pairings": [
+      "tomato sauce",
+      "light ragù",
+      "baked al forno"
+    ]
+  },
+  {
+    "id": "ziti",
+    "name": "Ziti",
+    "aliases": [
+      "ziti tagliati",
+      "cut ziti"
+    ],
+    "family": "tubes",
+    "sub": "tubes-smooth",
+    "glyph": "tube",
+    "region": "campania",
+    "country": null,
+    "make": "dried",
+    "pron": "ZEE-tee",
+    "meaning": "brides / the betrothed",
+    "look": "Smooth straight-cut tube of medium width, sold short or snapped from long lengths.",
+    "fact": "The classic wedding pasta of Naples. Traditionally made as long tubes and snapped by hand before cooking; pre-cut \"ziti tagliati\" came later.",
+    "pairings": [
+      "ragù napoletano",
+      "genovese",
+      "baked ziti"
+    ]
+  },
+  {
+    "id": "cannolicchi",
+    "name": "Cannolicchi",
+    "aliases": [],
+    "family": "tubes",
+    "sub": "tubes-smooth",
+    "glyph": "tube",
+    "region": "italy",
+    "country": null,
+    "make": "dried",
+    "pron": "kahn-noh-LEEK-kee",
+    "meaning": "little tubes",
+    "look": "Short straight tube, smooth or ridged, a size up from soup tubetti.",
+    "fact": "The name comes from canna, a reed or pipe, and is also the Italian word for razor clams, which have the same narrow tubular look.",
+    "pairings": [
+      "pasta e fagioli",
+      "minestrone",
+      "seafood sauces"
+    ]
+  },
+  {
+    "id": "ditali",
+    "name": "Ditali",
+    "aliases": [
+      "ditali lisci",
+      "ditali rigati"
+    ],
+    "family": "tubes",
+    "sub": "tubes-smooth",
+    "glyph": "tube",
+    "region": "italy",
+    "country": null,
+    "make": "dried",
+    "pron": "dee-TAH-lee",
+    "meaning": "thimbles",
+    "look": "Short stubby tube shaped like an open-ended thimble, smooth or ridged.",
+    "fact": "The middle size of the thimble family, between tiny ditalini and big ditaloni; made for legume soups thick enough to eat with a fork.",
+    "pairings": [
+      "pasta e ceci",
+      "pasta e piselli",
+      "pasta e fagioli"
+    ]
+  },
+  {
+    "id": "ditaloni",
+    "name": "Ditaloni",
+    "aliases": [],
+    "family": "tubes",
+    "sub": "tubes-smooth",
+    "glyph": "tube",
+    "region": "italy",
+    "country": null,
+    "make": "dried",
+    "pron": "dee-tah-LOH-nee",
+    "meaning": "big thimbles",
+    "look": "Wide, short thimble-like tube, the largest of the ditali family.",
+    "fact": "A larger ditalini whose name means \"big thimbles\". A favourite for pasta e fagioli because beans lodge inside the wide tube.",
+    "pairings": [
+      "pasta e fagioli",
+      "pasta e patate",
+      "minestrone"
+    ]
+  },
+  {
+    "id": "canneroni",
+    "name": "Canneroni",
+    "aliases": [],
+    "family": "tubes",
+    "sub": "tubes-smooth",
+    "glyph": "tube",
+    "region": "italy",
+    "country": null,
+    "make": "dried",
+    "pron": "kahn-neh-ROH-nee",
+    "meaning": "big tubes",
+    "look": "Short, wide straight tube, the larger sibling of cannolicchi.",
+    "fact": "A southern soup tube scaled up: wide enough to catch chickpeas and beans, and sturdy enough for thick vegetable sauces.",
+    "pairings": [
+      "pasta e ceci",
+      "pasta e fagioli",
+      "vegetable sauces"
+    ]
+  },
+  {
+    "id": "kofto-makaronaki",
+    "name": "Kofto makaronaki",
+    "aliases": [
+      "κοφτό μακαρονάκι"
+    ],
+    "family": "tubes",
+    "sub": "tubes-smooth",
+    "glyph": "tube",
+    "region": "world",
+    "country": "Greece",
+    "make": "dried",
+    "pron": "kof-TOH mah-kah-roh-NAH-kee",
+    "meaning": "little cut macaroni",
+    "look": "Small short smooth tube, straight or very slightly curved.",
+    "fact": "The everyday short tube of Greek kitchens, simmered directly in the sauce for one-pot dishes such as octopus with pasta.",
+    "pairings": [
+      "octopus stew (chtapodi)",
+      "tomato soups"
+    ]
+  },
+  {
+    "id": "rigatoni",
+    "name": "Rigatoni",
+    "aliases": [],
+    "family": "tubes",
+    "sub": "tubes-ridged",
+    "glyph": "tube-ridged",
+    "region": "lazio",
+    "country": null,
+    "make": "dried",
+    "pron": "ree-gah-TOH-nee",
+    "meaning": "big ridged ones",
+    "look": "Wide straight-cut tube with deep lengthwise ridges.",
+    "fact": "From rigato, \"ridged\": the grooves and wide bore were made for meaty sauces to lodge in. It is the tube of Roman cooking, from carbonara to pajata.",
+    "pairings": [
+      "carbonara",
+      "amatriciana",
+      "pajata"
+    ]
+  },
+  {
+    "id": "mezzi-rigatoni",
+    "name": "Mezzi rigatoni",
+    "aliases": [],
+    "family": "tubes",
+    "sub": "tubes-ridged",
+    "glyph": "tube-ridged",
+    "region": "italy",
+    "country": null,
+    "make": "dried",
+    "pron": "MED-zee ree-gah-TOH-nee",
+    "meaning": "half rigatoni",
+    "look": "Rigatoni of full width but about half the length.",
+    "fact": "The shorter barrel is easier to spear and fills completely with sauce, which makes it popular for chunky vegetable and sausage sauces.",
+    "pairings": [
+      "sausage ragù",
+      "norma",
+      "gricia"
+    ]
+  },
+  {
+    "id": "tortiglioni",
+    "name": "Tortiglioni",
+    "aliases": [],
+    "family": "tubes",
+    "sub": "tubes-ridged",
+    "glyph": "tube-ridged",
+    "region": "campania",
+    "country": null,
+    "make": "dried",
+    "pron": "tor-tee-LYOH-nee",
+    "meaning": null,
+    "look": "Rigatoni-sized tube whose ridges spiral around the barrel.",
+    "fact": "Unlike rigatoni, the grooves twist around the tube, so sauce winds through them instead of sitting in straight channels. The name comes from Latin torquere, to twist.",
+    "pairings": [
+      "ragù",
+      "tomato and ricotta",
+      "baked al forno"
+    ]
+  },
+  {
+    "id": "elicoidali",
+    "name": "Elicoidali",
+    "aliases": [],
+    "family": "tubes",
+    "sub": "tubes-ridged",
+    "glyph": "tube-ridged",
+    "region": "italy",
+    "country": null,
+    "make": "dried",
+    "pron": "eh-lee-koy-DAH-lee",
+    "meaning": "helicoidal",
+    "look": "Medium straight-cut tube, slimmer than rigatoni, with ridges that curve gently around it.",
+    "fact": "The name describes the helical ridges. It sits between rigatoni and tortiglioni: narrower than both, with a shallower spiral.",
+    "pairings": [
+      "meat ragù",
+      "tomato sauce",
+      "baked al forno"
+    ]
+  },
+  {
+    "id": "mezze-maniche",
+    "name": "Mezze maniche",
+    "aliases": [
+      "mezze maniche rigate"
+    ],
+    "family": "tubes",
+    "sub": "tubes-ridged",
+    "glyph": "tube-ridged",
+    "region": "lazio",
+    "country": null,
+    "make": "dried",
+    "pron": "MED-zeh MAH-nee-keh",
+    "meaning": "half sleeves",
+    "look": "Stubby ridged tube about as wide as rigatoni but only half as long.",
+    "fact": "Means \"half sleeves\", like a short-sleeved shirt. In Rome it is a favourite for carbonara, gricia and amatriciana, since the short barrel scoops up bits of guanciale.",
+    "pairings": [
+      "amatriciana",
+      "carbonara",
+      "gricia"
+    ]
+  },
+  {
+    "id": "sedani",
+    "name": "Sedani",
+    "aliases": [
+      "sedani rigati"
+    ],
+    "family": "tubes",
+    "sub": "tubes-ridged",
+    "glyph": "tube-ridged",
+    "region": "italy",
+    "country": null,
+    "make": "dried",
+    "pron": "SEH-dah-nee",
+    "meaning": "celery stalks",
+    "look": "Slim, slightly curved ridged tube with straight-cut ends.",
+    "fact": "Named for the look of a ribbed celery stalk. The smooth version is reportedly older and went by the name denti d'elefante, \"elephant's teeth\".",
+    "pairings": [
+      "tomato sauce",
+      "vegetable ragù",
+      "sausage sauce"
+    ]
+  },
+  {
+    "id": "sedanini",
+    "name": "Sedanini",
+    "aliases": [
+      "sedanini rigati"
+    ],
+    "family": "tubes",
+    "sub": "tubes-ridged",
+    "glyph": "tube-ridged",
+    "region": "italy",
+    "country": null,
+    "make": "dried",
+    "pron": "seh-dah-NEE-nee",
+    "meaning": "little celery stalks",
+    "look": "Small, narrow, slightly curved ridged tube.",
+    "fact": "The diminutive of sedani; its thin walls and narrow bore suit lighter tomato and vegetable sauces rather than heavy ragù.",
+    "pairings": [
+      "tomato and basil",
+      "vegetable sauces",
+      "pasta salad"
+    ]
+  },
+  {
+    "id": "millerighe",
+    "name": "Millerighe",
+    "aliases": [
+      "mille righe"
+    ],
+    "family": "tubes",
+    "sub": "tubes-ridged",
+    "glyph": "tube-ridged",
+    "region": "italy",
+    "country": null,
+    "make": "dried",
+    "pron": "meel-leh-REE-geh",
+    "meaning": "a thousand lines",
+    "look": "Wide straight tube covered in many fine, closely spaced ridges.",
+    "fact": "The dense fine ridging multiplies the surface area, so the tube holds more sauce on its outside than a rigatone of the same size.",
+    "pairings": [
+      "meat ragù",
+      "sausage ragù",
+      "baked al forno"
+    ]
+  },
+  {
+    "id": "macaroni",
+    "name": "Elbow macaroni",
+    "aliases": [
+      "macaroni",
+      "elbows",
+      "coditos"
+    ],
+    "family": "tubes",
+    "sub": "tubes-curved",
+    "glyph": "elbow",
+    "region": "world",
+    "country": "United States",
+    "make": "dried",
+    "pron": "mah-kah-ROH-nee",
+    "meaning": "from Italian maccheroni",
+    "look": "Small narrow smooth tube bent into a short curve.",
+    "fact": "The word is far older than the shape: \"macaroni\" once meant pasta in general. The little elbow became the North American standard for mac and cheese.",
+    "pairings": [
+      "mac and cheese",
+      "macaroni salad",
+      "goulash"
+    ]
+  },
+  {
+    "id": "gomiti",
+    "name": "Gomiti",
+    "aliases": [
+      "gomiti rigati"
+    ],
+    "family": "tubes",
+    "sub": "tubes-curved",
+    "glyph": "elbow",
+    "region": "italy",
+    "country": null,
+    "make": "dried",
+    "pron": "GOH-mee-tee",
+    "meaning": "elbows",
+    "look": "Short tube bent in a tight curve, smooth or ridged, wider than American elbows.",
+    "fact": "The bend is made in the die: dough is forced out faster on one side of the opening than the other, so the tube curls as it emerges.",
+    "pairings": [
+      "tomato sauce",
+      "cheese sauces",
+      "pasta salad"
+    ]
+  },
+  {
+    "id": "chifferi",
+    "name": "Chifferi",
+    "aliases": [
+      "chifferi rigati"
+    ],
+    "family": "tubes",
+    "sub": "tubes-curved",
+    "glyph": "elbow",
+    "region": "italy",
+    "country": null,
+    "make": "dried",
+    "pron": "KEEF-feh-ree",
+    "meaning": null,
+    "look": "Short, wide tube curved into a half-moon, smooth or ridged.",
+    "fact": "Named after the Austrian Kipferl, the crescent-shaped pastry it resembles.",
+    "pairings": [
+      "tomato sauce",
+      "ragù",
+      "soups"
+    ]
+  },
+  {
+    "id": "gramigna",
+    "name": "Gramigna",
+    "aliases": [],
+    "family": "tubes",
+    "sub": "tubes-curved",
+    "glyph": "elbow",
+    "region": "emilia-romagna",
+    "country": null,
+    "make": "egg",
+    "pron": "grah-MEEN-yah",
+    "meaning": "couch grass (a weed)",
+    "look": "Short, thin hollow strands curled into little hooks and commas.",
+    "fact": "Named after a wiry weed. In Bologna it is so tied to sausage that gramigna alla salsiccia reads on menus as a single dish.",
+    "pairings": [
+      "sausage ragù",
+      "sausage and cream"
+    ]
+  },
+  {
+    "id": "hornli",
+    "name": "Hörnli",
+    "aliases": [
+      "Hörnchen"
+    ],
+    "family": "tubes",
+    "sub": "tubes-curved",
+    "glyph": "elbow",
+    "region": "world",
+    "country": "Switzerland",
+    "make": "dried",
+    "pron": "HURN-lee",
+    "meaning": "little horns",
+    "look": "Small curved elbow tube, smooth or lightly ridged.",
+    "fact": "A Swiss comfort staple: Ghackets mit Hörnli pairs it with minced-meat sauce and apple purée, and it is one of the pastas used for Älplermagronen.",
+    "pairings": [
+      "Ghackets (minced meat sauce)",
+      "Älplermagronen"
+    ]
+  },
+  {
+    "id": "paccheri",
+    "name": "Paccheri",
+    "aliases": [
+      "schiaffoni"
+    ],
+    "family": "tubes",
+    "sub": "tubes-giant",
+    "glyph": "tube-giant",
+    "region": "campania",
+    "country": null,
+    "make": "dried",
+    "pron": "PAK-keh-ree",
+    "meaning": "slaps",
+    "look": "Very large, wide smooth tube that collapses flat when cooked.",
+    "fact": "Big enough to stuff one by one. The name likely comes from a Neapolitan word for a slap, perhaps for the sound they make when served.",
+    "pairings": [
+      "seafood ragù",
+      "ragù napoletano",
+      "stuffed and baked"
+    ]
+  },
+  {
+    "id": "mezzi-paccheri",
+    "name": "Mezzi paccheri",
+    "aliases": [],
+    "family": "tubes",
+    "sub": "tubes-giant",
+    "glyph": "tube-giant",
+    "region": "campania",
+    "country": null,
+    "make": "dried",
+    "pron": "MED-zee PAK-keh-ree",
+    "meaning": "half slaps",
+    "look": "Paccheri cut to about half length: a short, very wide smooth tube.",
+    "fact": "Half-length paccheri hold their shape better in the pan and are easier to eat, so many cooks prefer them for seafood sauces.",
+    "pairings": [
+      "seafood sauces",
+      "tomato and basil",
+      "genovese"
+    ]
+  },
+  {
+    "id": "bombardoni",
+    "name": "Bombardoni",
+    "aliases": [],
+    "family": "tubes",
+    "sub": "tubes-giant",
+    "glyph": "tube-giant",
+    "region": "italy",
+    "country": null,
+    "make": "dried",
+    "pron": "bom-bar-DOH-nee",
+    "meaning": null,
+    "look": "Oversized ridged tube, wider and longer than rigatoni.",
+    "fact": "A giant ridged tube made to be filled by hand or tossed with a very chunky ragù.",
+    "pairings": [
+      "chunky meat ragù",
+      "stuffed and baked"
+    ]
+  },
+  {
+    "id": "occhi-di-lupo",
+    "name": "Occhi di lupo",
+    "aliases": [],
+    "family": "tubes",
+    "sub": "tubes-giant",
+    "glyph": "tube-giant",
+    "region": "italy",
+    "country": null,
+    "make": "dried",
+    "pron": "OK-kee dee LOO-poh",
+    "meaning": "wolf's eyes",
+    "look": "Large, thick-walled short tube with a wide round opening.",
+    "fact": "Named for the wide round bore that stares up from the plate; the thick walls keep it firm in dense sauces and baked dishes.",
+    "pairings": [
+      "meat ragù",
+      "baked al forno"
+    ]
+  },
+  {
+    "id": "tufoli",
+    "name": "Tufoli",
+    "aliases": [],
+    "family": "tubes",
+    "sub": "tubes-giant",
+    "glyph": "tube-giant",
+    "region": "italy",
+    "country": null,
+    "make": "dried",
+    "pron": "TOO-foh-lee",
+    "meaning": null,
+    "look": "Large, wide smooth tube, shorter than cannelloni.",
+    "fact": "A big southern tube, wide enough to stuff and bake, yet short enough to be boiled and served with a chunky ragù.",
+    "pairings": [
+      "stuffed and baked",
+      "meat ragù"
+    ]
+  },
+  {
+    "id": "calamarata",
+    "name": "Calamarata",
+    "aliases": [],
+    "family": "tubes",
+    "sub": "tubes-rings",
+    "glyph": "ring",
+    "region": "campania",
+    "country": null,
+    "make": "dried",
+    "pron": "kah-lah-mah-RAH-tah",
+    "meaning": "squid-style",
+    "look": "Thick, wide, short smooth rings about the size of sliced squid.",
+    "fact": "Shaped to mimic rings of calamari and traditionally cooked with real squid, so pasta and seafood are hard to tell apart on the plate.",
+    "pairings": [
+      "squid and cherry tomato",
+      "seafood ragù"
+    ]
+  },
+  {
+    "id": "fusilli",
+    "name": "Fusilli",
+    "aliases": [
+      "Spirelli",
+      "hélices"
+    ],
+    "family": "twists",
+    "sub": "twists-corkscrew",
+    "glyph": "corkscrew",
+    "region": "italy",
+    "country": null,
+    "make": "dried",
+    "pron": "foo-ZEEL-lee",
+    "meaning": "little spindles",
+    "look": "Short three-bladed corkscrew.",
+    "fact": "Named after the fuso, the spindle that dough was once wound around by hand. Machine-made short fusilli only appeared in the 20th century.",
+    "pairings": [
+      "pesto",
+      "tomato sauce",
+      "pasta salad"
+    ]
+  },
+  {
+    "id": "fusilloni",
+    "name": "Fusilloni",
+    "aliases": [
+      "fusilli giganti"
+    ],
+    "family": "twists",
+    "sub": "twists-corkscrew",
+    "glyph": "corkscrew",
+    "region": "italy",
+    "country": null,
+    "make": "dried",
+    "pron": "foo-zeel-LOH-nee",
+    "meaning": "big fusilli",
+    "look": "Oversized fusilli with deep, wide spiral blades.",
+    "fact": "Simply fusilli scaled up; the deeper blades trap chunks of vegetable or meat that would slide off the standard size.",
+    "pairings": [
+      "chunky ragù",
+      "vegetable sauces",
+      "pesto"
+    ]
+  },
+  {
+    "id": "eliche",
+    "name": "Eliche",
+    "aliases": [],
+    "family": "twists",
+    "sub": "twists-corkscrew",
+    "glyph": "corkscrew",
+    "region": "italy",
+    "country": null,
+    "make": "dried",
+    "pron": "EH-lee-keh",
+    "meaning": "propellers",
+    "look": "Short corkscrew with broad, flat blades and an open spiral.",
+    "fact": "Named after ship and aircraft propellers. Brands often use eliche and fusilli interchangeably; where both are sold, eliche have the wider blades.",
+    "pairings": [
+      "tomato sauce",
+      "pesto",
+      "pasta salad"
+    ]
+  },
+  {
+    "id": "rotini",
+    "name": "Rotini",
+    "aliases": [],
+    "family": "twists",
+    "sub": "twists-corkscrew",
+    "glyph": "corkscrew",
+    "region": "world",
+    "country": "United States",
+    "make": "dried",
+    "pron": "roh-TEE-nee",
+    "meaning": null,
+    "look": "Short corkscrew with a tight, compact spiral.",
+    "fact": "A North American name: the word is not used in Italy, where the same tight corkscrew would be sold as fusilli or eliche.",
+    "pairings": [
+      "pasta salad",
+      "meat sauce",
+      "baked casseroles"
+    ]
+  },
+  {
+    "id": "spirali",
+    "name": "Spirali",
+    "aliases": [],
+    "family": "twists",
+    "sub": "twists-corkscrew",
+    "glyph": "corkscrew",
+    "region": "italy",
+    "country": null,
+    "make": "dried",
+    "pron": "spee-RAH-lee",
+    "meaning": "spirals",
+    "look": "Short spiral, usually wound more tightly than fusilli.",
+    "fact": "A loose trade name: many brands use it for corkscrews tighter than classic fusilli, and some for coiled hollow tubes.",
+    "pairings": [
+      "tomato sauce",
+      "pesto",
+      "pasta salad"
+    ]
+  },
+  {
+    "id": "fusilli-al-ferretto",
+    "name": "Fusilli al ferretto",
+    "aliases": [
+      "fusilli napoletani",
+      "fusilli avellinesi",
+      "fusilli molisani"
+    ],
+    "family": "twists",
+    "sub": "twists-corkscrew",
+    "glyph": "corkscrew",
+    "region": "campania",
+    "country": null,
+    "make": "semola-fresh",
+    "pron": "foo-ZEEL-lee ahl fehr-RET-toh",
+    "meaning": "fusilli made on the little iron",
+    "look": "Long, loose hand-made spiral, formed by winding a rope of dough around a thin rod.",
+    "fact": "The ancestor of factory fusilli: a strip of semolina dough is spun around a thin iron rod, then slid off as a springy coil.",
+    "pairings": [
+      "ragù napoletano",
+      "lamb ragù",
+      "tomato and ricotta"
+    ]
+  },
+  {
+    "id": "riccioli",
+    "name": "Riccioli",
+    "aliases": [],
+    "family": "twists",
+    "sub": "twists-corkscrew",
+    "glyph": "corkscrew",
+    "region": "italy",
+    "country": null,
+    "make": "dried",
+    "pron": "REE-choh-lee",
+    "meaning": "curls",
+    "look": "Short twisted strip curled into a loose ringlet.",
+    "fact": "The name just means \"curls\", and makers apply it to several short twisted shapes with open spirals.",
+    "pairings": [
+      "tomato sauce",
+      "vegetable sauces",
+      "meat ragù"
+    ]
+  },
+  {
+    "id": "fusilli-bucati",
+    "name": "Fusilli bucati",
+    "aliases": [
+      "fusilli bucati corti"
+    ],
+    "family": "twists",
+    "sub": "twists-helix",
+    "glyph": "helix",
+    "region": "italy",
+    "country": null,
+    "make": "dried",
+    "pron": "foo-ZEEL-lee boo-KAH-tee",
+    "meaning": "pierced fusilli",
+    "look": "Thin hollow tube wound into a short spring.",
+    "fact": "Bucati means pierced: the coil is a narrow tube, so it catches sauce both in the spiral and through its hollow centre.",
+    "pairings": [
+      "tomato sauce",
+      "ragù",
+      "sausage sauce"
+    ]
+  },
+  {
+    "id": "fusilli-lunghi-bucati",
+    "name": "Fusilli lunghi bucati",
+    "aliases": [
+      "fusilli col buco"
+    ],
+    "family": "twists",
+    "sub": "twists-helix",
+    "glyph": "helix",
+    "region": "campania",
+    "country": null,
+    "make": "dried",
+    "pron": "foo-ZEEL-lee LOON-ghee boo-KAH-tee",
+    "meaning": "long pierced fusilli",
+    "look": "Spaghetti-length hollow strand curled like a telephone cord.",
+    "fact": "The factory descendant of hand-wound Neapolitan fusilli: a long hollow strand set in springy coils, often broken into pieces before cooking.",
+    "pairings": [
+      "ragù napoletano",
+      "tomato sauce",
+      "genovese"
+    ]
+  },
+  {
+    "id": "cavatappi",
+    "name": "Cavatappi",
+    "aliases": [
+      "cellentani",
+      "amori",
+      "scoobi doo"
+    ],
+    "family": "twists",
+    "sub": "twists-helix",
+    "glyph": "helix",
+    "region": "italy",
+    "country": null,
+    "make": "dried",
+    "pron": "kah-vah-TAP-pee",
+    "meaning": "corkscrews",
+    "look": "Ridged hollow tube bent into a short open helix.",
+    "fact": "Means \"corkscrews\": a hollow spiral combining tube and twist. Barilla launched it in the 1960s as cellentani; other makers use the generic name cavatappi.",
+    "pairings": [
+      "mac and cheese",
+      "tomato sauce",
+      "pasta salad"
+    ]
+  },
+  {
+    "id": "gemelli",
+    "name": "Gemelli",
+    "aliases": [],
+    "family": "twists",
+    "sub": "twists-rolled",
+    "glyph": "twist",
+    "region": "italy",
+    "country": null,
+    "make": "dried",
+    "pron": "jeh-MEL-lee",
+    "meaning": "twins",
+    "look": "Short piece that looks like two strands twisted around each other.",
+    "fact": "They look like two strands twisted together, but each piece is usually a single S-shaped strand twisted on itself.",
+    "pairings": [
+      "pesto",
+      "tomato sauce",
+      "pasta salad"
+    ]
+  },
+  {
+    "id": "casarecce",
+    "name": "Casarecce",
+    "aliases": [
+      "caserecce"
+    ],
+    "family": "twists",
+    "sub": "twists-rolled",
+    "glyph": "scroll",
+    "region": "sicily",
+    "country": null,
+    "make": "dried",
+    "pron": "kah-sah-REH-cheh",
+    "meaning": "homemade",
+    "look": "Short strip rolled lengthwise into a loose S-shaped scroll.",
+    "fact": "The name means \"homemade\": the shape copies the look of dough rolled by hand around a thin rod, though today it is mostly factory extruded.",
+    "pairings": [
+      "pesto alla trapanese",
+      "norma",
+      "sausage and broccoli"
+    ]
+  },
+  {
+    "id": "strozzapreti",
+    "name": "Strozzapreti",
+    "aliases": [],
+    "family": "twists",
+    "sub": "twists-rolled",
+    "glyph": "twist",
+    "region": "emilia-romagna",
+    "country": null,
+    "make": "flour-water",
+    "pron": "stroht-tsah-PREH-tee",
+    "meaning": "priest stranglers",
+    "look": "Hand-rolled strip of dough twisted into an irregular elongated curl.",
+    "fact": "Means \"priest stranglers\". Legend says Romagna housewives made it for the clergy as rent in kind, hoping the greedy priests would choke on it.",
+    "pairings": [
+      "sausage ragù",
+      "tomato sauce",
+      "seafood sauces"
+    ]
+  },
+  {
+    "id": "trofie",
+    "name": "Trofie",
+    "aliases": [
+      "trofiette"
+    ],
+    "family": "twists",
+    "sub": "twists-rolled",
+    "glyph": "twist",
+    "region": "liguria",
+    "country": null,
+    "make": "flour-water",
+    "pron": "TROH-fyeh",
+    "meaning": null,
+    "look": "Small thin twist of dough with tapered ends, about 3 cm long.",
+    "fact": "From the Golfo Paradiso coast near Genoa. Each piece is rubbed across the board with the palm into a tight twist; it is the classic partner of pesto genovese.",
+    "pairings": [
+      "pesto genovese",
+      "pesto with potatoes and green beans"
+    ]
+  },
+  {
+    "id": "busiate",
+    "name": "Busiate",
+    "aliases": [],
+    "family": "twists",
+    "sub": "twists-rolled",
+    "glyph": "helix",
+    "region": "sicily",
+    "country": null,
+    "make": "semola-fresh",
+    "pron": "boo-ZYAH-teh",
+    "meaning": "from busa, a reed stalk",
+    "look": "Long, open telephone-cord coil of semolina dough.",
+    "fact": "From Trapani in western Sicily: each spiral is rolled around a thin rod or reed called a busa, the tool that gave the pasta its name.",
+    "pairings": [
+      "pesto alla trapanese",
+      "swordfish and aubergine"
+    ]
+  },
+  {
+    "id": "fileja",
+    "name": "Fileja",
+    "aliases": [
+      "filei",
+      "filateddhi"
+    ],
+    "family": "twists",
+    "sub": "twists-rolled",
+    "glyph": "scroll",
+    "region": "calabria",
+    "country": null,
+    "make": "semola-fresh",
+    "pron": "fee-LAY-yah",
+    "meaning": null,
+    "look": "Elongated hand-rolled curl, like a loosely closed tube about 10 cm long.",
+    "fact": "A Calabrian pasta rolled around a thin rod called a dinaculu, which leaves a hollow channel without any extrusion at all.",
+    "pairings": [
+      "'nduja and tomato",
+      "pork ragù",
+      "goat ragù"
+    ]
+  },
+  {
+    "id": "maccheroni-al-ferretto",
+    "name": "Maccheroni al ferretto",
+    "aliases": [
+      "ferricelli",
+      "fusilli lucani"
+    ],
+    "family": "twists",
+    "sub": "twists-rolled",
+    "glyph": "scroll",
+    "region": "basilicata",
+    "country": null,
+    "make": "semola-fresh",
+    "pron": "mahk-keh-ROH-nee ahl fehr-RET-toh",
+    "meaning": "macaroni made on the little iron",
+    "look": "Hand-rolled hollow stick of semolina dough, 5 to 15 cm long, with a visible seam.",
+    "fact": "Across the southern mainland, dough is rolled around a thin square iron rod and slid off as a hollow tube; every area has its own name for it.",
+    "pairings": [
+      "pork ragù",
+      "tomato and cacioricotta",
+      "breadcrumbs and peppers"
+    ]
+  },
+  {
+    "id": "minchiareddhi",
+    "name": "Minchiareddhi",
+    "aliases": [
+      "maccaruni"
+    ],
+    "family": "twists",
+    "sub": "twists-rolled",
+    "glyph": "scroll",
+    "region": "puglia",
+    "country": null,
+    "make": "semola-fresh",
+    "pron": "meen-kyah-RED-dee",
+    "meaning": null,
+    "look": "Short hand-rolled hollow stick, a few centimetres long, with a seam.",
+    "fact": "The ferretto pasta of Salento. It is often cooked together with orecchiette as \"maritati\", the married pair served at weddings.",
+    "pairings": [
+      "tomato and cacioricotta",
+      "meat ragù",
+      "ricotta forte"
+    ]
+  },
+  {
+    "id": "maccarrones-de-busa",
+    "name": "Maccarrones de busa",
+    "aliases": [],
+    "family": "twists",
+    "sub": "twists-rolled",
+    "glyph": "scroll",
+    "region": "sardinia",
+    "country": null,
+    "make": "semola-fresh",
+    "pron": "mahk-kah-ROH-nehs deh BOO-zah",
+    "meaning": "knitting-needle macaroni",
+    "look": "Hand-rolled hollow strand like a short, thick, rustic bucatino.",
+    "fact": "Sardinia's version of rod-rolled pasta: semolina dough is wrapped around a knitting needle (busa) to make a long hollow tube.",
+    "pairings": [
+      "sausage ragù",
+      "tomato and pecorino",
+      "wild boar ragù"
+    ]
+  },
+  {
+    "id": "pasta-al-ceppo",
+    "name": "Pasta al ceppo",
+    "aliases": [
+      "maccheroni al ceppo"
+    ],
+    "family": "twists",
+    "sub": "twists-rolled",
+    "glyph": "scroll",
+    "region": "abruzzo",
+    "country": null,
+    "make": "semola-fresh",
+    "pron": "PAH-stah ahl CHEP-poh",
+    "meaning": "pasta on the stick",
+    "look": "Strip of dough rolled around a stick into a tube that looks like a cinnamon quill.",
+    "fact": "From the hills of Teramo province: the ceppo was the knitting-needle-like stick each piece was wrapped around. Dried versions are now extruded.",
+    "pairings": [
+      "meat ragù",
+      "sausage and mushrooms"
+    ]
+  },
+  {
+    "id": "maccheroni-alla-bobbiese",
+    "name": "Maccheroni alla bobbiese",
+    "aliases": [
+      "maccheroni bobbiesi"
+    ],
+    "family": "twists",
+    "sub": "twists-rolled",
+    "glyph": "scroll",
+    "region": "emilia-romagna",
+    "country": null,
+    "make": "egg",
+    "pron": "mahk-keh-ROH-nee AHL-lah bob-BYEH-zeh",
+    "meaning": "macaroni Bobbio-style",
+    "look": "Hand-rolled hollow stick of fresh dough with a seam along its length.",
+    "fact": "A speciality of Bobbio in the Piacenza hills, where the dough is rolled around a knitting needle; the classic dressing is slow-braised beef stracotto.",
+    "pairings": [
+      "beef stracotto sauce",
+      "mushroom sauce"
+    ]
+  }
+]
