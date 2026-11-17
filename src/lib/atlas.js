@@ -182,7 +182,10 @@ export class Atlas {
       c.setPointerCapture(e.pointerId)
       const p = pos(e)
       this.pointers.set(e.pointerId, p)
-      this.drag = { x: p.x, y: p.y, moved: 0 }
+      // a gesture that ever had two fingers down is never a tap
+      if (this.pointers.size === 1) this.multi = false
+      else this.multi = true
+      this.drag = { x: p.x, y: p.y, moved: this.multi ? 99 : 0 }
       this.anim = null
       if (this.pointers.size === 2) {
         const [a, b] = [...this.pointers.values()]
@@ -222,7 +225,7 @@ export class Atlas {
       if (this.pointers.size < 2) this.pinch = null
       c.style.cursor = ''
       if (!had || !this.drag || e.type === 'pointercancel') return
-      if (this.drag.moved <= 4) {
+      if (this.drag.moved <= 4 && !this.multi) {
         const p = pos(e)
         this._click(this._hit(p.x, p.y))
       }
@@ -563,8 +566,10 @@ export class Atlas {
     const halfW = W / 2 / k + 120
     const halfH = H / 2 / k + 120
     const glyphs = k >= 0.2
-    const labels = k >= 0.52
-    const labelAlpha = clamp((k - 0.52) / 0.1, 0, 1)
+    // phones reach this density at a lower zoom, so names appear sooner there
+    const labelK = this.coarse ? 0.32 : 0.52
+    const labels = k >= labelK
+    const labelAlpha = clamp((k - labelK) / 0.1, 0, 1)
     const fontPx = Math.max(15, 10.5 / k)
     const hoverId = this.hover?.kind === 'pasta' ? this.hover.id : null
     ctx.textAlign = 'center'

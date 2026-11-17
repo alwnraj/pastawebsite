@@ -14,6 +14,8 @@ const Search = forwardRef(function Search({ onPick, total, compact }, ref) {
     onPick(r.p.id)
     setQ('')
     setOpen(false)
+    // close the phone keyboard so the panel is visible, and hand keys back to the map
+    document.activeElement?.blur()
   }
 
   return (
@@ -21,8 +23,12 @@ const Search = forwardRef(function Search({ onPick, total, compact }, ref) {
       <input
         ref={ref}
         type="search"
+        enterKeyHint="search"
+        autoCapitalize="off"
+        autoCorrect="off"
+        spellCheck={false}
         value={q}
-        placeholder={compact ? `Search ${total} shapes…` : `Search ${total} shapes…  ( / )`}
+        placeholder={compact ? 'Search shapes…' : `Search ${total} shapes…  ( / )`}
         aria-label="Search pasta shapes"
         onChange={(e) => {
           setQ(e.target.value)

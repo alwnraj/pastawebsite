@@ -6,12 +6,17 @@ import Panel from './components/Panel.jsx'
 import Search from './components/Search.jsx'
 
 const PANEL_W = 440
-const isPhone = () => window.matchMedia('(max-width: 820px)').matches
+// keep in sync with the phone media queries in index.css
+const LANDSCAPE_PHONE = '(orientation: landscape) and (max-height: 500px)'
+const isPhone = () => window.matchMedia(`(max-width: 820px), ${LANDSCAPE_PHONE}`).matches
+const isLandscapePhone = () => window.matchMedia(LANDSCAPE_PHONE).matches
 // how much of the canvas the overlays cover, so the camera can frame around them
-const insetFor = (mode) =>
-  isPhone()
-    ? { top: window.innerWidth > window.innerHeight ? 60 : 104, bottom: mode === 'panel' ? Math.round(window.innerHeight * 0.56) : mode === 'tour' ? Math.min(250, Math.round(window.innerHeight * 0.6)) : 50 }
-    : { right: mode === 'panel' ? PANEL_W : 0 }
+const insetFor = (mode) => {
+  if (!isPhone()) return { right: mode === 'panel' ? PANEL_W : 0 }
+  // landscape phones: panel and tour dock to the right, below the bar
+  if (isLandscapePhone()) return { top: 60, right: mode ? Math.min(380, Math.round(window.innerWidth * 0.5)) + 8 : 0, bottom: mode ? 0 : 50 }
+  return { top: 104, bottom: mode === 'panel' ? Math.round(window.innerHeight * 0.56) : mode === 'tour' ? Math.min(250, Math.round(window.innerHeight * 0.6)) : 50 }
+}
 
 function readHash() {
   const [lens, id] = window.location.hash.replace(/^#\/?/, '').split('/')
