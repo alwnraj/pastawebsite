@@ -67,10 +67,18 @@ export default function App() {
     }
     atlas.setInset(insetFor(null))
     atlas.view = atlas._fitView(atlas.layout.bounds)
+    let lastW = canvasRef.current.clientWidth
     const ro = new ResizeObserver(() => {
       setPhone(isPhone())
       atlas.setInset(insetFor(selectedRef.current ? 'panel' : tourRef.current != null ? 'tour' : null))
       atlas.resize()
+      // on rotation the overlays move, so re-centre whatever is being looked at
+      const w = canvasRef.current.clientWidth
+      if (w !== lastW) {
+        lastW = w
+        if (selectedRef.current) atlas.focusPasta(selectedRef.current, 0)
+        else if (tourRef.current != null) goTourRef.current?.(tourRef.current)
+      }
     })
     ro.observe(canvasRef.current)
     return () => {
@@ -166,6 +174,8 @@ export default function App() {
     },
     [lens],
   )
+  const goTourRef = useRef(goTour)
+  goTourRef.current = goTour
 
   const begin = () => {
     setIntro(false)
